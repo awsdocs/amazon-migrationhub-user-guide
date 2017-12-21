@@ -1,0 +1,35 @@
+# Task<a name="API_Task"></a>
+
+Task object encapsulating task information\.
+
+## Contents<a name="API_Task_Contents"></a>
+
+ **ProgressPercent**   
+Indication of the percentage completion of the task\.  
+Type: Integer  
+Valid Range: Minimum value of 0\. Maximum value of 100\.  
+Required: No
+
+ **Status**   
+Status of the task \- Not Started, In\-Progress, Complete\.  
+Type: String  
+Valid Values:` NOT_STARTED | IN_PROGRESS | FAILED | COMPLETED`   
+Required: Yes
+
+ **StatusDetail**   
+Details of task status as notified by a migration tool\. A tool might use this field to provide clarifying information about the status that is unique to that tool or that explains an error state\.  
+Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 500\.  
+Required: No
+
+## See Also<a name="API_Task_SeeAlso"></a>
+
+For more information about using this API in one of the language\-specific AWS SDKs, see the following:
+
++  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/Task) 
+
++  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/Task) 
+
++  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/Task) 
+
++  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/Task) 
