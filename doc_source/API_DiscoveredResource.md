@@ -4,13 +4,13 @@ Object representing the on\-premises resource being migrated\.
 
 ## Contents<a name="API_DiscoveredResource_Contents"></a>
 
- **ConfigurationId**   
+ **ConfigurationId**   <a name="migrationhub-Type-DiscoveredResource-ConfigurationId"></a>
 The configurationId in ADS that uniquely identifies the on\-premise resource\.  
 Type: String  
 Length Constraints: Minimum length of 1\.  
 Required: Yes
 
- **Description**   
+ **Description**   <a name="migrationhub-Type-DiscoveredResource-Description"></a>
 A description that can be free\-form text to record additional detail about the discovered resource for clarity or later reference\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 500\.  

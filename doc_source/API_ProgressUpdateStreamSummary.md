@@ -4,7 +4,7 @@ Summary of the AWS resource used for access control that is implicitly linked to
 
 ## Contents<a name="API_ProgressUpdateStreamSummary_Contents"></a>
 
- **ProgressUpdateStreamName**   
+ **ProgressUpdateStreamName**   <a name="migrationhub-Type-ProgressUpdateStreamSummary-ProgressUpdateStreamName"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

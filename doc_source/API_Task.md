@@ -4,19 +4,19 @@ Task object encapsulating task information\.
 
 ## Contents<a name="API_Task_Contents"></a>
 
- **ProgressPercent**   
+ **ProgressPercent**   <a name="migrationhub-Type-Task-ProgressPercent"></a>
 Indication of the percentage completion of the task\.  
 Type: Integer  
 Valid Range: Minimum value of 0\. Maximum value of 100\.  
 Required: No
 
- **Status**   
+ **Status**   <a name="migrationhub-Type-Task-Status"></a>
 Status of the task \- Not Started, In\-Progress, Complete\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | FAILED | COMPLETED`   
 Required: Yes
 
- **StatusDetail**   
+ **StatusDetail**   <a name="migrationhub-Type-Task-StatusDetail"></a>
 Details of task status as notified by a migration tool\. A tool might use this field to provide clarifying information about the status that is unique to that tool or that explains an error state\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 500\.  

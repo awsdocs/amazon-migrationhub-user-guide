@@ -6,13 +6,13 @@ Associates a discovered resource ID from Application Discovery Service \(ADS\) w
 
 ```
 {
-   "DiscoveredResource": { 
-      "ConfigurationId": "string",
-      "Description": "string"
+   "[DiscoveredResource](#migrationhub-AssociateDiscoveredResource-request-DiscoveredResource)": { 
+      "[ConfigurationId](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-ConfigurationId)": "string",
+      "[Description](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-Description)": "string"
    },
-   "DryRun": boolean,
-   "MigrationTaskName": "string",
-   "ProgressUpdateStream": "string"
+   "[DryRun](#migrationhub-AssociateDiscoveredResource-request-DryRun)": boolean,
+   "[MigrationTaskName](#migrationhub-AssociateDiscoveredResource-request-MigrationTaskName)": "string",
+   "[ProgressUpdateStream](#migrationhub-AssociateDiscoveredResource-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -20,24 +20,24 @@ Associates a discovered resource ID from Application Discovery Service \(ADS\) w
 
 The request accepts the following data in JSON format\.
 
- ** DiscoveredResource **   
+ ** [DiscoveredResource](#API_AssociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-AssociateDiscoveredResource-request-DiscoveredResource"></a>
 Object representing a Resource\.  
 Type: [DiscoveredResource](API_DiscoveredResource.md) object  
 Required: Yes
 
- ** DryRun **   
+ ** [DryRun](#API_AssociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-AssociateDiscoveredResource-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_AssociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-AssociateDiscoveredResource-request-MigrationTaskName"></a>
 The identifier given to the MigrationTask\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_AssociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-AssociateDiscoveredResource-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

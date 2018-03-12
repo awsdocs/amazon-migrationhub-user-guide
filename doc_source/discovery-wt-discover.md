@@ -27,23 +27,21 @@ These steps walk you through the discovery process using an AWS Agentless Discov
 
 The Discovery Connector is a VMWare appliance \(OVA\) and can only collect information about VMWare VMs\. 
 
-You use a Discovery Connector because it lets you quickly assess your infrastructure using an tool that isn’t specific to any operation system, without having to install anything on the servers themselves\.
+You use a Discovery Connector because it lets you quickly assess your infrastructure using a tool that isn’t specific to any operating system, without having to install anything on the servers themselves\.
 
 **To discover resources using an agentless connector**
 
-1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download connector**, else, in the navigation pane, under **Discover**, choose **Tools**\.
+1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download connector**; else, in the navigation pane, under **Discover**, choose **Tools**, and then choose **Download connector**\.
 
-1. In the **Discovery Connector** box, choose **Deploy connectors**\.
+1. Deploy and configure the agentless connector by following the instructions specified in [Setting up Agentless Discovery](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agentless.html) from the AWS Application Discovery Service User Guide\.
 
-   1. These installation instructions may also be found [here](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agentless.html)\.
-
-1. After you have successfully installed the agentless connector, return to the Migration Hub console and navigate to the **Data Collectors** page\. 
+1. After you have successfully installed the agentless connector, return to the **Data Collectors** page on the Migration Hub console and choose the refresh icon\.
 
 1. Select the check box of the connector\(s\) you want to start\.
 
 1. Choose **Start data collection**\.
 
-   1. To install additional connectors, choose **Deploy new Discovery Connectors**\.
+   1. To install additional connectors, repeat the above procedure\.
 
 ### Discovery Using the AWS Application Discovery Agent<a name="discovery-agent-wt"></a>
 
@@ -55,11 +53,9 @@ The beneﬁt of using a Discovery Agent is that it provides more detailed inform
 
 **To discover resources using an agent**
 
-1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download agent**, then in the dropdown, select either **Windows agent** or **Linux agent**, else, in the navigation pane, under **Discover**, choose **Tools**\.
+1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download agent**, then in the dropdown, select either **Windows** or **Linux**; else, the **Download agent** button can be accessed by choosing **Tools** under **Discover** in the navigation pane\.
 
-1. In the **Discovery Agent** box, choose **Deploy agents**\.
-
-   1. These installation instructions may also be found [here](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agents.html)\.
+1. Deploy and configure the agent by following the instructions specified in [Setting up Agent Based Discovery](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agents.html) from the AWS Application Discovery Service User Guide\.
 
 1. After you have successfully installed the agent, return to the **Data Collectors** page on the Migration Hub console and choose the refresh icon\.
 
@@ -67,7 +63,7 @@ The beneﬁt of using a Discovery Agent is that it provides more detailed inform
 
 1. Choose **Start data collection**\.
 
-   1. To install additional agents, choose **Deploy new Discovery Agents**\.
+   1. To install additional agents, repeat the above procedure\.
 
 ## Discover Step 2: View Discovered Servers<a name="discovery-wt-view-disco-servers"></a>
 

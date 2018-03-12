@@ -20,13 +20,13 @@ FQDN
 
 ## Contents<a name="API_ResourceAttribute_Contents"></a>
 
- **Type**   
+ **Type**   <a name="migrationhub-Type-ResourceAttribute-Type"></a>
 Type of resource\.  
 Type: String  
 Valid Values:` IPV4_ADDRESS | IPV6_ADDRESS | MAC_ADDRESS | FQDN | VM_MANAGER_ID | VM_MANAGED_OBJECT_REFERENCE | VM_NAME | VM_PATH | BIOS_ID | MOTHERBOARD_SERIAL_NUMBER | LABEL`   
 Required: Yes
 
- **Value**   
+ **Value**   <a name="migrationhub-Type-ResourceAttribute-Value"></a>
 Value of the resource type\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  

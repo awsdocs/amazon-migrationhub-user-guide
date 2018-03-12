@@ -12,9 +12,9 @@ Lists all, or filtered by resource name, migration tasks associated with the use
 
 ```
 {
-   "MaxResults": number,
-   "NextToken": "string",
-   "ResourceName": "string"
+   "[MaxResults](#migrationhub-ListMigrationTasks-request-MaxResults)": number,
+   "[NextToken](#migrationhub-ListMigrationTasks-request-NextToken)": "string",
+   "[ResourceName](#migrationhub-ListMigrationTasks-request-ResourceName)": "string"
 }
 ```
 
@@ -22,18 +22,18 @@ Lists all, or filtered by resource name, migration tasks associated with the use
 
 The request accepts the following data in JSON format\.
 
- ** MaxResults **   
+ ** [MaxResults](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-MaxResults"></a>
 Value to specify how many results are returned per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 100\.  
 Required: No
 
- ** NextToken **   
+ ** [NextToken](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Required: No
 
- ** ResourceName **   
+ ** [ResourceName](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-ResourceName"></a>
 Filter migration tasks by discovered resource name\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
@@ -43,17 +43,17 @@ Required: No
 
 ```
 {
-   "MigrationTaskSummaryList": [ 
+   "[MigrationTaskSummaryList](#migrationhub-ListMigrationTasks-response-MigrationTaskSummaryList)": [ 
       { 
-         "MigrationTaskName": "string",
-         "ProgressPercent": number,
-         "ProgressUpdateStream": "string",
-         "Status": "string",
-         "StatusDetail": "string",
-         "UpdateDateTime": number
+         "[MigrationTaskName](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-MigrationTaskName)": "string",
+         "[ProgressPercent](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-ProgressPercent)": number,
+         "[ProgressUpdateStream](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-ProgressUpdateStream)": "string",
+         "[Status](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-Status)": "string",
+         "[StatusDetail](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-StatusDetail)": "string",
+         "[UpdateDateTime](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-UpdateDateTime)": number
       }
    ],
-   "NextToken": "string"
+   "[NextToken](#migrationhub-ListMigrationTasks-response-NextToken)": "string"
 }
 ```
 
@@ -63,11 +63,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** MigrationTaskSummaryList **   
+ ** [MigrationTaskSummaryList](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-MigrationTaskSummaryList"></a>
 Lists the migration task's summary which includes: `MigrationTaskName`, `ProgressPercent`, `ProgressUpdateStream`, `Status`, and the `UpdateDateTime` for each task\.  
 Type: Array of [MigrationTaskSummary](API_MigrationTaskSummary.md) objects
 
- ** NextToken **   
+ ** [NextToken](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-NextToken"></a>
 If there are more migration tasks than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String
 

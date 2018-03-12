@@ -2,7 +2,7 @@
 
 Discovering your servers first is an optional starting point for migrations by gathering detailed server information and then grouping the discovered servers into applications to be migrated and tracked\.
 
-Use this section to guide you through the initial console screens that Migration Hub presents to the first\-time user to view, compare, and download AWS discovery tools\. *If you are not sure about the differences between the two AWS discovery tools, Discovery Connectors and Discovery Agents, see the AWS discovery tools comparison chart*\.
+Use this section to guide you through the initial console screens that Migration Hub presents to the first\-time user to view, compare, and download AWS discovery tools\. *If you are not sure about the differences between the two AWS discovery tools, Discovery Connectors and Discovery Agents, see the [AWS discovery tools comparison chart](discovery-wt-discover.md#discovery-wt-aws-disco-tools)*\.
 
 Once you get past the new user screens, this section will reference the [AWS Migration Hub Walkthroughs](walkthroughs.md) for remaining steps\.
 

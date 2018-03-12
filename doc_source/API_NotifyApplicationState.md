@@ -6,9 +6,9 @@ Sets the migration state of an application\. For a given application identified 
 
 ```
 {
-   "ApplicationId": "string",
-   "DryRun": boolean,
-   "Status": "string"
+   "[ApplicationId](#migrationhub-NotifyApplicationState-request-ApplicationId)": "string",
+   "[DryRun](#migrationhub-NotifyApplicationState-request-DryRun)": boolean,
+   "[Status](#migrationhub-NotifyApplicationState-request-Status)": "string"
 }
 ```
 
@@ -16,18 +16,18 @@ Sets the migration state of an application\. For a given application identified 
 
 The request accepts the following data in JSON format\.
 
- ** ApplicationId **   
+ ** [ApplicationId](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-ApplicationId"></a>
 The configurationId in ADS that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
 Required: Yes
 
- ** DryRun **   
+ ** [DryRun](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** Status **   
+ ** [Status](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-Status"></a>
 Status of the application \- Not Started, In\-Progress, Complete\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | COMPLETED`   

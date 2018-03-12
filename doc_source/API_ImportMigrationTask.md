@@ -8,9 +8,9 @@ This API is a prerequisite to calling the `NotifyMigrationTaskState` API as the 
 
 ```
 {
-   "DryRun": boolean,
-   "MigrationTaskName": "string",
-   "ProgressUpdateStream": "string"
+   "[DryRun](#migrationhub-ImportMigrationTask-request-DryRun)": boolean,
+   "[MigrationTaskName](#migrationhub-ImportMigrationTask-request-MigrationTaskName)": "string",
+   "[ProgressUpdateStream](#migrationhub-ImportMigrationTask-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -18,19 +18,19 @@ This API is a prerequisite to calling the `NotifyMigrationTaskState` API as the 
 
 The request accepts the following data in JSON format\.
 
- ** DryRun **   
+ ** [DryRun](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

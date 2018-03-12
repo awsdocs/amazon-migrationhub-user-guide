@@ -20,7 +20,7 @@ If you are not seeing your applications' migration status updates on the **Updat
 
 To make sure authentication is occurring correctly:
 
-+ Check if the migration tools you are using have been authorized to communicate with Migration Hub\. For more information, see steps to authorize a migration tool\.
++ Check if the migration tools you are using have been authorized to communicate with Migration Hub\. For more information, see [steps to authorize a migration tool](migrate-wt-migrate.md#migrate-wt-migrate-using-tools)\.
 
 + Check the [Tools page](http://console.aws.amazon.com/migrationhub/migrate/tools) to see the status of connected tools\. Learn more about setting up necessary polices and roles in [Required Managed Policies](new-customer-setup.md#required-managed-policies)\.
 
@@ -40,11 +40,11 @@ If you are not seeing your migration updates associated with an application, it 
 
 ### Servers' Application Grouping<a name="group-as-apps"></a>
 
-+ Check if all your severs have been grouped into an application, see steps to groups servers into applications\.
++ Check if all your severs have been grouped into an application, see [steps to groups servers into applications](migrate-wt-migrate.md#migrate-wt-group-as-applications)\.
 
 ### Update Status<a name="update-status"></a>
 
-+ The application details page requires you to refresh the page in order to see the latest status\. See steps to track status of migrations\.
++ The application details page requires you to refresh the page in order to see the latest status\. See [steps to track status of migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
 
 ### Update and Server Mapping<a name="update-mapping"></a>
 

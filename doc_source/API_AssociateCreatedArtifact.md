@@ -12,13 +12,13 @@ Associates a created artifact of an AWS cloud resource, the target receiving the
 
 ```
 {
-   "CreatedArtifact": { 
-      "Description": "string",
-      "Name": "string"
+   "[CreatedArtifact](#migrationhub-AssociateCreatedArtifact-request-CreatedArtifact)": { 
+      "[Description](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Description)": "string",
+      "[Name](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Name)": "string"
    },
-   "DryRun": boolean,
-   "MigrationTaskName": "string",
-   "ProgressUpdateStream": "string"
+   "[DryRun](#migrationhub-AssociateCreatedArtifact-request-DryRun)": boolean,
+   "[MigrationTaskName](#migrationhub-AssociateCreatedArtifact-request-MigrationTaskName)": "string",
+   "[ProgressUpdateStream](#migrationhub-AssociateCreatedArtifact-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -26,24 +26,24 @@ Associates a created artifact of an AWS cloud resource, the target receiving the
 
 The request accepts the following data in JSON format\.
 
- ** CreatedArtifact **   
+ ** [CreatedArtifact](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-CreatedArtifact"></a>
 An ARN of the AWS resource related to the migration \(e\.g\., AMI, EC2 instance, RDS instance, etc\.\)   
 Type: [CreatedArtifact](API_CreatedArtifact.md) object  
 Required: Yes
 
- ** DryRun **   
+ ** [DryRun](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

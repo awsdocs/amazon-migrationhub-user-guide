@@ -6,8 +6,8 @@ Retrieves a list of all attributes associated with a specific migration task\.
 
 ```
 {
-   "MigrationTaskName": "string",
-   "ProgressUpdateStream": "string"
+   "[MigrationTaskName](#migrationhub-DescribeMigrationTask-request-MigrationTaskName)": "string",
+   "[ProgressUpdateStream](#migrationhub-DescribeMigrationTask-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -15,14 +15,14 @@ Retrieves a list of all attributes associated with a specific migration task\.
 
 The request accepts the following data in JSON format\.
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_DescribeMigrationTask_RequestSyntax) **   <a name="migrationhub-DescribeMigrationTask-request-MigrationTaskName"></a>
 The identifier given to the MigrationTask\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_DescribeMigrationTask_RequestSyntax) **   <a name="migrationhub-DescribeMigrationTask-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -33,21 +33,21 @@ Required: Yes
 
 ```
 {
-   "MigrationTask": { 
-      "MigrationTaskName": "string",
-      "ProgressUpdateStream": "string",
-      "ResourceAttributeList": [ 
+   "[MigrationTask](#migrationhub-DescribeMigrationTask-response-MigrationTask)": { 
+      "[MigrationTaskName](API_MigrationTask.md#migrationhub-Type-MigrationTask-MigrationTaskName)": "string",
+      "[ProgressUpdateStream](API_MigrationTask.md#migrationhub-Type-MigrationTask-ProgressUpdateStream)": "string",
+      "[ResourceAttributeList](API_MigrationTask.md#migrationhub-Type-MigrationTask-ResourceAttributeList)": [ 
          { 
-            "Type": "string",
-            "Value": "string"
+            "[Type](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Type)": "string",
+            "[Value](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Value)": "string"
          }
       ],
-      "Task": { 
-         "ProgressPercent": number,
-         "Status": "string",
-         "StatusDetail": "string"
+      "[Task](API_MigrationTask.md#migrationhub-Type-MigrationTask-Task)": { 
+         "[ProgressPercent](API_Task.md#migrationhub-Type-Task-ProgressPercent)": number,
+         "[Status](API_Task.md#migrationhub-Type-Task-Status)": "string",
+         "[StatusDetail](API_Task.md#migrationhub-Type-Task-StatusDetail)": "string"
       },
-      "UpdateDateTime": number
+      "[UpdateDateTime](API_MigrationTask.md#migrationhub-Type-MigrationTask-UpdateDateTime)": number
    }
 }
 ```
@@ -58,7 +58,7 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** MigrationTask **   
+ ** [MigrationTask](#API_DescribeMigrationTask_ResponseSyntax) **   <a name="migrationhub-DescribeMigrationTask-response-MigrationTask"></a>
 Object encapsulating information about the migration task\.  
 Type: [MigrationTask](API_MigrationTask.md) object
 

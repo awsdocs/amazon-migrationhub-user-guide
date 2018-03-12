@@ -12,16 +12,16 @@ Notifies Migration Hub of the current status, progress, or other detail regardin
 
 ```
 {
-   "DryRun": boolean,
-   "MigrationTaskName": "string",
-   "NextUpdateSeconds": number,
-   "ProgressUpdateStream": "string",
-   "Task": { 
-      "ProgressPercent": number,
-      "Status": "string",
-      "StatusDetail": "string"
+   "[DryRun](#migrationhub-NotifyMigrationTaskState-request-DryRun)": boolean,
+   "[MigrationTaskName](#migrationhub-NotifyMigrationTaskState-request-MigrationTaskName)": "string",
+   "[NextUpdateSeconds](#migrationhub-NotifyMigrationTaskState-request-NextUpdateSeconds)": number,
+   "[ProgressUpdateStream](#migrationhub-NotifyMigrationTaskState-request-ProgressUpdateStream)": "string",
+   "[Task](#migrationhub-NotifyMigrationTaskState-request-Task)": { 
+      "[ProgressPercent](API_Task.md#migrationhub-Type-Task-ProgressPercent)": number,
+      "[Status](API_Task.md#migrationhub-Type-Task-Status)": "string",
+      "[StatusDetail](API_Task.md#migrationhub-Type-Task-StatusDetail)": "string"
    },
-   "UpdateDateTime": number
+   "[UpdateDateTime](#migrationhub-NotifyMigrationTaskState-request-UpdateDateTime)": number
 }
 ```
 
@@ -29,37 +29,37 @@ Notifies Migration Hub of the current status, progress, or other detail regardin
 
 The request accepts the following data in JSON format\.
 
- ** DryRun **   
+ ** [DryRun](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** NextUpdateSeconds **   
+ ** [NextUpdateSeconds](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-NextUpdateSeconds"></a>
 Number of seconds after the UpdateDateTime within which the Migration Hub can expect an update\. If Migration Hub does not receive an update within the specified interval, then the migration task will be considered stale\.  
 Type: Integer  
 Valid Range: Minimum value of 0\.  
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
 Pattern: `[^/:|\000-\037]+`   
 Required: Yes
 
- ** Task **   
+ ** [Task](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-Task"></a>
 Information about the task's progress and status\.  
 Type: [Task](API_Task.md) object  
 Required: Yes
 
- ** UpdateDateTime **   
+ ** [UpdateDateTime](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-UpdateDateTime"></a>
 The timestamp when the task was gathered\.  
 Type: Timestamp  
 Required: Yes

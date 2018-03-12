@@ -6,10 +6,10 @@ Disassociate an Application Discovery Service \(ADS\) discovered resource from a
 
 ```
 {
-   "ConfigurationId": "string",
-   "DryRun": boolean,
-   "MigrationTaskName": "string",
-   "ProgressUpdateStream": "string"
+   "[ConfigurationId](#migrationhub-DisassociateDiscoveredResource-request-ConfigurationId)": "string",
+   "[DryRun](#migrationhub-DisassociateDiscoveredResource-request-DryRun)": boolean,
+   "[MigrationTaskName](#migrationhub-DisassociateDiscoveredResource-request-MigrationTaskName)": "string",
+   "[ProgressUpdateStream](#migrationhub-DisassociateDiscoveredResource-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -17,25 +17,25 @@ Disassociate an Application Discovery Service \(ADS\) discovered resource from a
 
 The request accepts the following data in JSON format\.
 
- ** ConfigurationId **   
+ ** [ConfigurationId](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-ConfigurationId"></a>
 ConfigurationId of the ADS resource to be disassociated\.  
 Type: String  
 Length Constraints: Minimum length of 1\.  
 Required: Yes
 
- ** DryRun **   
+ ** [DryRun](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-MigrationTaskName"></a>
 The identifier given to the MigrationTask\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

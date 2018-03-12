@@ -6,10 +6,10 @@ Lists discovered resources associated with the given `MigrationTask`\.
 
 ```
 {
-   "MaxResults": number,
-   "MigrationTaskName": "string",
-   "NextToken": "string",
-   "ProgressUpdateStream": "string"
+   "[MaxResults](#migrationhub-ListDiscoveredResources-request-MaxResults)": number,
+   "[MigrationTaskName](#migrationhub-ListDiscoveredResources-request-MigrationTaskName)": "string",
+   "[NextToken](#migrationhub-ListDiscoveredResources-request-NextToken)": "string",
+   "[ProgressUpdateStream](#migrationhub-ListDiscoveredResources-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -17,25 +17,25 @@ Lists discovered resources associated with the given `MigrationTask`\.
 
 The request accepts the following data in JSON format\.
 
- ** MaxResults **   
+ ** [MaxResults](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-MaxResults"></a>
 The maximum number of results returned per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 10\.  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-MigrationTaskName"></a>
 The name of the MigrationTask\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** NextToken **   
+ ** [NextToken](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Required: No
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -46,13 +46,13 @@ Required: Yes
 
 ```
 {
-   "DiscoveredResourceList": [ 
+   "[DiscoveredResourceList](#migrationhub-ListDiscoveredResources-response-DiscoveredResourceList)": [ 
       { 
-         "ConfigurationId": "string",
-         "Description": "string"
+         "[ConfigurationId](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-ConfigurationId)": "string",
+         "[Description](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-Description)": "string"
       }
    ],
-   "NextToken": "string"
+   "[NextToken](#migrationhub-ListDiscoveredResources-response-NextToken)": "string"
 }
 ```
 
@@ -62,11 +62,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** DiscoveredResourceList **   
+ ** [DiscoveredResourceList](#API_ListDiscoveredResources_ResponseSyntax) **   <a name="migrationhub-ListDiscoveredResources-response-DiscoveredResourceList"></a>
 Returned list of discovered resources associated with the given MigrationTask\.  
 Type: Array of [DiscoveredResource](API_DiscoveredResource.md) objects
 
- ** NextToken **   
+ ** [NextToken](#API_ListDiscoveredResources_ResponseSyntax) **   <a name="migrationhub-ListDiscoveredResources-response-NextToken"></a>
 If there are more discovered resources than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String
 

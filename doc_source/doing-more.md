@@ -42,7 +42,7 @@ See Step 2\.a in *To determine if a migration update must be manually mapped to 
 
 ### Tracking When You Migrate Without Performing Discovery<a name="updates-tracking-wt-no-disco"></a>
 
-If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\. You can group servers to applications \(see, migrate\-wt\-group\-as\-applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. See, [Group Servers as Applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track Status of Migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
+If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\. You can group servers to applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. See, [Group Servers as Applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track Status of Migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
 
 ### Troubleshooting and Manually Mapping Migration Updates<a name="updates-tracking-wt-troubleshooting"></a>
 

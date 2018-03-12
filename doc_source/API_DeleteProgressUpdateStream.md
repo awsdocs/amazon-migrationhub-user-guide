@@ -16,8 +16,8 @@ Deletes a progress update stream, including all of its tasks, which was previous
 
 ```
 {
-   "DryRun": boolean,
-   "ProgressUpdateStreamName": "string"
+   "[DryRun](#migrationhub-DeleteProgressUpdateStream-request-DryRun)": boolean,
+   "[ProgressUpdateStreamName](#migrationhub-DeleteProgressUpdateStream-request-ProgressUpdateStreamName)": "string"
 }
 ```
 
@@ -25,12 +25,12 @@ Deletes a progress update stream, including all of its tasks, which was previous
 
 The request accepts the following data in JSON format\.
 
- ** DryRun **   
+ ** [DryRun](#API_DeleteProgressUpdateStream_RequestSyntax) **   <a name="migrationhub-DeleteProgressUpdateStream-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** ProgressUpdateStreamName **   
+ ** [ProgressUpdateStreamName](#API_DeleteProgressUpdateStream_RequestSyntax) **   <a name="migrationhub-DeleteProgressUpdateStream-request-ProgressUpdateStreamName"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  

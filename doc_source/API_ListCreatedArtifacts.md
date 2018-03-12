@@ -12,10 +12,10 @@ Lists the created artifacts attached to a given migration task in an update stre
 
 ```
 {
-   "MaxResults": number,
-   "MigrationTaskName": "string",
-   "NextToken": "string",
-   "ProgressUpdateStream": "string"
+   "[MaxResults](#migrationhub-ListCreatedArtifacts-request-MaxResults)": number,
+   "[MigrationTaskName](#migrationhub-ListCreatedArtifacts-request-MigrationTaskName)": "string",
+   "[NextToken](#migrationhub-ListCreatedArtifacts-request-NextToken)": "string",
+   "[ProgressUpdateStream](#migrationhub-ListCreatedArtifacts-request-ProgressUpdateStream)": "string"
 }
 ```
 
@@ -23,25 +23,25 @@ Lists the created artifacts attached to a given migration task in an update stre
 
 The request accepts the following data in JSON format\.
 
- ** MaxResults **   
+ ** [MaxResults](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MaxResults"></a>
 Maximum number of results to be returned per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 10\.  
 Required: No
 
- ** MigrationTaskName **   
+ ** [MigrationTaskName](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** NextToken **   
+ ** [NextToken](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Required: No
 
- ** ProgressUpdateStream **   
+ ** [ProgressUpdateStream](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -52,13 +52,13 @@ Required: Yes
 
 ```
 {
-   "CreatedArtifactList": [ 
+   "[CreatedArtifactList](#migrationhub-ListCreatedArtifacts-response-CreatedArtifactList)": [ 
       { 
-         "Description": "string",
-         "Name": "string"
+         "[Description](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Description)": "string",
+         "[Name](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Name)": "string"
       }
    ],
-   "NextToken": "string"
+   "[NextToken](#migrationhub-ListCreatedArtifacts-response-NextToken)": "string"
 }
 ```
 
@@ -68,11 +68,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** CreatedArtifactList **   
+ ** [CreatedArtifactList](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-CreatedArtifactList"></a>
 List of created artifacts up to the maximum number of results specified in the request\.  
 Type: Array of [CreatedArtifact](API_CreatedArtifact.md) objects
 
- ** NextToken **   
+ ** [NextToken](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-NextToken"></a>
 If there are more created artifacts than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String
 

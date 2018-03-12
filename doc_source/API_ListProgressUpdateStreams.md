@@ -6,8 +6,8 @@ Lists progress update streams associated with the user account making this call\
 
 ```
 {
-   "MaxResults": number,
-   "NextToken": "string"
+   "[MaxResults](#migrationhub-ListProgressUpdateStreams-request-MaxResults)": number,
+   "[NextToken](#migrationhub-ListProgressUpdateStreams-request-NextToken)": "string"
 }
 ```
 
@@ -15,13 +15,13 @@ Lists progress update streams associated with the user account making this call\
 
 The request accepts the following data in JSON format\.
 
- ** MaxResults **   
+ ** [MaxResults](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-MaxResults"></a>
 Filter to limit the maximum number of results to list per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 100\.  
 Required: No
 
- ** NextToken **   
+ ** [NextToken](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Required: No
@@ -30,10 +30,10 @@ Required: No
 
 ```
 {
-   "NextToken": "string",
-   "ProgressUpdateStreamSummaryList": [ 
+   "[NextToken](#migrationhub-ListProgressUpdateStreams-response-NextToken)": "string",
+   "[ProgressUpdateStreamSummaryList](#migrationhub-ListProgressUpdateStreams-response-ProgressUpdateStreamSummaryList)": [ 
       { 
-         "ProgressUpdateStreamName": "string"
+         "[ProgressUpdateStreamName](API_ProgressUpdateStreamSummary.md#migrationhub-Type-ProgressUpdateStreamSummary-ProgressUpdateStreamName)": "string"
       }
    ]
 }
@@ -45,11 +45,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** NextToken **   
+ ** [NextToken](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-NextToken"></a>
 If there are more streams created than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String
 
- ** ProgressUpdateStreamSummaryList **   
+ ** [ProgressUpdateStreamSummaryList](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-ProgressUpdateStreamSummaryList"></a>
 List of progress update streams up to the max number of results passed in the input\.  
 Type: Array of [ProgressUpdateStreamSummary](API_ProgressUpdateStreamSummary.md) objects
 

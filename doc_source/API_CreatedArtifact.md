@@ -4,13 +4,13 @@ An ARN of the AWS cloud resource target receiving the migration \(e\.g\., AMI, E
 
 ## Contents<a name="API_CreatedArtifact_Contents"></a>
 
- **Description**   
+ **Description**   <a name="migrationhub-Type-CreatedArtifact-Description"></a>
 A description that can be free\-form text to record additional detail about the artifact for clarity or for later reference\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 500\.  
 Required: No
 
- **Name**   
+ **Name**   <a name="migrationhub-Type-CreatedArtifact-Name"></a>
 An ARN that uniquely identifies the result of a migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  

@@ -6,7 +6,7 @@ Gets the migration status of an application\.
 
 ```
 {
-   "ApplicationId": "string"
+   "[ApplicationId](#migrationhub-DescribeApplicationState-request-ApplicationId)": "string"
 }
 ```
 
@@ -14,7 +14,7 @@ Gets the migration status of an application\.
 
 The request accepts the following data in JSON format\.
 
- ** ApplicationId **   
+ ** [ApplicationId](#API_DescribeApplicationState_RequestSyntax) **   <a name="migrationhub-DescribeApplicationState-request-ApplicationId"></a>
 The configurationId in ADS that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
@@ -24,8 +24,8 @@ Required: Yes
 
 ```
 {
-   "ApplicationStatus": "string",
-   "LastUpdatedTime": number
+   "[ApplicationStatus](#migrationhub-DescribeApplicationState-response-ApplicationStatus)": "string",
+   "[LastUpdatedTime](#migrationhub-DescribeApplicationState-response-LastUpdatedTime)": number
 }
 ```
 
@@ -35,12 +35,12 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** ApplicationStatus **   
+ ** [ApplicationStatus](#API_DescribeApplicationState_ResponseSyntax) **   <a name="migrationhub-DescribeApplicationState-response-ApplicationStatus"></a>
 Status of the application \- Not Started, In\-Progress, Complete\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | COMPLETED` 
 
- ** LastUpdatedTime **   
+ ** [LastUpdatedTime](#API_DescribeApplicationState_ResponseSyntax) **   <a name="migrationhub-DescribeApplicationState-response-LastUpdatedTime"></a>
 The timestamp when the application status was last updated\.  
 Type: Timestamp
 

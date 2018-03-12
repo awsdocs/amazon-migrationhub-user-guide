@@ -4,39 +4,39 @@ MigrationTaskSummary includes `MigrationTaskName`, `ProgressPercent`, `ProgressU
 
 ## Contents<a name="API_MigrationTaskSummary_Contents"></a>
 
- **MigrationTaskName**   
+ **MigrationTaskName**   <a name="migrationhub-Type-MigrationTaskSummary-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: No
 
- **ProgressPercent**   
+ **ProgressPercent**   <a name="migrationhub-Type-MigrationTaskSummary-ProgressPercent"></a>
   
 Type: Integer  
 Valid Range: Minimum value of 0\. Maximum value of 100\.  
 Required: No
 
- **ProgressUpdateStream**   
+ **ProgressUpdateStream**   <a name="migrationhub-Type-MigrationTaskSummary-ProgressUpdateStream"></a>
 An AWS resource used for access control\. It should uniquely identify the migration tool as it is used for all updates made by the tool\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
 Pattern: `[^/:|\000-\037]+`   
 Required: No
 
- **Status**   
+ **Status**   <a name="migrationhub-Type-MigrationTaskSummary-Status"></a>
 Status of the task\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | FAILED | COMPLETED`   
 Required: No
 
- **StatusDetail**   
+ **StatusDetail**   <a name="migrationhub-Type-MigrationTaskSummary-StatusDetail"></a>
 Detail information of what is being done within the overall status state\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 500\.  
 Required: No
 
- **UpdateDateTime**   
+ **UpdateDateTime**   <a name="migrationhub-Type-MigrationTaskSummary-UpdateDateTime"></a>
 The timestamp when the task was gathered\.  
 Type: Timestamp  
 Required: No

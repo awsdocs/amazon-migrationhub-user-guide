@@ -4,32 +4,32 @@ Represents a migration task in a migration tool\.
 
 ## Contents<a name="API_MigrationTask_Contents"></a>
 
- **MigrationTaskName**   
+ **MigrationTaskName**   <a name="migrationhub-Type-MigrationTask-MigrationTaskName"></a>
 Unique identifier that references the migration task\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: No
 
- **ProgressUpdateStream**   
+ **ProgressUpdateStream**   <a name="migrationhub-Type-MigrationTask-ProgressUpdateStream"></a>
 A name that identifies the vendor of the migration tool being used\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
 Pattern: `[^/:|\000-\037]+`   
 Required: No
 
- **ResourceAttributeList**   
+ **ResourceAttributeList**   <a name="migrationhub-Type-MigrationTask-ResourceAttributeList"></a>
   
 Type: Array of [ResourceAttribute](API_ResourceAttribute.md) objects  
 Array Members: Minimum number of 0 items\. Maximum number of 100 items\.  
 Required: No
 
- **Task**   
+ **Task**   <a name="migrationhub-Type-MigrationTask-Task"></a>
 Task object encapsulating task information\.  
 Type: [Task](API_Task.md) object  
 Required: No
 
- **UpdateDateTime**   
+ **UpdateDateTime**   <a name="migrationhub-Type-MigrationTask-UpdateDateTime"></a>
 The timestamp when the task was gathered\.  
 Type: Timestamp  
 Required: No
