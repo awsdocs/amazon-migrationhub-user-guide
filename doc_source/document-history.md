@@ -1,15 +1,13 @@
 # Document History<a name="document-history"></a>
 
-
+**Topics**
 + [User Guide Important Changes](#user-guide-changes)
 + [API Guide Important Changes](#api-guide-changes)
 
 ## User Guide Important Changes<a name="user-guide-changes"></a>
 
 The following table describes important changes to the *AWS Migration Hub* User Guide\.
-
 + **API version**: 2017\-05\-31
-
 + **Latest User Guide documentation update**: March 06, 2018
 
 
@@ -21,9 +19,7 @@ The following table describes important changes to the *AWS Migration Hub* User 
 ## API Guide Important Changes<a name="api-guide-changes"></a>
 
 The following table describes important changes to the *AWS Migration Hub* API Guide\.
-
 + **API version**: 2017\-05\-31
-
 + **Latest API Guide documentation update**: March 08, 2018
 
 

@@ -1,14 +1,11 @@
 # Phase 1: Discover<a name="discovery-wt-discover"></a>
 
 The discovery phase has the following steps: 
-
 + Choose and Deploy AWS Discovery Tools\.
-
 + View Discovered Servers\.
-
 + Group Servers as Applications\.
 
-
+**Topics**
 + [Discover Step 1: Choose and Deploy AWS Discovery Tools](#discovery-wt-aws-disco-tools)
 + [Discover Step 2: View Discovered Servers](#discovery-wt-view-disco-servers)
 + [Discover Step 3: Group Servers as Applications](#discovery-wt-group-as-applications)
@@ -109,5 +106,4 @@ You can import application groups in bulk using the AWS CLI for Application Disc
 **Next steps**
 
 Once you have completed the three steps of the Discover phase, proceed to
-
 + [Phase 2: Migrate](discovery-wt-migrate.md)

@@ -2,7 +2,7 @@
 
 In this section, you can find information about how to get started with AWS Migration Hub\. Included are steps to introduce you to the initial console screens that Migration Hub presents to a new user\.
 
-
+**Topics**
 + [Assumptions](#gs-assumptions)
 + [Accessing AWS Migration Hub](#access-via-console-and-api)
 + [Two Ways to Get Started](#gs-the-two-ways)
@@ -15,15 +15,10 @@ If you are a developer or are interested in sending migration status from either
 ## Assumptions<a name="gs-assumptions"></a>
 
 For these exercises, the following is assumed:
-
 + You have signed up for AWS\. For more information, see [Setting Up](setting-up.md)
-
 + Migration Hub monitors the status of your migrations in all AWS regions, provided your migration tools are available in that region\.
-
 + The migration tools that integrate with Migration Hub send migration status to Migration Hub in us\-west\-2 where the status is aggregated and visible in a single location\.
-
 + The migration tools do not send status unless you have authorized \(that is, connected\) them\.
-
 + For a list of AWS regions where you can use Migration Hub, see the [Amazon Web Services General Reference](http://docs.aws.amazon.com/general/latest/gr/rande.html#migrationhub_region)\.
 
 ## Accessing AWS Migration Hub<a name="access-via-console-and-api"></a>
@@ -47,7 +42,5 @@ If this is the first time you are using Migration Hub or you have not sent any d
 To begin your migration, choose either **Get started with discovery** or **Get started migrating** and then proceed to the respective workflow listed in the topics below\.
 
 **Topics**
-
 + Option 1: [Perform Discovery and Then Migrate](gs-new-user-discovery.md)
-
 + Option 2: [Migrate Without Performing Discovery](gs-new-user-migration.md)

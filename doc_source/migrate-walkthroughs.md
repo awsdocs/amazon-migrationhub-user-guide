@@ -14,6 +14,6 @@ The steps you will be doing in this walkthrough follow the outline of the **Migr
 
 The following topics guide you through the three major steps of a direct to migration workflow\.
 
-
+**Topics**
 + [Phase 1: Migrate](migrate-wt-migrate.md)
 + [Phase 2: Track](migrate-wt-track.md)

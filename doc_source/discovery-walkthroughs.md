@@ -23,7 +23,7 @@ The steps you will be doing in this walkthrough follow the outline of the **Perf
 
 The following topics guide you through the three major steps of a discovery based migration workflow:
 
-
+**Topics**
 + [Phase 1: Discover](discovery-wt-discover.md)
 + [Phase 2: Migrate](discovery-wt-migrate.md)
 + [Phase 3: Track](discovery-wt-track.md)

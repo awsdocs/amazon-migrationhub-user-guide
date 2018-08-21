@@ -5,7 +5,7 @@ MigrationTaskSummary includes `MigrationTaskName`, `ProgressPercent`, `ProgressU
 ## Contents<a name="API_MigrationTaskSummary_Contents"></a>
 
  **MigrationTaskName**   <a name="migrationhub-Type-MigrationTaskSummary-MigrationTaskName"></a>
-Unique identifier that references the migration task\.  
+Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
@@ -44,11 +44,7 @@ Required: No
 ## See Also<a name="API_MigrationTaskSummary_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/MigrationTaskSummary) 

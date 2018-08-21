@@ -30,5 +30,4 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 | [PutResourceAttributes](http://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html) | mgh:PutResourceAttributes |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 
 ## Related Topics<a name="w3ab1c39c17c23"></a>
-
 + [Access Control](auth-and-access-control.md#access-control)

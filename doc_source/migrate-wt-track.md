@@ -1,10 +1,9 @@
 # Phase 2: Track<a name="migrate-wt-track"></a>
 
 In the track phase, you track the status of migrations\.
-
 + Track Status of Migrations\.
 
-
+**Topics**
 + [Track Step 1: Track Status of Migrations](#migrate-wt-track-app-status)
 
 ## Track Step 1: Track Status of Migrations<a name="migrate-wt-track-app-status"></a>

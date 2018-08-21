@@ -1,14 +1,11 @@
 # Phase 1: Migrate<a name="migrate-wt-migrate"></a>
 
 The migrate phase has the following steps: 
-
 + Connect Migration Tools to Migration Hub\.
-
 + Migrate Using the Connected Migration Tools\.
-
 + Group Servers as Applications\.
 
-
+**Topics**
 + [Migrate Step 1: Connect Migration Tools to Migration Hub](#migrate-wt-auth-migrate-tools)
 + [Migrate Step 2: Migrate Using the Connected Migration Tools](#migrate-wt-migrate-using-tools)
 + [Migrate Step 3: Group Servers as Applications](#migrate-wt-group-as-applications)
@@ -26,7 +23,7 @@ The table following lists the supported tools\.
 
 | Resource type | Migration tool name | 
 | --- | --- | 
-|  Server  |  AWS Server Migration Service ATADATA ATAmotion CloudEndure Live Migration Racemi DynaCenter  | 
+|  Server  |  AWS Server Migration Service ATADATA ATAmotion CloudEndure Live Migration RiverMeadow Migration SaaS  | 
 | Database |  AWS Database Migration Service   | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
@@ -95,5 +92,4 @@ The following steps will show you how to select the server or servers you want t
 **Next steps**
 
 Once you have completed the three steps of the Migrate phase, proceed to
-
 + [Phase 2: Track](migrate-wt-track.md)

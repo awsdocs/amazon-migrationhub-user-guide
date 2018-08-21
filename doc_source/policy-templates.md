@@ -6,6 +6,6 @@ The various types of permission polices referenced in this section have been exp
 
 The policy templates have been organized in the following hierarchy as shown below\. You can click on any policy to go directly to its template\.
 
-
+**Topics**
 + [New User IAM Setup](new-customer-setup.md)
 + [Custom Policies for Migration Tools](customer-managed-vendor.md)

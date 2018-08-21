@@ -1,11 +1,8 @@
 # AssociateCreatedArtifact<a name="API_AssociateCreatedArtifact"></a>
 
 Associates a created artifact of an AWS cloud resource, the target receiving the migration, with the migration task performed by a migration tool\. This API has the following traits:
-
 + Migration tools can call the `AssociateCreatedArtifact` operation to indicate which AWS artifact is associated with a migration task\.
-
 + The created artifact name must be provided in ARN \(Amazon Resource Name\) format which will contain information about type and region; for example: `arn:aws:ec2:us-east-1:488216288981:image/ami-6d0ba87b`\.
-
 + Examples of the AWS resource behind the created artifact are, AMI's, EC2 instance, or DMS endpoint, etc\.
 
 ## Request Syntax<a name="API_AssociateCreatedArtifact_RequestSyntax"></a>
@@ -37,7 +34,7 @@ Type: Boolean
 Required: No
 
  ** [MigrationTaskName](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-MigrationTaskName"></a>
-Unique identifier that references the migration task\.  
+Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
@@ -110,21 +107,12 @@ The following example associates an AWS resource to the migration task identifie
 ## See Also<a name="API_AssociateCreatedArtifact_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 

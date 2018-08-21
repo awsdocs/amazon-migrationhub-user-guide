@@ -1,21 +1,15 @@
 # Doing More in Migration Hub<a name="doing-more"></a>
 
 This section contains additional information to help enrich your migration experience by providing details on how to fully utilize the Migration Hub console discussed in the following topics:
-
 + [Tracking Migration Updates](#updates-tracking-wt)
-
 + [Tracking Metrics Using the Dashboards](#dashboards-tracking-wt)
-
 + [Navigating from the Dashboard and the Navigation Pane](#navigation-tracking-wt)
 
 ## Tracking Migration Updates<a name="updates-tracking-wt"></a>
 
 In order to better understand how Migration Hub helps you monitor progress of a migration, there are three concepts to understand in the Migration Hub:
-
 + Applications
-
 + Resources \(for example, servers\)
-
 + Updates
 
 Migration tools like AWS SMS, AWS DMS, and integrated partners' tools send updates to AWS Migration Hub\. These updates include information about how a particular resource migration \(for example, server or database\) is progressing\. One or more resources are grouped together to make an application\. Each application has a dedicated page in Migration Hub where you can go to see the updates for all the resources in the application\.

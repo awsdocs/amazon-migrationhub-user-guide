@@ -15,19 +15,14 @@ Once you’ve created a `ProgressUpdateStream`, you can start importing migratio
 ### Associating a Migration Task with a Previously Discovered Server<a name="api-reference-associate_task"></a>
 
 In order to add migration task detail to the console, the task must be associated with a resource\. The resource represents the existing or source server for the migration\.   There are two ways that this association can be made:
-
 + **Auto\-mapping \(recommended\)**: A migration tool can associate \(Put\) sufficient identifiable information \(e\.g\., IP address, MAC address, and/or fully qualified domain name, and in a VMware environment, vCenter ID, MoRef ID, VM name, and/or VM folder path\) by calling `PutResourceAttributes` with a migration task so that AWS Migration Hub can correctly map the server being migrated to a server in AWS Application Discovery Service \(ADS\)'s servers repository\. If Migration Hub does not find a matching server in ADS’ server repository, then it automatically adds the server to the ADS repository\.
-
 + **Manual\-mapping**: Alternatively, a migration tool can allow the user to make this association manually by providing them with a mapping experience within the migration tool’s workflow that displays a list of existing AWS Application Discovery Service \(ADS\) servers\.
 **Note**  
 This approach is not recommended and rarely necessary since auto\-mapping \(above\) will automatically add and map the server from your tool to the Application Discovery Service repository when calling `PutResourceAttributes`\.
 
 ### Auto\-Map Explained<a name="api-reference-automatch"></a>
-
 + A migration tool uses the `PutResourceAttributes` API to provide information about the resource being migrated\. This is done by an asynchronous association made with the resource after the `PutResourceAttributes` call is returned\. If no matching server was found, then `PutResourceAttributes` automatically adds a server to the ADS repository and maps the migration task to the new server\.  This association can then be verified by calling `ListDiscoveredResource.` 
-
 + It is called with `MigrationTaskName` and `ResourceAttributes`\. The `MigrationTaskName` is an identifier provided by the migration tool\. This name uniquely identifies a migration task within your `ProgressUpdateStream`\.
-
 + The `ResourceAttributes` is descriptive information about the resource being migrated, such as a MAC address, IP address, fully qualified domain name, etc\. for servers, or in a VMware environment, VM name, vCenter Id or MoRef ID\. It can be used to associate the migration task with a server in the Application Discovery Service \(ADS\)\.
 
 ### Sending Migration Status Updates<a name="api-reference-send-updates"></a>
@@ -39,11 +34,8 @@ The `MigrationTaskName` input parameter includes arguments used for addressing u
 ### Migration Tool Expected Behavior<a name="api-reference-expected-behaviour"></a>
 
 The following points are important information regarding the interaction between the migration tool you use and AWS Migration Hub\.
-
 + The migration tool is expected to retry on Migration Hub API failures\.
-
 + The migration tool is expected to publish updates as often as possible\.  A migration tool must specify its own update expectations with every call to  `NotifyMigrationTaskState` API\. It is recommended to send updates as soon as they are available\.
-
 + The migration tool should call `PutResourceAttributes`\. If during the course of migration, the migration tool detects any change to the resource, or finds additional information, it can resend `PutResourceAttributes` data and Migration Hub will use the new values, overwriting old ones, and attempt to re\-map to a resource in the Application Discovery Service\.
 
 ## API Endpoint<a name="api-reference-endpoint"></a>
@@ -65,11 +57,7 @@ Migration Hub is integrated with CloudTrail, a service that captures API calls f
 ## Related Topics<a name="api-reference-related-topics"></a>
 
 The following sections provide descriptions of the API operations, how to create a signature for request authentication, and how to grant permissions for these API operations using the IAM policies\.
-
 +  [Authentication and Access Control for AWS Migration Hub](auth-and-access-control.md) 
-
 +  [Actions](API_Operations.md) 
-
 +  [Data Types](API_Types.md) 
-
 +  [AWS CloudTrail](logging-using-cloudtrail.md) 

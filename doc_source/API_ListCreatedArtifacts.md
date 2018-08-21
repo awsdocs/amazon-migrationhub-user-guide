@@ -1,11 +1,8 @@
 # ListCreatedArtifacts<a name="API_ListCreatedArtifacts"></a>
 
 Lists the created artifacts attached to a given migration task in an update stream\. This API has the following traits:
-
 + Gets the list of the created artifacts while migration is taking place\.
-
 + Shows the artifacts created by the migration tool that was associated by the `AssociateCreatedArtifact` API\. 
-
 + Lists created artifacts in a paginated interface\. 
 
 ## Request Syntax<a name="API_ListCreatedArtifacts_RequestSyntax"></a>
@@ -30,7 +27,7 @@ Valid Range: Minimum value of 1\. Maximum value of 10\.
 Required: No
 
  ** [MigrationTaskName](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MigrationTaskName"></a>
-Unique identifier that references the migration task\.  
+Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
@@ -130,21 +127,12 @@ The following example lists the created artifact name and its description that i
 ## See Also<a name="API_ListCreatedArtifacts_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 

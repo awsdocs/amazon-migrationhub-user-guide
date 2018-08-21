@@ -1,11 +1,8 @@
 # NotifyMigrationTaskState<a name="API_NotifyMigrationTaskState"></a>
 
 Notifies Migration Hub of the current status, progress, or other detail regarding a migration task\. This API has the following traits:
-
 + Migration tools will call the `NotifyMigrationTaskState` API to share the latest progress and status\.
-
 +  `MigrationTaskName` is used for addressing updates to the correct target\.
-
 +  `ProgressUpdateStream` is used for access control and to provide a namespace for each migration tool\.
 
 ## Request Syntax<a name="API_NotifyMigrationTaskState_RequestSyntax"></a>
@@ -35,7 +32,7 @@ Type: Boolean
 Required: No
 
  ** [MigrationTaskName](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-MigrationTaskName"></a>
-Unique identifier that references the migration task\.  
+Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
@@ -123,21 +120,12 @@ The following example communicates the latest progress and updates to Migration 
 ## See Also<a name="API_NotifyMigrationTaskState_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
