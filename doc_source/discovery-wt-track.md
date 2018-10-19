@@ -16,7 +16,7 @@ In the track phase, you track the status of migrations\.
 
    1. If you do not see all of your application's servers listed in the application's details page, it might be because you have not grouped those servers into this application yet\. If you do not see the migration status of a server, automapping to discovered servers may have mapped to the wrong server and you need to manually edit the mapping\. See [Updates About My Migrations Don't Appear Inside an Application](troubleshooting.md#migs-do-not-appear-in-app)\.
 
-1. After verifying the in\-progress migration status from the application's detail screen, you will want to change the application migration status from "Not started" to "In\-progress"\. Choose **Change status** in the upper, right\-hand corner\.
+1.  The first time a migration task is started for a server associated with the application, applications with this status will change to the **in\-progress** status, automatically\. After verifying the in\-progress migration status from the application's detail screen, if the status is still **Not started**, you can manually change it to **In\-progress**\. Choose **Change status** in the upper, right\-hand corner\.
 
 1. Select the radio button next to **In\-progress** in the dialog box\.
 

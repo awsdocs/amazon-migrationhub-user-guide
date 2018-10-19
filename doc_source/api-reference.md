@@ -52,7 +52,7 @@ The documentation describes API version 2017\-05\-31\.
 
 ## AWS CloudTrail<a name="api-cloudtrail-logging"></a>
 
-Migration Hub is integrated with CloudTrail, a service that captures API calls from the Migration Hub console or from your code to the Migration Hub API operations\. Using the information collected by CloudTrail, you can determine the request that was made to Migration Hub, the source IP address from which the request was made, who made the request, when it was made, and so on\. See [Logging AWS Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md)\.
+Migration Hub is integrated with CloudTrail, a service that captures API calls from the Migration Hub console or from your code to the Migration Hub API operations\. Using the information collected by CloudTrail, you can determine the request that was made to Migration Hub, the source IP address from which the request was made, who made the request, when it was made, and so on\. See [Logging Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md)\.
 
 ## Related Topics<a name="api-reference-related-topics"></a>
 
@@ -60,4 +60,4 @@ The following sections provide descriptions of the API operations, how to create
 +  [Authentication and Access Control for AWS Migration Hub](auth-and-access-control.md) 
 +  [Actions](API_Operations.md) 
 +  [Data Types](API_Types.md) 
-+  [AWS CloudTrail](logging-using-cloudtrail.md) 
++  [](logging-using-cloudtrail.md) 

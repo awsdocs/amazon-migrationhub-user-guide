@@ -9,8 +9,8 @@ Following, you can find information on how to troubleshoot issues for AWS Migrat
 ## My Migrations Do Not Appear in Migration Hub<a name="migs-do-not-appear-in-hub"></a>
 
 If you are not seeing your applications' migration status updates on the **Updates** page in Migration Hub, it is usually due to one of the following:
-+ Migration tools not being authorized to commmunicate with Migration Hub\.
-+ You do not have the neccesary polices and roles set up in IAM\.
++ Migration tools not being authorized to communicate with Migration Hub\.
++ You do not have the necessary polices and roles set up in IAM\.
 + Migration status mapping is incorrect needs to be done manually\.
 
 ### Authentication<a name="authenitcation-ts"></a>

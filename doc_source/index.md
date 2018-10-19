@@ -61,5 +61,5 @@ Amazon's trademarks and trade dress may not be used in
       + [ProgressUpdateStreamSummary](API_ProgressUpdateStreamSummary.md)
       + [ResourceAttribute](API_ResourceAttribute.md)
       + [Task](API_Task.md)
-+ [Logging AWS Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
++ [Logging Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
 + [Document History](document-history.md)

@@ -19,7 +19,7 @@ For these exercises, the following is assumed:
 + Migration Hub monitors the status of your migrations in all AWS regions, provided your migration tools are available in that region\.
 + The migration tools that integrate with Migration Hub send migration status to Migration Hub in us\-west\-2 where the status is aggregated and visible in a single location\.
 + The migration tools do not send status unless you have authorized \(that is, connected\) them\.
-+ For a list of AWS regions where you can use Migration Hub, see the [Amazon Web Services General Reference](http://docs.aws.amazon.com/general/latest/gr/rande.html#migrationhub_region)\.
++ For a list of AWS regions where you can use Migration Hub, see the [Amazon Web Services General Reference](https://docs.aws.amazon.com/general/latest/gr/rande.html#migrationhub_region)\.
 
 ## Accessing AWS Migration Hub<a name="access-via-console-and-api"></a>
 
