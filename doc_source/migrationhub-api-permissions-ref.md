@@ -29,5 +29,5 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 | [NotifyMigrationTaskState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyMigrationTaskState.html) | mgh:NotifyMigrationTaskState |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 | [PutResourceAttributes](http://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html) | mgh:PutResourceAttributes |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 
-## Related Topics<a name="w3aac39c17c23"></a>
+## Related Topics<a name="w4aac15c17c23"></a>
 + [Access Control](auth-and-access-control.md#access-control)

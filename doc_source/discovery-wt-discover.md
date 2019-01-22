@@ -12,7 +12,7 @@ The discovery phase has the following steps:
 
 ## Discover Step 1: Choose and Deploy AWS Discovery Tools<a name="discovery-wt-aws-disco-tools"></a>
 
-If you landed here from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), or if you already have AWS discovery tools implemented and would like to deploy more, the following steps will show you how to deploy either an [AWS Agentless Discovery Connector](#discovery-agent-less-wt) or an [AWS Application Discovery Agent](#discovery-agent-wt)\. 
+If you landed here from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), or if you already have AWS discovery tools implemented and would like to deploy more, the following steps will show you how to deploy either an [AWS Agentless Discovery Connector](#discovery-agent-less-wt) or an [AWS Application Discovery Agent](#discovery-agent-wt)\. If you have already performed discovery using an AWS Migration Partner discovery tool or have existing data from data sources such as a Configuration Management Database \(CMDB\) or IT Asset Management System \(ITAM\), you can use Migration Hub import to upload them\. For more information, see [Migration Hub Import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) in the *Application Discovery Service User Guide*\.
 
 To help you decide whether to choose a Discovery Connector or a Discovery Agent, the following comparison chart is provided\.
 

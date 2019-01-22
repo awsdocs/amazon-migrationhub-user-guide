@@ -1,29 +1,17 @@
 # Document History<a name="document-history"></a>
-
-**Topics**
-+ [User Guide Important Changes](#user-guide-changes)
-+ [API Guide Important Changes](#api-guide-changes)
-
-## User Guide Important Changes<a name="user-guide-changes"></a>
-
-The following table describes important changes to the *AWS Migration Hub* User Guide\.
 + **API version**: 2017\-05\-31
-+ **Latest User Guide documentation update**: March 06, 2018
++ **Latest User Guide documentation update**: January 18, 2019 2018
+
+The following table describes important changes to the *AWS Migration Hub User Guide* after January 18 2019\. For notifications about documentation updates, you can subscribe to the RSS feed\.
+
+| Change | Description | Date | 
+| --- |--- |--- |
+| [Introducing the Migration Hub import feature](#document-history) | Migration Hub import allows you to import information about your on\-premises servers and applications into Migration Hub, including server specifications and utilization data\. You can also use this data to track the status of application migrations\. For more information, see [Perform Discovery and Then Migrate](https://docs.aws.amazon.com/migrationhub/latest/ug/gs-new-user-discovery.html)\. | January 18, 2019 | 
+
+The following table describes documentation releases for the *AWS Migration Hub User Guide* before January 18, 2019:
 
 
 | Change | Description | Date Changed | 
 | --- | --- | --- | 
-|  New guide  |  This is the first release of the *AWS Migration Hub* User Guide\.  |  August 11, 2017  | 
 |  Discovery walkthrough  |  Updated to reflect removal of "Deploy agents/connectors" and "Deploy new agents/connectors" from console\.  |  March 06, 2018  | 
-
-## API Guide Important Changes<a name="api-guide-changes"></a>
-
-The following table describes important changes to the *AWS Migration Hub* API Guide\.
-+ **API version**: 2017\-05\-31
-+ **Latest API Guide documentation update**: March 08, 2018
-
-
-| Change | Description | Date Changed | 
-| --- | --- | --- | 
-|  New guide  |  This is the first release of the *AWS Migration Hub* API Guide\.  |  August 11, 2017  | 
-|  PutResourceAttributesRequest$ResourceAttributeList  |  Updated to reflect unused key LABEL removed from Type: Array of ResourceAttribute objects in PutResourceAttributes API\.  |  March 08, 2018  | 
+|  New guide  |  This is the first release of the *AWS Migration Hub* User Guide\.  |  August 11, 2017  | 

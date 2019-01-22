@@ -1,7 +1,7 @@
 # AWS Migration Hub User Guide
 
 -----
-*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -34,6 +34,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Custom Policies for Migration Tools](customer-managed-vendor.md)
    + [AWS Migration Hub API Permissions: Actions and Resources Reference](migrationhub-api-permissions-ref.md)
    + [AWS Migration Hub Authentication and Access Control Explained](auth-and-access-explained.md)
++ [AWS Migration Hub Limits](limits.md)
 + [Troubleshooting AWS Migration Hub](troubleshooting.md)
 + [AWS Migration Hub API](api-reference.md)
    + [Actions](API_Operations.md)

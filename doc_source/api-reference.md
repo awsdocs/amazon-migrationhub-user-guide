@@ -46,7 +46,7 @@ https://mgh\.us\-west\-2\.amazonaws\.com/
 
 ## API Version<a name="api-reference-version"></a>
 
-The version of the API being used for a call is identified by the first path segment of the request URI, and its form is a ISO 8601 date\. 
+The version of the API being used for a call is identified by the first path segment of the request URI, and its form is a ISO 8601 date\.
 
 The documentation describes API version 2017\-05\-31\.
 
