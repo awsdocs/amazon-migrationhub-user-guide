@@ -2,15 +2,18 @@
 
 This section describes limitations when working with AWS Migration Hub\.
 
-## AWS Migration Hub Limits that Can Be Increased<a name="soft-limits"></a>
+## AWS Migration Hub Import Limits<a name="import-limits"></a>
 
-Following are the limits for AWS Migration Hub that can be increased by contacting AWS Support\.
-+ 25,000 imported records per account\.
-+ 5,000 imported servers per account\.
-+ 25,000 deletions of import records per 24 hour period, starting every day at 00:00 UTC\.
-+ 400 servers per application\.
+Following are the limits for AWS Migration Hub import\.
++ 10 MB maximum size for each import file\.
++ 25,000 imported records per account\. You can request an increase to this limit\.
++ 5,000 imported servers per account\. You can request an increase to this limit\.
++ 25,000 deletions of import records per 24 hour period, starting every day at 00:00 UTC\. You can request an increase to this limit\.
++ 400 servers per application\. You can request an increase to this limit\.
 
-You can take the following steps to request an increase for these limits\. These increases are not granted immediately, so it may take a couple of days for your increase to become effective\.
+## Requesting Limit Increases<a name="migration-hub-limit-increases.title"></a>
+
+You can take the following steps to request an increase for some limits\. These increases are not granted immediately, so it may take a couple of days for your increase to become effective\.
 
 **To request a limit increase**
 

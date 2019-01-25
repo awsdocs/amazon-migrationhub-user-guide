@@ -1,6 +1,6 @@
 # Document History<a name="document-history"></a>
 + **API version**: 2017\-05\-31
-+ **Latest User Guide documentation update**: January 18, 2019 2018
++ **Latest User Guide documentation update**: January 18, 2019
 
 The following table describes important changes to the *AWS Migration Hub User Guide* after January 18 2019\. For notifications about documentation updates, you can subscribe to the RSS feed\.
 
