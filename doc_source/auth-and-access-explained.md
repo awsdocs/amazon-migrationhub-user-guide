@@ -173,7 +173,7 @@ AWS addresses many common use cases by providing standalone IAM policies that ar
 
 The following AWS managed policies, which you can attach to users in your account, are specific to Migration Hub and are grouped by use case scenario:
 + **AWSMigrationHubDiscoveryAccess** – Grants permission to allow the Migration Hub service to call Application Discovery Service\.
-+ **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for an user who's not an administrator\.
++ **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for a user who's not an administrator\.
 + **AWSMigrationHubSMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Server Migration Service migration tool\.
 + **AWSMigrationHubDMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Database Migration Service migration tool\.
 
