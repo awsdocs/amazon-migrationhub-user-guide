@@ -16,7 +16,7 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 |  [AssociateDiscoveredResource](http://docs.aws.amazon.com/migrationhub/latest/ug/API_AssociateDiscoveredResource.html)  |  mgh:AssociateDiscoveredResource  |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 |  [CreateProgressUpdateStream](http://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateProgressUpdateStream.html)  | mgh:CreateProgressUpdateStream |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id  | 
 | [DeleteProgressUpdateStream](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DeleteProgressUpdateStream.html) | mgh:DeleteProgressUpdateStream |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id  | 
-| [DescribeApplicationState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeApplicationState.html)  |  mgh:DescribeApplicationState  |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
+| [DescribeApplicationState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeApplicationState.html)  |  mgh:DescribeApplicationState  |  \*  | 
 | [DescribeMigrationTask](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeMigrationTask.html) | mgh:DescribeMigrationTask |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 |  [DisassociateCreatedArtifact](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateCreatedArtifact.html)  | mgh:DisassociateCreatedArtifact |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 | [DisassociateDiscoveredResource](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DisassociateDiscoveredResource.html) | mgh:DisassociateDiscoveredResource |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
@@ -25,9 +25,18 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 |  [ListDiscoveredResources](http://docs.aws.amazon.com/migrationhub/latest/ug/API_ListDiscoveredResources.html)  | mgh:ListDiscoveredResources |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 |  [ListMigrationTasks](http://docs.aws.amazon.com/migrationhub/latest/ug/API_ListMigrationTasks.html)  | mgh:ListMigrationTasks |  \*  | 
 |  [ListProgressUpdateStreams](http://docs.aws.amazon.com/migrationhub/latest/ug/API_ListProgressUpdateStreams.html)  | mgh:ListProgressUpdateStreams |  \*  | 
-| [NotifyApplicationState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyApplicationState.html) | mgh:NotifyApplicationState |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
+| [NotifyApplicationState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyApplicationState.html) | mgh:NotifyApplicationState |  \*  | 
 | [NotifyMigrationTaskState](http://docs.aws.amazon.com/migrationhub/latest/ug/API_NotifyMigrationTaskState.html) | mgh:NotifyMigrationTaskState |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 | [PutResourceAttributes](http://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html) | mgh:PutResourceAttributes |  arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id or arn:aws:mgh:region:account\-id:ProgressUpdateStreamName/resource\-id/\*  | 
 
-## Related Topics<a name="w8aac17c17c23"></a>
+
+**AWS Migration Hub Home Region API and Required Permissions for Actions**  
+
+| Migration Hub API Operations | Required Permissions \(API Actions\) | Resources | 
+| --- | --- | --- | 
+|  [CreateHomeRegionControl](http://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateHomeRegionControls.html)  | mgh:CreateHomeRegionControl |  \*  | 
+|  [DescribeHomeRegionControls](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeHomeRegionControls.html)  | mgh:DescribeHomeRegionControls |  \*  | 
+|  [GetHomeRegion](http://docs.aws.amazon.com/migrationhub/latest/ug/API_GetHomeRegion.html)  | mgh:GetHomeRegion |  \*  | 
+
+## Related Topics<a name="w27aac21c21c29"></a>
 + [Access Control](auth-and-access-control.md#access-control)

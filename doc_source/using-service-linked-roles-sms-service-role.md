@@ -60,7 +60,7 @@ You're not required to manually create a service\-linked role\. When you connect
 
 Use the Migration Hub console to create a service\-linked role\.
 
-1. Open a web browser and navigate to the Migration Hub console at [console\.aws\.amazon\.com/migrationhub](https://console.aws.amazon.com/mhb)\.
+1. Open a web browser and navigate to the Migration Hub console at [console\.aws\.amazon\.com/migrationhub](https://console.aws.amazon.com/migrationhub)\.
 
 1. From the left navigation, under **Migrate** choose **Tools******
 

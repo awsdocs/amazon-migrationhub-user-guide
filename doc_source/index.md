@@ -28,6 +28,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Phase 1: Migrate](migrate-wt-migrate.md)
       + [Phase 2: Track](migrate-wt-track.md)
 + [Doing More in Migration Hub](doing-more.md)
++ [The AWS Migration Hub Home Region](home-region.md)
 + [Amazon EC2 Instance Recommendations](ec2-recommendations.md)
 + [Authentication and Access Control for AWS Migration Hub](auth-and-access-control.md)
    + [AWS Migration Hub Roles and Policies](policy-templates.md)

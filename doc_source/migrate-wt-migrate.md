@@ -14,7 +14,7 @@ The migrate phase has the following steps:
 
 If you landed here from Step 3 of [Migrate Without Performing Discovery](gs-new-user-migration.md), the following steps will show you how to authorize a migration tool and begin migrating\. 
 
-### <a name="w8aac11c20c27c11b5"></a>
+### <a name="w27aac12c20c27c11b5"></a>
 
 Migration happens outside Migration Hub using AWS migration tools or integrated partners' migration tools\. You choose these tools through the Tools page in the Migrate section in Migration Hub\.
 
@@ -23,8 +23,8 @@ The table following lists the supported tools\.
 
 | Resource type | Migration tool name | 
 | --- | --- | 
-|  Server  |  AWS Server Migration Service ATADATA ATAmotion CloudEndure Live Migration RiverMeadow Migration SaaS  | 
-| Database |  AWS Database Migration Service   | 
+|  Server  |  AWS Server Migration Service CloudEndure Migration ATADATA ATAmotion RiverMeadow Migration SaaS  | 
+| Database |  AWS Database Migration Service  | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
 
@@ -47,7 +47,7 @@ Note that if you are using API's or do not want to authorize through Migration H
 
 ## Migrate Step 2: Migrate Using the Connected Migration Tools<a name="migrate-wt-migrate-using-tools"></a>
 
-### <a name="w8aac11c20c27c13b3"></a>
+### <a name="w27aac12c20c27c13b3"></a>
 
 The following steps walk you through the migration of a previously defined application\.
 

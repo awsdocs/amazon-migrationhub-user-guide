@@ -111,7 +111,7 @@ The following table defines the different columns for an Amazon EC2 recommendati
 | Server\.SMBiosId | System management BIOS \(SMBIOS\) ID\. |  | 
 | Server\.VMware\.MoRefId | The managed object reference ID\. Must be provided with a VMware\.VCenterId\. |  | 
 | Server\.VMware\.VCenterId | Virtual machine unique identifier\. Must be provided with a VMware\.MoRefId\. |  | 
-| Server\.VMware\.vCenterName | The name of the cCenter where the VM is managed\. |  | 
+| Server\.VMware\.vCenterName | The name of the Center where the VM is managed\. |  | 
 | Server\.VMware\.vmFolderPath | The directory path of the VM files\. |  | 
 | Server\.CPU\.UsagePct\.Avg | The average CPU utilization when the discovery tool was collecting data\. | 4523\.9 | 
 | Server\.CPU\.UsagePct\.Max | The maximum CPU utilization when the discovery tool was collecting data\. | 55\.3424 | 

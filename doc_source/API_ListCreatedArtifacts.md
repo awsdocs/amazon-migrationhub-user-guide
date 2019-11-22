@@ -79,8 +79,12 @@ Type: String
 You do not have sufficient access to perform this action\.  
 HTTP Status Code: 400
 
+ **HomeRegionNotSetException**   
+The home region is not set\. Set the home region to continue\.  
+HTTP Status Code: 400
+
  **InternalServerError**   
-Exception raised when there is an internal, configuration, or dependency error encountered\.  
+Exception raised when an internal, configuration, or dependency error is encountered\.  
 HTTP Status Code: 500
 
  **InvalidInputException**   
@@ -88,7 +92,7 @@ Exception raised when the provided input violates a policy constraint or is ente
 HTTP Status Code: 400
 
  **ResourceNotFoundException**   
-Exception raised when the request references a resource \(ADS configuration, update stream, migration task, etc\.\) that does not exist in ADS \(Application Discovery Service\) or in Migration Hub's repository\.  
+Exception raised when the request references a resource \(Application Discovery Service configuration, update stream, migration task, etc\.\) that does not exist in Application Discovery Service \(Application Discovery Service\) or in Migration Hub's repository\.  
 HTTP Status Code: 400
 
  **ServiceUnavailableException**   
@@ -131,7 +135,6 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
 +  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [AWS SDK for Go \- Pilot](https://docs.aws.amazon.com/goto/SdkForGoPilot/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
 +  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 

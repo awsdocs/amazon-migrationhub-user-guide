@@ -35,7 +35,8 @@ This is an example role for use by a integrated partner or developer when using 
         },
         {
             "Action": [
-                "mgh:ListMigrationTasks"
+                "mgh:ListMigrationTasks",
+                "mgh:GetHomeRegion"
             ],
             "Effect": "Allow",
             "Resource": "*"

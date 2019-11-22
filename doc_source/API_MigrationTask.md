@@ -19,7 +19,7 @@ Pattern: `[^/:|\000-\037]+`
 Required: No
 
  **ResourceAttributeList**   <a name="migrationhub-Type-MigrationTask-ResourceAttributeList"></a>
-  
+Information about the resource that is being migrated\. This data will be used to map the task to a resource in the Application Discovery Service repository\.  
 Type: Array of [ResourceAttribute](API_ResourceAttribute.md) objects  
 Array Members: Minimum number of 0 items\. Maximum number of 100 items\.  
 Required: No
@@ -39,6 +39,5 @@ Required: No
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/MigrationTask) 
 +  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/MigrationTask) 
-+  [AWS SDK for Go \- Pilot](https://docs.aws.amazon.com/goto/SdkForGoPilot/AWSMigrationHub-2017-05-31/MigrationTask) 
 +  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/MigrationTask) 
 +  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/MigrationTask) 

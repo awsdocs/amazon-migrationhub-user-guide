@@ -70,8 +70,6 @@ The main dashboard consists of four at\-a\-glance status and information panes a
 
 To reach the main dashboard, choose **Dashboard** from the navigation pane\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/DashboardWithData.png)
-
 ## Navigating from the Dashboard and the Navigation Pane<a name="navigation-tracking-wt"></a>
 
 After viewing dashboard data summaries, you might want to retrieve more detail without interrupting your workﬂow\. You do this by navigating directly from the relevant status or information pane on the dashboard\.
@@ -86,4 +84,4 @@ In the table following, you can ﬁnd instructions on how to navigate from a das
 | All connectors |  From the total number of connectors in the Discovery summary box in the Main dashboard, choose **View all connectors**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | All applications |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose **View all applications** Or, from the Discover dashboard in the Servers & Applications pane, choose **View all applications**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | Application details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard in the Most recently updated applications box, choose the application's status box\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| Server details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose the application\. Then choose the server name in the Server ID column\.   |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
+| Server details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose the application\. Then choose the server name in the Server ID column\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
