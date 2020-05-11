@@ -85,3 +85,14 @@ In the table following, you can ﬁnd instructions on how to navigate from a das
 | All applications |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose **View all applications** Or, from the Discover dashboard in the Servers & Applications pane, choose **View all applications**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | Application details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard in the Most recently updated applications box, choose the application's status box\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | Server details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose the application\. Then choose the server name in the Server ID column\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
+
+## Tagging Migration Resources<a name="tagging-migration-resources"></a>
+
+Migrated resources \(Amazon EC2 instances or Amazon Machine Images \(AMIs\)\) reported to Migration Hub by migration tools \(like CloudEndure\) are automatically tagged with Application Discovery Service server IDs\. If you turn on cost allocation tagging, you can view the cost of the AWS resources that are tagged by Migration Hub in the AWS Cost Explorer Service\. Resource tagging by Migration Hub can’t be turned off\. This tagging is implemented automatically and doesn't count against your limit of 50 tags per resource\.
+
+These resources have the `aws:migrationhub:source-id` tag, and the `source-id` matches the `server.configurationId` server asset field from Application Discovery Service\. For more information, see the following topics:
++ [Querying Discovered Configuration Items](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-api-queries.html) in the *Application Discovery Service User Guide*\.
++ [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*\.
+
+**Note**  
+Currently, automatic tagging for migrated resources isn't supported in Asia Pacific \(Hong Kong\) or Middle East \(Bahrain\)\.

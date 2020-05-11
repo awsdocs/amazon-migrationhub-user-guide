@@ -28,12 +28,15 @@ Required: No
  ** [NextToken](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
+Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$`   
 Required: No
 
  ** [ResourceName](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-ResourceName"></a>
 Filter migration tasks by discovered resource name\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
+Pattern: `^.{1,1600}$`   
 Required: No
 
 ## Response Syntax<a name="API_ListMigrationTasks_ResponseSyntax"></a>
@@ -66,7 +69,9 @@ Type: Array of [MigrationTaskSummary](API_MigrationTaskSummary.md) objects
 
  ** [NextToken](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-NextToken"></a>
 If there are more migration tasks than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
-Type: String
+Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
+Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$` 
 
 ## Errors<a name="API_ListMigrationTasks_Errors"></a>
 
@@ -97,6 +102,10 @@ HTTP Status Code: 400
  **ServiceUnavailableException**   
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
+
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
 
 ## Example<a name="API_ListMigrationTasks_Examples"></a>
 
@@ -140,4 +149,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 

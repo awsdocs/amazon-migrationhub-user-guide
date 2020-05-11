@@ -88,6 +88,10 @@ HTTP Status Code: 400
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
 
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
+
 ## Example<a name="API_DescribeMigrationTask_Examples"></a>
 
 ### Describe a migration task by listing all associated attributes<a name="API_DescribeMigrationTask_Example_1"></a>
@@ -131,4 +135,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/DescribeMigrationTask) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/DescribeMigrationTask) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/DescribeMigrationTask) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/DescribeMigrationTask) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/DescribeMigrationTask) 

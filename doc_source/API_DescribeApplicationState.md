@@ -18,6 +18,7 @@ The request accepts the following data in JSON format\.
 The configurationId in Application Discovery Service that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
+Pattern: `^.{1,1600}$`   
 Required: Yes
 
 ## Response Syntax<a name="API_DescribeApplicationState_ResponseSyntax"></a>
@@ -74,6 +75,10 @@ HTTP Status Code: 400
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
 
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
+
 ## Example<a name="API_DescribeApplicationState_Examples"></a>
 
 ### Describe a migration task by listing all associated attributes<a name="API_DescribeApplicationState_Example_1"></a>
@@ -108,4 +113,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/DescribeApplicationState) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/DescribeApplicationState) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/DescribeApplicationState) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/DescribeApplicationState) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/DescribeApplicationState) 

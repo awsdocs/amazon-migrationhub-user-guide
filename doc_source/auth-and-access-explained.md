@@ -85,7 +85,7 @@ For more information about using identity\-based policies with Migration Hub, se
 
 Other services, such as Amazon S3, also support resource\-based permissions policies\. For example, you can attach a policy to an S3 bucket to manage access permissions to that bucket\. Migration Hub does not support resource\-based policies\. However, keep in mind that you will still see references made to resources\. This is because there is a difference between *resource\-based* permissions and *resource\-level* permissions\. 
 
-Resource\-based permissions are permissions that attach directly to a resource, whereas a resource\-level permission simply specifies, within an identity\-based permission, on which resource an user or a role can perform actions on\. Therefore, when references to resources are made discussing Migration Hub permissions, it is within this context of *resource\-level* permissions\.
+Resource\-based permissions are permissions that attach directly to a resource, whereas a resource\-level permission simply specifies, within an identity\-based permission, on which resource a user or a role can perform actions on\. Therefore, when references to resources are made discussing Migration Hub permissions, it is within this context of *resource\-level* permissions\.
 
 ### Specifying Policy Elements: Actions, Effects, and Principals<a name="specify-policy-elements"></a>
 
@@ -173,7 +173,7 @@ AWS addresses many common use cases by providing standalone IAM policies that ar
 
 The following AWS managed policies, which you can attach to users in your account, are specific to Migration Hub and are grouped by use case scenario:
 + **AWSMigrationHubDiscoveryAccess** – Grants permission to allow the Migration Hub service to call Application Discovery Service\.
-+ **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for an user who's not an administrator\.
++ **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for a user who's not an administrator\.
 + **AWSMigrationHubSMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Server Migration Service migration tool\.
 + **AWSMigrationHubDMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Database Migration Service migration tool\.
 

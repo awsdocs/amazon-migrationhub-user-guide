@@ -22,6 +22,31 @@ The role permissions policy is as follows:
             "Resource": [
                 "*"
             ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ec2:CreateTags",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:image/*"
+            ],
+            "Condition": {
+                "ForAllValues:StringEquals": {
+                    "aws:TagKeys": "aws:migrationhub:source-id"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Action": "dms:AddTagsToResource",
+            "Resource": [
+                "arn:aws:dms:*:*:endpoint:*"
+            ],
+            "Condition": {
+                "ForAllValues:StringEquals": {
+                    "aws:TagKeys": "aws:migrationhub:source-id"
+                }
+            }
         }
     ]
 }

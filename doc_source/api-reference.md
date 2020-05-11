@@ -3,7 +3,7 @@
 The AWS Migration Hub API methods help to obtain server and application migration status and integrate your resource\-specific migration tool by providing a programmatic interface to Migration Hub\.
 
 **Note**  
-Remember that you must set your AWS Migration Hub home region before you call any of these APIs, or a `HomeRegionNotSetException` error is returned\.
+Remember that you must set your AWS Migration Hub home region before you call write actions \(create, notify, associate, disassociate, import, or put\), or a `HomeRegionNotSetException` error is returned\.
  You must make the API calls while in your home region\.
 Although it is unlikely, the Migration Hub home region could change\. If you call APIs outside the home region, an `InvalidInputException` is returned\.
 You must call `GetHomeRegion` to obtain the latest Migration Hub home region\.
@@ -73,7 +73,7 @@ Migration Hub is integrated with CloudTrail, a service that captures API calls f
 ## Related Topics<a name="api-reference-related-topics"></a>
 
 The following sections provide descriptions of the API operations, how to create a signature for request authentication, and how to grant permissions for these API operations using the IAM policies\.
-+  [Authentication and Access Control for AWS Migration Hub](auth-and-access-control.md) 
++  [Identity and Access Management in AWS Migration Hub](auth-and-access-control.md) 
 +  [Actions](API_Operations.md) 
 +  [Data Types](API_Types.md) 
 +  [Logging Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md) 

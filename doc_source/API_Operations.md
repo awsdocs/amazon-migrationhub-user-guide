@@ -10,6 +10,7 @@ The following actions are supported:
 +  [DisassociateCreatedArtifact](API_DisassociateCreatedArtifact.md) 
 +  [DisassociateDiscoveredResource](API_DisassociateDiscoveredResource.md) 
 +  [ImportMigrationTask](API_ImportMigrationTask.md) 
++  [ListApplicationStates](API_ListApplicationStates.md) 
 +  [ListCreatedArtifacts](API_ListCreatedArtifacts.md) 
 +  [ListDiscoveredResources](API_ListDiscoveredResources.md) 
 +  [ListMigrationTasks](API_ListMigrationTasks.md) 

@@ -1,7 +1,7 @@
 # AWS Migration Hub User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -30,16 +30,18 @@ Amazon's trademarks and trade dress may not be used in
 + [Doing More in Migration Hub](doing-more.md)
 + [The AWS Migration Hub Home Region](home-region.md)
 + [Amazon EC2 Instance Recommendations](ec2-recommendations.md)
-+ [Authentication and Access Control for AWS Migration Hub](auth-and-access-control.md)
-   + [AWS Migration Hub Roles and Policies](policy-templates.md)
-      + [New User IAM Setup](new-customer-setup.md)
-      + [Custom Policies for Migration Tools](customer-managed-vendor.md)
-   + [AWS Migration Hub API Permissions: Actions and Resources Reference](migrationhub-api-permissions-ref.md)
-   + [AWS Migration Hub Authentication and Access Control Explained](auth-and-access-explained.md)
-   + [Using Service-Linked Roles for Migration Hub](using-service-linked-roles.md)
-      + [Using Roles to Connect Migration Hub to Application Discovery Service](using-service-linked-roles-discovery-service-role.md)
-      + [Using Roles to Connect Migration Hub to AWS DMS](using-service-linked-roles-dms-service-role.md)
-      + [Using Roles to Connect Migration Hub to AWS SMS](using-service-linked-roles-sms-service-role.md)
++ [Security in AWS Migration Hub](security.md)
+   + [Identity and Access Management in AWS Migration Hub](auth-and-access-control.md)
+      + [AWS Migration Hub Roles and Policies](policy-templates.md)
+         + [New User IAM Setup](new-customer-setup.md)
+         + [Custom Policies for Migration Tools](customer-managed-vendor.md)
+      + [AWS Migration Hub API Permissions: Actions and Resources Reference](migrationhub-api-permissions-ref.md)
+      + [AWS Migration Hub Authentication and Access Control Explained](auth-and-access-explained.md)
+      + [Using Service-Linked Roles for Migration Hub](using-service-linked-roles.md)
+         + [Using Roles to Connect Migration Hub to Application Discovery Service](using-service-linked-roles-discovery-service-role.md)
+         + [Using Roles to Connect Migration Hub to AWS DMS](using-service-linked-roles-dms-service-role.md)
+         + [Using Roles to Connect Migration Hub to AWS SMS](using-service-linked-roles-sms-service-role.md)
+   + [Logging and monitoring in AWS Migration Hub](logging-monitoring.md)
 + [AWS Migration Hub Limits](limits.md)
 + [Troubleshooting AWS Migration Hub](troubleshooting.md)
 + [AWS Migration Hub API](api-reference.md)
@@ -53,6 +55,7 @@ Amazon's trademarks and trade dress may not be used in
       + [DisassociateCreatedArtifact](API_DisassociateCreatedArtifact.md)
       + [DisassociateDiscoveredResource](API_DisassociateDiscoveredResource.md)
       + [ImportMigrationTask](API_ImportMigrationTask.md)
+      + [ListApplicationStates](API_ListApplicationStates.md)
       + [ListCreatedArtifacts](API_ListCreatedArtifacts.md)
       + [ListDiscoveredResources](API_ListDiscoveredResources.md)
       + [ListMigrationTasks](API_ListMigrationTasks.md)
@@ -61,6 +64,7 @@ Amazon's trademarks and trade dress may not be used in
       + [NotifyMigrationTaskState](API_NotifyMigrationTaskState.md)
       + [PutResourceAttributes](API_PutResourceAttributes.md)
    + [Data Types](API_Types.md)
+      + [ApplicationState](API_ApplicationState.md)
       + [CreatedArtifact](API_CreatedArtifact.md)
       + [DiscoveredResource](API_DiscoveredResource.md)
       + [MigrationTask](API_MigrationTask.md)

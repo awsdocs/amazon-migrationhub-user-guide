@@ -20,7 +20,8 @@ The request accepts the following data in JSON format\.
  ** [ConfigurationId](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-ConfigurationId"></a>
 ConfigurationId of the Application Discovery Service resource to be disassociated\.  
 Type: String  
-Length Constraints: Minimum length of 1\.  
+Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
+Pattern: `^.{1,1600}$`   
 Required: Yes
 
  ** [DryRun](#API_DisassociateDiscoveredResource_RequestSyntax) **   <a name="migrationhub-DisassociateDiscoveredResource-request-DryRun"></a>
@@ -76,6 +77,10 @@ HTTP Status Code: 400
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
 
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
+
  **UnauthorizedOperation**   
 Exception raised to indicate a request was not authorized when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
@@ -108,4 +113,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/DisassociateDiscoveredResource) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/DisassociateDiscoveredResource) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/DisassociateDiscoveredResource) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/DisassociateDiscoveredResource) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/DisassociateDiscoveredResource) 

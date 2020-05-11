@@ -30,6 +30,7 @@ Required: Yes
 Value of the resource type\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
+Pattern: `^.{1,256}$`   
 Required: Yes
 
 ## See Also<a name="API_ResourceAttribute_SeeAlso"></a>
@@ -38,4 +39,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ResourceAttribute) 
 +  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ResourceAttribute) 
 +  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/ResourceAttribute) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/ResourceAttribute) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ResourceAttribute) 

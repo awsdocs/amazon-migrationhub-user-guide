@@ -1,6 +1,7 @@
 # Data Types<a name="API_Types"></a>
 
 The following data types are supported:
++  [ApplicationState](API_ApplicationState.md) 
 +  [CreatedArtifact](API_CreatedArtifact.md) 
 +  [DiscoveredResource](API_DiscoveredResource.md) 
 +  [MigrationTask](API_MigrationTask.md) 

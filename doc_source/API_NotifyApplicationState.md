@@ -21,6 +21,7 @@ The request accepts the following data in JSON format\.
 The configurationId in Application Discovery Service that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
+Pattern: `^.{1,1600}$`   
 Required: Yes
 
  ** [DryRun](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
@@ -77,6 +78,10 @@ HTTP Status Code: 400
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
 
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
+
  **UnauthorizedOperation**   
 Exception raised to indicate a request was not authorized when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
@@ -118,4 +123,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 

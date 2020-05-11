@@ -5,7 +5,7 @@ When you are setting up [Access Control](auth-and-access-control.md#access-contr
 **Note**  
 To specify an action, use the `mgh:` prefix followed by the API operation name \(for example, `mgh:CreateProgressUpdateStream`\)\.
 
-If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, you can open the table in a new window\. To close the window, choose the close button \(**X**\) in the lower\-right corner\.
+Use the scroll bars to see the rest of the table\.
 
 
 **AWS Migration Hub API and Required Permissions for Actions**  
@@ -34,9 +34,9 @@ If you see an expand arrow \(**↗**\) in the upper\-right corner of the table, 
 
 | Migration Hub API Operations | Required Permissions \(API Actions\) | Resources | 
 | --- | --- | --- | 
-|  [CreateHomeRegionControl](http://docs.aws.amazon.com/migrationhub/latest/ug/API_CreateHomeRegionControls.html)  | mgh:CreateHomeRegionControl |  \*  | 
-|  [DescribeHomeRegionControls](http://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeHomeRegionControls.html)  | mgh:DescribeHomeRegionControls |  \*  | 
-|  [GetHomeRegion](http://docs.aws.amazon.com/migrationhub/latest/ug/API_GetHomeRegion.html)  | mgh:GetHomeRegion |  \*  | 
+|  [CreateHomeRegionControl](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_CreateHomeRegionControl.html)  | mgh:CreateHomeRegionControl |  \*  | 
+|  [DescribeHomeRegionControls](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html)  | mgh:DescribeHomeRegionControls |  \*  | 
+|  [GetHomeRegion](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html)  | mgh:GetHomeRegion |  \*  | 
 
-## Related Topics<a name="w27aac21c21c29"></a>
+## Related Topics<a name="w33aac22c17c21c29"></a>
 + [Access Control](auth-and-access-control.md#access-control)

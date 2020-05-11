@@ -33,6 +33,8 @@ Required: Yes
  ** [NextToken](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
+Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$`   
 Required: No
 
  ** [ProgressUpdateStream](#API_ListDiscoveredResources_RequestSyntax) **   <a name="migrationhub-ListDiscoveredResources-request-ProgressUpdateStream"></a>
@@ -68,7 +70,9 @@ Type: Array of [DiscoveredResource](API_DiscoveredResource.md) objects
 
  ** [NextToken](#API_ListDiscoveredResources_ResponseSyntax) **   <a name="migrationhub-ListDiscoveredResources-response-NextToken"></a>
 If there are more discovered resources than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
-Type: String
+Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
+Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$` 
 
 ## Errors<a name="API_ListDiscoveredResources_Errors"></a>
 
@@ -95,6 +99,10 @@ HTTP Status Code: 400
  **ServiceUnavailableException**   
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
+
+ **ThrottlingException**   
+The request was denied due to request throttling\.  
+HTTP Status Code: 400
 
 ## Example<a name="API_ListDiscoveredResources_Examples"></a>
 
@@ -137,4 +145,4 @@ For more information about using this API in one of the language\-specific AWS S
 +  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListDiscoveredResources) 
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListDiscoveredResources) 
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListDiscoveredResources) 
-+  [AWS SDK for Ruby V2](https://docs.aws.amazon.com/goto/SdkForRubyV2/AWSMigrationHub-2017-05-31/ListDiscoveredResources) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListDiscoveredResources) 

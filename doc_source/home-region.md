@@ -8,9 +8,7 @@ On your first use of the AWS Migration Hub console, select a Migration Hub home 
 
 You can choose and view your current home region on the AWS Migration Hub **Settings** page\. To navigate to the **Settings** page, choose **Settings** from the left navigation\.
 
-The available AWS Migration Hub home regions are: 
-+  US West \(Oregon\) Region
-+  EU \(Frankfurt\) Region
+For a list of the available AWS Migration Hub home regions, see [AWS Migration Hub endpoints](https://docs.aws.amazon.com/general/latest/gr/migrationhubn.html) in the *AWS General Reference*\.
 
 The Migration Hub console in your home region gives you detailed visibility into discovery and migration, regardless of whether you are moving applications into one AWS Region or ten\. From your Migration Hub home region, you can track your migration into any AWS Region\.
 
@@ -42,7 +40,7 @@ After it is set, your Migration Hub home region cannot be changed\. Contact [AWS
 
 ## Working with the Migration Hub Home Region APIs<a name="using-migration-hub-apis"></a>
 
-You can call the AWS Migration Hub, AWS Application Discovery Service, and AWS Migration Hub home region APIs from within your home region *only*\. API calls originating from outside your home region are rejected, except for the ability to register your agents and connectors\.
+You can call the AWS Migration Hub, AWS Application Discovery Service, and AWS Migration Hub home region APIs from within your home region *only*\. API calls for write actions \(create, notify, associate, disassociate, import, or put\) originating from outside your home region are rejected, except for the ability to register your agents and connectors\. API calls for read actions \(list, describe, stop, and delete\) are permitted outside of your home region\.
 
 **Note**  
  You can register agents and collectors outside your home region\. However, the `StartDataCollection` API call in AWS Application Discovery Service prevents you from enabling data collection from outside the home region\.
