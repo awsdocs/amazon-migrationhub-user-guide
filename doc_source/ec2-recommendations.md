@@ -141,8 +141,5 @@ Keep the following considerations in mind when generating EC2 instance recommend
   + Previous generation instances \(C3, for example\)
   + Bare Metal instances
   + ARM instances \(A1, for example\)
-  + Amazon EBS\-optimized instances
-  + GPU\-optimized instances \(P3, for example\)
-  + Network\-optimized instances
   + 32\-bit instances
 + If the operating system for a server is not supported by Amazon EC2, that server's returned recommendation will be `Linux`\. Additional information can be found in the `Recommendation.EC2.Remarks` column for each affected server\.
