@@ -93,6 +93,3 @@ Migrated resources \(Amazon EC2 instances or Amazon Machine Images \(AMIs\)\) re
 These resources have the `aws:migrationhub:source-id` tag, and the `source-id` matches the `server.configurationId` server asset field from Application Discovery Service\. For more information, see the following topics:
 + [Querying Discovered Configuration Items](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-api-queries.html) in the *Application Discovery Service User Guide*\.
 + [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*\.
-
-**Note**  
-Currently, automatic tagging for migrated resources isn't supported in Asia Pacific \(Hong Kong\) or Middle East \(Bahrain\)\.
