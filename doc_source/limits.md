@@ -5,11 +5,11 @@ This section describes limitations when working with AWS Migration Hub\.
 ## AWS Migration Hub Import Limits<a name="import-limits"></a>
 
 Following are the limits for AWS Migration Hub import\.
++ 400 servers maximum per application\.
 + 10 MB maximum size for each import file\.
 + 25,000 imported records per account\. You can request an increase to this limit\.
 + 5,000 imported servers per account\. You can request an increase to this limit\.
 + 25,000 deletions of import records per 24 hour period, starting every day at 00:00 UTC\. You can request an increase to this limit\.
-+ 400 servers per application\. You can request an increase to this limit\.
 
 ## Requesting Limit Increases<a name="migration-hub-limit-increases.title"></a>
 
