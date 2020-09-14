@@ -6,10 +6,10 @@ Sets the migration state of an application\. For a given application identified 
 
 ```
 {
-   "[ApplicationId](#migrationhub-NotifyApplicationState-request-ApplicationId)": "string",
-   "[DryRun](#migrationhub-NotifyApplicationState-request-DryRun)": boolean,
-   "[Status](#migrationhub-NotifyApplicationState-request-Status)": "string",
-   "[UpdateDateTime](#migrationhub-NotifyApplicationState-request-UpdateDateTime)": number
+   "ApplicationId": "string",
+   "DryRun": boolean,
+   "Status": "string",
+   "UpdateDateTime": number
 }
 ```
 
@@ -93,7 +93,7 @@ HTTP Status Code: 400
 The following example communicates the migration status to Migration Hub using the values passed to the required parameters `ApplicationId` and `Status`\.
 
 **Note**  
-In this example, the `DryRun` parameter is used and set to "true" in order to show the output of the `DryRunOperation` when the user has appropriate permissions to execute the command\.
+In this example, the `DryRun` parameter is used and set to "true" in order to show the output of the `DryRunOperation` when the user has appropriate permissions to run the command\.
 
 #### Sample Request<a name="API_NotifyApplicationState_Example_1_Request"></a>
 

@@ -11,8 +11,8 @@ Deletes a progress update stream, including all of its tasks, which was previous
 
 ```
 {
-   "[DryRun](#migrationhub-DeleteProgressUpdateStream-request-DryRun)": boolean,
-   "[ProgressUpdateStreamName](#migrationhub-DeleteProgressUpdateStream-request-ProgressUpdateStreamName)": "string"
+   "DryRun": boolean,
+   "ProgressUpdateStreamName": "string"
 }
 ```
 

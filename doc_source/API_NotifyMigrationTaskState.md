@@ -9,16 +9,16 @@ Notifies Migration Hub of the current status, progress, or other detail regardin
 
 ```
 {
-   "[DryRun](#migrationhub-NotifyMigrationTaskState-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-NotifyMigrationTaskState-request-MigrationTaskName)": "string",
-   "[NextUpdateSeconds](#migrationhub-NotifyMigrationTaskState-request-NextUpdateSeconds)": number,
-   "[ProgressUpdateStream](#migrationhub-NotifyMigrationTaskState-request-ProgressUpdateStream)": "string",
-   "[Task](#migrationhub-NotifyMigrationTaskState-request-Task)": { 
-      "[ProgressPercent](API_Task.md#migrationhub-Type-Task-ProgressPercent)": number,
-      "[Status](API_Task.md#migrationhub-Type-Task-Status)": "string",
-      "[StatusDetail](API_Task.md#migrationhub-Type-Task-StatusDetail)": "string"
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "NextUpdateSeconds": number,
+   "ProgressUpdateStream": "string",
+   "Task": { 
+      "ProgressPercent": number,
+      "Status": "string",
+      "StatusDetail": "string"
    },
-   "[UpdateDateTime](#migrationhub-NotifyMigrationTaskState-request-UpdateDateTime)": number
+   "UpdateDateTime": number
 }
 ```
 

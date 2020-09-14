@@ -8,9 +8,9 @@ This API is a prerequisite to calling the `NotifyMigrationTaskState` API as the 
 
 ```
 {
-   "[DryRun](#migrationhub-ImportMigrationTask-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-ImportMigrationTask-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-ImportMigrationTask-request-ProgressUpdateStream)": "string"
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 

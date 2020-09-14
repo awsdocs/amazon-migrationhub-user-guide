@@ -84,7 +84,7 @@ The following table defines the different columns for an Amazon EC2 recommendati
 | Server\.OS\.Version | The version of the operating system\. | 16\.04\.3NT 6\.2\.8 | 
 | Server\.CPU\.NumberOfProcessors | For bare hardware servers discovered by an agent, this is the number of Physical CPUs\. For data collected by agents running in virtualized environments, this can be the number of vCPUs allocated\. However this varies depending on the virtualization platform\. | 4 | 
 | Server\.CPU\.NumberOfCores | For bare hardware servers discovered by an agent, this is the total number of physical cores for all processors\. For data collected by agents in virtualized environments, this varies depending on the virtualization platform\. | 8 | 
-| Server\.CPU\.NumberOfLogicalCores | The total number of threads that can execute concurrently on all CPUs in a server\. Some CPUs support multiple threads to run concurrently on a single CPU core\. In those cases, this number will be larger than the number of physical \(or virtual\) cores\. | 16 | 
+| Server\.CPU\.NumberOfLogicalCores | The total number of threads that can run concurrently on all CPUs in a server\. Some CPUs support multiple threads to run concurrently on a single CPU core\. In those cases, this number will be larger than the number of physical \(or virtual\) cores\. | 16 | 
 | Recommendation\.EC2\.RequestedCPU\.UsagePct | The percent of Server\.CPU\.NumberOfCores used to create the recommendation\. | 0\.9 | 
 | Recommendation\.EC2\.RequestedvCPU | The Server\.CPU\.NumberOfLogicalCores value multiplied by the Recommendation\.EC2\.RequestedCPUPercentUse value, rounded up to the next integer\. | 16 | 
 | Server\.RAM\.TotalSizeInMB | The total RAM, in MB, available on the server\. | 64128 | 

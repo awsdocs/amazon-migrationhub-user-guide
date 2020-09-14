@@ -6,8 +6,8 @@ Lists progress update streams associated with the user account making this call\
 
 ```
 {
-   "[MaxResults](#migrationhub-ListProgressUpdateStreams-request-MaxResults)": number,
-   "[NextToken](#migrationhub-ListProgressUpdateStreams-request-NextToken)": "string"
+   "MaxResults": number,
+   "NextToken": "string"
 }
 ```
 
@@ -32,10 +32,10 @@ Required: No
 
 ```
 {
-   "[NextToken](#migrationhub-ListProgressUpdateStreams-response-NextToken)": "string",
-   "[ProgressUpdateStreamSummaryList](#migrationhub-ListProgressUpdateStreams-response-ProgressUpdateStreamSummaryList)": [ 
+   "NextToken": "string",
+   "ProgressUpdateStreamSummaryList": [ 
       { 
-         "[ProgressUpdateStreamName](API_ProgressUpdateStreamSummary.md#migrationhub-Type-ProgressUpdateStreamSummary-ProgressUpdateStreamName)": "string"
+         "ProgressUpdateStreamName": "string"
       }
    ]
 }

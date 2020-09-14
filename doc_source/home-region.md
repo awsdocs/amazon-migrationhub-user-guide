@@ -22,7 +22,7 @@ To start discovery and planning, you can deploy data collectors, such as AWS App
 
 Before you install your data collectors, your home region must be set\. Before collecting data, you must register your collectors in your home region\. If you're using the AWS CLI, you must set up your AWS CLI to use the home region as the default region\. Instructions for how to set your home region in the AWS CLI are provided in the AWS CLI sections of this guide\.
 
-An AWS Discovery Agent discovers data for many types of hardware, hypervisors, and operating systems including Linux and Windows\. An agent must be installed on each host that is targeted for migration\. For specific information about the data fields that are returned by AWS Discovery Agent, see the [AWS Application Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) user guide\.
+AWS Application Discovery Agent discovers data for many types of hardware, hypervisors, and operating systems including Linux and Windows\. An agent must be installed on each host that is targeted for migration\. For specific information about the data fields that are returned by AWS Application Discovery Agent, see the [AWS Application Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) user guide\.
 
 AWS Agentless Discovery Connector discovers data for VMWare vCenter hosts and systems, using VMWare metadata\. For specific information about the data fields that are returned by AWS Agentless Discovery Connector, see the [AWS Agentless Discovery Connector ](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-connector.html)user guide 
 

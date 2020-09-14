@@ -6,8 +6,8 @@ Creates a progress update stream which is an AWS resource used for access contro
 
 ```
 {
-   "[DryRun](#migrationhub-CreateProgressUpdateStream-request-DryRun)": boolean,
-   "[ProgressUpdateStreamName](#migrationhub-CreateProgressUpdateStream-request-ProgressUpdateStreamName)": "string"
+   "DryRun": boolean,
+   "ProgressUpdateStreamName": "string"
 }
 ```
 

@@ -6,7 +6,7 @@ Gets the migration status of an application\.
 
 ```
 {
-   "[ApplicationId](#migrationhub-DescribeApplicationState-request-ApplicationId)": "string"
+   "ApplicationId": "string"
 }
 ```
 
@@ -25,8 +25,8 @@ Required: Yes
 
 ```
 {
-   "[ApplicationStatus](#migrationhub-DescribeApplicationState-response-ApplicationStatus)": "string",
-   "[LastUpdatedTime](#migrationhub-DescribeApplicationState-response-LastUpdatedTime)": number
+   "ApplicationStatus": "string",
+   "LastUpdatedTime": number
 }
 ```
 

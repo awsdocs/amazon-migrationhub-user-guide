@@ -6,10 +6,10 @@ Lists discovered resources associated with the given `MigrationTask`\.
 
 ```
 {
-   "[MaxResults](#migrationhub-ListDiscoveredResources-request-MaxResults)": number,
-   "[MigrationTaskName](#migrationhub-ListDiscoveredResources-request-MigrationTaskName)": "string",
-   "[NextToken](#migrationhub-ListDiscoveredResources-request-NextToken)": "string",
-   "[ProgressUpdateStream](#migrationhub-ListDiscoveredResources-request-ProgressUpdateStream)": "string"
+   "MaxResults": number,
+   "MigrationTaskName": "string",
+   "NextToken": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 
@@ -48,13 +48,13 @@ Required: Yes
 
 ```
 {
-   "[DiscoveredResourceList](#migrationhub-ListDiscoveredResources-response-DiscoveredResourceList)": [ 
+   "DiscoveredResourceList": [ 
       { 
-         "[ConfigurationId](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-ConfigurationId)": "string",
-         "[Description](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-Description)": "string"
+         "ConfigurationId": "string",
+         "Description": "string"
       }
    ],
-   "[NextToken](#migrationhub-ListDiscoveredResources-response-NextToken)": "string"
+   "NextToken": "string"
 }
 ```
 

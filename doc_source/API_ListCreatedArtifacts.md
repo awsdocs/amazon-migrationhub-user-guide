@@ -9,10 +9,10 @@ Lists the created artifacts attached to a given migration task in an update stre
 
 ```
 {
-   "[MaxResults](#migrationhub-ListCreatedArtifacts-request-MaxResults)": number,
-   "[MigrationTaskName](#migrationhub-ListCreatedArtifacts-request-MigrationTaskName)": "string",
-   "[NextToken](#migrationhub-ListCreatedArtifacts-request-NextToken)": "string",
-   "[ProgressUpdateStream](#migrationhub-ListCreatedArtifacts-request-ProgressUpdateStream)": "string"
+   "MaxResults": number,
+   "MigrationTaskName": "string",
+   "NextToken": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 
@@ -51,13 +51,13 @@ Required: Yes
 
 ```
 {
-   "[CreatedArtifactList](#migrationhub-ListCreatedArtifacts-response-CreatedArtifactList)": [ 
+   "CreatedArtifactList": [ 
       { 
-         "[Description](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Description)": "string",
-         "[Name](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Name)": "string"
+         "Description": "string",
+         "Name": "string"
       }
    ],
-   "[NextToken](#migrationhub-ListCreatedArtifacts-response-NextToken)": "string"
+   "NextToken": "string"
 }
 ```
 

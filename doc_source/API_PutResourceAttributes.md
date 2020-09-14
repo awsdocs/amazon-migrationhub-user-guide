@@ -13,13 +13,13 @@ Because this is an asynchronous call, it will always return 200, whether an asso
 
 ```
 {
-   "[DryRun](#migrationhub-PutResourceAttributes-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-PutResourceAttributes-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-PutResourceAttributes-request-ProgressUpdateStream)": "string",
-   "[ResourceAttributeList](#migrationhub-PutResourceAttributes-request-ResourceAttributeList)": [ 
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string",
+   "ResourceAttributeList": [ 
       { 
-         "[Type](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Type)": "string",
-         "[Value](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Value)": "string"
+         "Type": "string",
+         "Value": "string"
       }
    ]
 }

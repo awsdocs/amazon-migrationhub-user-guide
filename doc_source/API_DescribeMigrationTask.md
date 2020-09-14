@@ -6,8 +6,8 @@ Retrieves a list of all attributes associated with a specific migration task\.
 
 ```
 {
-   "[MigrationTaskName](#migrationhub-DescribeMigrationTask-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-DescribeMigrationTask-request-ProgressUpdateStream)": "string"
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 
@@ -33,21 +33,21 @@ Required: Yes
 
 ```
 {
-   "[MigrationTask](#migrationhub-DescribeMigrationTask-response-MigrationTask)": { 
-      "[MigrationTaskName](API_MigrationTask.md#migrationhub-Type-MigrationTask-MigrationTaskName)": "string",
-      "[ProgressUpdateStream](API_MigrationTask.md#migrationhub-Type-MigrationTask-ProgressUpdateStream)": "string",
-      "[ResourceAttributeList](API_MigrationTask.md#migrationhub-Type-MigrationTask-ResourceAttributeList)": [ 
+   "MigrationTask": { 
+      "MigrationTaskName": "string",
+      "ProgressUpdateStream": "string",
+      "ResourceAttributeList": [ 
          { 
-            "[Type](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Type)": "string",
-            "[Value](API_ResourceAttribute.md#migrationhub-Type-ResourceAttribute-Value)": "string"
+            "Type": "string",
+            "Value": "string"
          }
       ],
-      "[Task](API_MigrationTask.md#migrationhub-Type-MigrationTask-Task)": { 
-         "[ProgressPercent](API_Task.md#migrationhub-Type-Task-ProgressPercent)": number,
-         "[Status](API_Task.md#migrationhub-Type-Task-Status)": "string",
-         "[StatusDetail](API_Task.md#migrationhub-Type-Task-StatusDetail)": "string"
+      "Task": { 
+         "ProgressPercent": number,
+         "Status": "string",
+         "StatusDetail": "string"
       },
-      "[UpdateDateTime](API_MigrationTask.md#migrationhub-Type-MigrationTask-UpdateDateTime)": number
+      "UpdateDateTime": number
    }
 }
 ```

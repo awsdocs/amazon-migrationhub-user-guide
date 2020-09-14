@@ -9,13 +9,13 @@ Associates a created artifact of an AWS cloud resource, the target receiving the
 
 ```
 {
-   "[CreatedArtifact](#migrationhub-AssociateCreatedArtifact-request-CreatedArtifact)": { 
-      "[Description](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Description)": "string",
-      "[Name](API_CreatedArtifact.md#migrationhub-Type-CreatedArtifact-Name)": "string"
+   "CreatedArtifact": { 
+      "Description": "string",
+      "Name": "string"
    },
-   "[DryRun](#migrationhub-AssociateCreatedArtifact-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-AssociateCreatedArtifact-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-AssociateCreatedArtifact-request-ProgressUpdateStream)": "string"
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 

@@ -6,9 +6,9 @@ Lists all the migration statuses for your applications\. If you use the optional
 
 ```
 {
-   "[ApplicationIds](#migrationhub-ListApplicationStates-request-ApplicationIds)": [ "string" ],
-   "[MaxResults](#migrationhub-ListApplicationStates-request-MaxResults)": number,
-   "[NextToken](#migrationhub-ListApplicationStates-request-NextToken)": "string"
+   "ApplicationIds": [ "string" ],
+   "MaxResults": number,
+   "NextToken": "string"
 }
 ```
 
@@ -41,14 +41,14 @@ Required: No
 
 ```
 {
-   "[ApplicationStateList](#migrationhub-ListApplicationStates-response-ApplicationStateList)": [ 
+   "ApplicationStateList": [ 
       { 
-         "[ApplicationId](API_ApplicationState.md#migrationhub-Type-ApplicationState-ApplicationId)": "string",
-         "[ApplicationStatus](API_ApplicationState.md#migrationhub-Type-ApplicationState-ApplicationStatus)": "string",
-         "[LastUpdatedTime](API_ApplicationState.md#migrationhub-Type-ApplicationState-LastUpdatedTime)": number
+         "ApplicationId": "string",
+         "ApplicationStatus": "string",
+         "LastUpdatedTime": number
       }
    ],
-   "[NextToken](#migrationhub-ListApplicationStates-response-NextToken)": "string"
+   "NextToken": "string"
 }
 ```
 

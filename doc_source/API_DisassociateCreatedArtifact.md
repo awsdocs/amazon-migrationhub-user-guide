@@ -9,10 +9,10 @@ Disassociates a created artifact of an AWS resource with a migration task perfor
 
 ```
 {
-   "[CreatedArtifactName](#migrationhub-DisassociateCreatedArtifact-request-CreatedArtifactName)": "string",
-   "[DryRun](#migrationhub-DisassociateCreatedArtifact-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-DisassociateCreatedArtifact-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-DisassociateCreatedArtifact-request-ProgressUpdateStream)": "string"
+   "CreatedArtifactName": "string",
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 

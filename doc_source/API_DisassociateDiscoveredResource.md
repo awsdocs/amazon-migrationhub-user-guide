@@ -6,10 +6,10 @@ Disassociate an Application Discovery Service discovered resource from a migrati
 
 ```
 {
-   "[ConfigurationId](#migrationhub-DisassociateDiscoveredResource-request-ConfigurationId)": "string",
-   "[DryRun](#migrationhub-DisassociateDiscoveredResource-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-DisassociateDiscoveredResource-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-DisassociateDiscoveredResource-request-ProgressUpdateStream)": "string"
+   "ConfigurationId": "string",
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 

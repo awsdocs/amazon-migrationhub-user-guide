@@ -6,13 +6,13 @@ Associates a discovered resource ID from Application Discovery Service with a mi
 
 ```
 {
-   "[DiscoveredResource](#migrationhub-AssociateDiscoveredResource-request-DiscoveredResource)": { 
-      "[ConfigurationId](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-ConfigurationId)": "string",
-      "[Description](API_DiscoveredResource.md#migrationhub-Type-DiscoveredResource-Description)": "string"
+   "DiscoveredResource": { 
+      "ConfigurationId": "string",
+      "Description": "string"
    },
-   "[DryRun](#migrationhub-AssociateDiscoveredResource-request-DryRun)": boolean,
-   "[MigrationTaskName](#migrationhub-AssociateDiscoveredResource-request-MigrationTaskName)": "string",
-   "[ProgressUpdateStream](#migrationhub-AssociateDiscoveredResource-request-ProgressUpdateStream)": "string"
+   "DryRun": boolean,
+   "MigrationTaskName": "string",
+   "ProgressUpdateStream": "string"
 }
 ```
 

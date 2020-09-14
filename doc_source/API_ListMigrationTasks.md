@@ -9,9 +9,9 @@ Lists all, or filtered by resource name, migration tasks associated with the use
 
 ```
 {
-   "[MaxResults](#migrationhub-ListMigrationTasks-request-MaxResults)": number,
-   "[NextToken](#migrationhub-ListMigrationTasks-request-NextToken)": "string",
-   "[ResourceName](#migrationhub-ListMigrationTasks-request-ResourceName)": "string"
+   "MaxResults": number,
+   "NextToken": "string",
+   "ResourceName": "string"
 }
 ```
 
@@ -43,17 +43,17 @@ Required: No
 
 ```
 {
-   "[MigrationTaskSummaryList](#migrationhub-ListMigrationTasks-response-MigrationTaskSummaryList)": [ 
+   "MigrationTaskSummaryList": [ 
       { 
-         "[MigrationTaskName](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-MigrationTaskName)": "string",
-         "[ProgressPercent](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-ProgressPercent)": number,
-         "[ProgressUpdateStream](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-ProgressUpdateStream)": "string",
-         "[Status](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-Status)": "string",
-         "[StatusDetail](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-StatusDetail)": "string",
-         "[UpdateDateTime](API_MigrationTaskSummary.md#migrationhub-Type-MigrationTaskSummary-UpdateDateTime)": number
+         "MigrationTaskName": "string",
+         "ProgressPercent": number,
+         "ProgressUpdateStream": "string",
+         "Status": "string",
+         "StatusDetail": "string",
+         "UpdateDateTime": number
       }
    ],
-   "[NextToken](#migrationhub-ListMigrationTasks-response-NextToken)": "string"
+   "NextToken": "string"
 }
 ```
 
