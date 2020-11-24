@@ -10,7 +10,7 @@ The migrate phase has the following steps:
 
 ## Migrate Step 1: Connect Migration Tools to Migration Hub<a name="discovery-wt-auth-migrate-tools"></a>
 
-### <a name="w33aac12c15c41c11b3"></a>
+### <a name="migrate-step-1"></a>
 
 Migration happens outside Migration Hub using AWS migration tools or integrated partners' migration tools\. You choose these tools through the Tools page in the Migrate section in Migration Hub\.
 
@@ -19,7 +19,7 @@ The table following lists the supported tools\.
 
 | Resource type | Migration tool name | 
 | --- | --- | 
-|  Server  |  AWS Server Migration Service CloudEndure Migration ATADATA ATAmotion RiverMeadow Migration SaaS  | 
+|  Server  |  AWS Server Migration Service CloudEndure Migration ATADATA ATAmotion  | 
 | Database |  AWS Database Migration Service  | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
@@ -43,7 +43,7 @@ Note that if you are using API's or do not want to authorize through Migration H
 
 ## Migrate Step 2: Migrate Using the Connected Migration Tools<a name="discovery-wt-migrate-using-tools"></a>
 
-### <a name="w33aac12c15c41c13b3"></a>
+### <a name="migrate-step-2"></a>
 
 The following steps walk you through the migration of a previously defined application\.
 
@@ -57,7 +57,7 @@ The following steps walk you through the migration of a previously defined appli
 
 1. When your application's migration has started, return to Migration Hub\.
 
-### <a name="w33aac12c15c41c13b5"></a>
+### <a name="w35aac12c15c27c11b5"></a>
 
 **Next steps**
 

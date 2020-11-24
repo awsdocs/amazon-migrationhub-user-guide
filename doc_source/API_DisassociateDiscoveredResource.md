@@ -85,7 +85,7 @@ HTTP Status Code: 400
 Exception raised to indicate a request was not authorized when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
 
-## Example<a name="API_DisassociateDiscoveredResource_Examples"></a>
+## Examples<a name="API_DisassociateDiscoveredResource_Examples"></a>
 
 ### Disassociate a discovered resource from the repository<a name="API_DisassociateDiscoveredResource_Example_1"></a>
 

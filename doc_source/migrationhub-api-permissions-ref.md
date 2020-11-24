@@ -38,5 +38,5 @@ Use the scroll bars to see the rest of the table\.
 |  [DescribeHomeRegionControls](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html)  | mgh:DescribeHomeRegionControls |  \*  | 
 |  [GetHomeRegion](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html)  | mgh:GetHomeRegion |  \*  | 
 
-## Related Topics<a name="w33aac23c17c21c29"></a>
+## Related Topics<a name="w35aac26c17c21c29"></a>
 + [Access Control](auth-and-access-control.md#access-control)

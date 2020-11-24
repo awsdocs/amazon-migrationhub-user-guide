@@ -1,8 +1,15 @@
 # What Is AWS Migration Hub?<a name="whatishub"></a>
 
-AWS Migration Hub provides a single place to discover your existing servers, plan migrations, and track the status of each application migration\. The AWS Migration Hub provides visibility into your application portfolio and streamlines planning and tracking\. You can see the status of the servers and databases that make up each of the applications you are migrating, regardless of which migration tool you are using\.
+AWS Migration Hub \(Migration Hub\) provides a single place to discover your existing servers, plan migrations, and track the status of each application migration\. The Migration Hub provides visibility into your application portfolio and streamlines planning and tracking\. You can visualize the connections and the status of the servers and databases that make up each of the applications you are migrating, regardless of which migration tool you are using\.
 
-AWS Migration Hub gives you the choice to start migrating right away and group servers while migration is underway, or to first discover servers and then group them into applications\. Either way, you can migrate each server in an application and track progress from each tool in the AWS Migration Hub\. It supports migration status updates from the following AWS services: AWS Database Migration Service, AWS Server Migration Service, and [CloudEndure Migration](https://aws.amazon.com/cloudendure)\. It also supports migration status updates from the following partner tools: [ATADATA ATAmotion](https://aws.amazon.com/migration-hub/partners/) and [RiverMeadow Migration SaaS](https://aws.amazon.com/migration-hub/partners/)\.
+Migration Hub gives you the choice to start migrating right away and group servers while migration is underway, or to first discover servers and then group them into applications\. Either way, you can migrate each server in an application and track progress from each tool in the AWS Migration Hub\.
+
+Migration Hub supports migration status updates from the following AWS services:
++ AWS Database Migration Service
++ AWS Server Migration Service
++ [CloudEndure Migration](https://aws.amazon.com/cloudendure)
+
+Migration Hub also supports migration status updates from the [ATADATA ATAmotion](https://aws.amazon.com/migration-hub/partners/) partner tool\.
 
 For more information, open the AWS Migration Hub console at [https://console\.aws\.amazon\.com/migrationhub/](https://console.aws.amazon.com/migrationhub/), and in the navigation pane under **Migrate**, choose **Tools**\. *Note that you must first have an AWS account and credentials for access to the Migration Hub console \- see* [Setting Up](setting-up.md)\.
 

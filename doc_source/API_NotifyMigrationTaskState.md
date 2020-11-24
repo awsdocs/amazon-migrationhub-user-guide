@@ -103,7 +103,7 @@ HTTP Status Code: 400
 Exception raised to indicate a request was not authorized when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
 
-## Example<a name="API_NotifyMigrationTaskState_Examples"></a>
+## Examples<a name="API_NotifyMigrationTaskState_Examples"></a>
 
 ### Notify the migration task state to Migration Hub<a name="API_NotifyMigrationTaskState_Example_1"></a>
 

@@ -4,6 +4,13 @@ Amazon EC2 instance recommendations provide you with the ability to estimate the
 
 Based on your business needs, you can choose additional preferences such as billing options, region, EC2 instance type exclusions and the CPU/RAM sizing \(average, peak, percentile\) to further optimize your EC2 instance recommendations and associated costs\.
 
+**Topics**
++ [Prerequisites](#ec2-recommendation-prerequisites)
++ [How EC2 Instance Recommendations Work](#how-ec2-recommendations-work)
++ [Generating Amazon EC2 Recommendations](#generating-ec2-recommendations)
++ [Understanding Your Amazon EC2 Recommendations](#understanding-ec2-recommendations)
++ [Additional Considerations](#ec2-rec-considerations)
+
 ## Prerequisites<a name="ec2-recommendation-prerequisites"></a>
 
 Before you can get Amazon EC2 instance recommendations, you must have data about your on\-premises servers in Migration Hub\. This data can come from the discovery tools \(Discovery Connector or Discovery Agent\) or from Migration Hub import\. For more information on using these tools and features, see the following links:
@@ -85,8 +92,8 @@ The following table defines the different columns for an Amazon EC2 recommendati
 | Server\.CPU\.NumberOfProcessors | For bare hardware servers discovered by an agent, this is the number of Physical CPUs\. For data collected by agents running in virtualized environments, this can be the number of vCPUs allocated\. However this varies depending on the virtualization platform\. | 4 | 
 | Server\.CPU\.NumberOfCores | For bare hardware servers discovered by an agent, this is the total number of physical cores for all processors\. For data collected by agents in virtualized environments, this varies depending on the virtualization platform\. | 8 | 
 | Server\.CPU\.NumberOfLogicalCores | The total number of threads that can run concurrently on all CPUs in a server\. Some CPUs support multiple threads to run concurrently on a single CPU core\. In those cases, this number will be larger than the number of physical \(or virtual\) cores\. | 16 | 
-| Recommendation\.EC2\.RequestedCPU\.UsagePct | The percent of Server\.CPU\.NumberOfCores used to create the recommendation\. | 0\.9 | 
-| Recommendation\.EC2\.RequestedvCPU | The Server\.CPU\.NumberOfLogicalCores value multiplied by the Recommendation\.EC2\.RequestedCPUPercentUse value, rounded up to the next integer\. | 16 | 
+| Recommendation\.EC2\.RequestedCPU\.UsagePct | The percent of `Server.CPU.NumberOfCores` used to create the recommendation\. | 0\.9 | 
+| Recommendation\.EC2\.RequestedvCPU | The `Server.CPU.NumberOfLogicalCores` value multiplied by the `Recommendation.EC2.RequestedCPUPercentUse` value, rounded up to the next integer\. | 16 | 
 | Server\.RAM\.TotalSizeInMB | The total RAM, in MB, available on the server\. | 64128 | 
 | Recommendation\.EC2\.RequestedRAM\.UsagePct | The percent of the RAM usage for a discovered server\. This is used if you chose Current server specification with a Custom match when you chose your sizing preferences\. | 0\.8 | 
 | Recommendation\.EC2\.RequestedRAMinMB | The Server\.RAM\.TotalSizeInMB value multiplied by the Recommendation\.EC2\.RequestedRAMPercentUse value\. | 800 | 

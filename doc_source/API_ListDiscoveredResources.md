@@ -104,7 +104,7 @@ HTTP Status Code: 500
 The request was denied due to request throttling\.  
 HTTP Status Code: 400
 
-## Example<a name="API_ListDiscoveredResources_Examples"></a>
+## Examples<a name="API_ListDiscoveredResources_Examples"></a>
 
 ### List discovered resources associated with the given MigrationTask<a name="API_ListDiscoveredResources_Example_1"></a>
 

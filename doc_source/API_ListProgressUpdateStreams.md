@@ -83,7 +83,7 @@ HTTP Status Code: 500
 The request was denied due to request throttling\.  
 HTTP Status Code: 400
 
-## Example<a name="API_ListProgressUpdateStreams_Examples"></a>
+## Examples<a name="API_ListProgressUpdateStreams_Examples"></a>
 
 ### List progress update streams<a name="API_ListProgressUpdateStreams_Example_1"></a>
 

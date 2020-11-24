@@ -23,7 +23,7 @@ To make sure authentication is occurring correctly:
 + Check the [Tools page](http://console.aws.amazon.com/migrationhub/migrate/tools) to see the status of connected tools\. Learn more about setting up necessary policies and roles in [Required Managed Policies](new-customer-setup.md#required-managed-policies)\.
 
 ### Migration Status Matching When Using AWS Discovery Tools<a name="matching"></a>
-+ Check whether a migration update must be manually mapped or was incorrectly mapped to a discovered serve\., See [Tracking Migration Updates](doing-more.md#updates-tracking-wt)\.
++ Check whether a migration update must be manually mapped or was incorrectly mapped to a discovered server, see [Tracking Migration Updates](doing-more.md#updates-tracking-wt)\.
 
 ## Updates About My Migrations Don't Appear Inside an Application<a name="migs-do-not-appear-in-app"></a>
 

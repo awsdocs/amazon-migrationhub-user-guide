@@ -107,7 +107,7 @@ HTTP Status Code: 500
 The request was denied due to request throttling\.  
 HTTP Status Code: 400
 
-## Example<a name="API_ListCreatedArtifacts_Examples"></a>
+## Examples<a name="API_ListCreatedArtifacts_Examples"></a>
 
 ### List created artifacts associated with a migration task and update stream<a name="API_ListCreatedArtifacts_Example_1"></a>
 

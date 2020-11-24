@@ -1,11 +1,11 @@
 # Option 1: Perform Discovery and Then Migrate<a name="discovery-walkthroughs"></a>
 
 **Discover**  
-Here you will be guided through the workflow of starting your migration by first discovering your existing infrastructure using AWS discovery tools\. You can download and deploy discovery connectors and/or discovery agents to discover your existing infrastructure\. When one of these is deployed, you start data collection from the Migration Hub console\.
+This section guides you through the workflow of starting your migration by first discovering your existing infrastructure using AWS discovery tools\. You can download and deploy discovery connectors and/or discovery agents to discover your existing infrastructure\. When one of these is deployed, you start data collection from the Migration Hub console\.
 
 Migration Hub's discovery process collects data about your existing environment using AWS discovery tools such as the AWS Agentless Discovery Connector and the AWS Application Discovery Agent\. These discovery tools store their collected data in the Application Discovery Service's repository providing details about each server and the processes running on them\. Application Discovery Service is another AWS service that is integrated with Migration Hub so that you can view your discovery data inside Migration Hub\.
 
-When you have discovered your servers and their respective data has been collected into the repository, you can view details about any server by choosing the server ID on the [Servers](http://console.aws.amazon.com/discovery/home?source=mgh#/resources) page\. Choosing a server ID brings you to a server detail page\.
+When you have discovered your servers and their respective data has been collected into the repository, you can view details about any server by choosing the server host name on the [Servers](http://console.aws.amazon.com/discovery/home?source=mgh#/resources) page\. 
 
 You can logically define and group all the discovered servers that comprise the applications you want to migrate\.
 
