@@ -1,15 +1,15 @@
-# Getting Started with AWS Migration Hub<a name="getting-started"></a>
+# Getting started with AWS Migration Hub<a name="getting-started"></a>
 
-In this section, you can find information about how to get started with AWS Migration Hub\. Included are steps to introduce you to the initial console screens that Migration Hub presents to a new user\.
+In this section, you can find information about how to get started with AWS Migration Hub\. Included are steps to introduce you to the initial console pages that Migration Hub presents to a new user\.
 
-Before you begin, be sure to set your home region, either from the console or by using commands in the CLI\. The first time you view the Migration Hub console, you'll be prompted to choose a home region\. You can choose and view your current home region on the Migration Hub **Settings** page\. To navigate to the **Settings** page, choose **Settings** in the left navigation\. After the home region is set, it cannot be changed\.
+Before you begin, be sure to set your home region, either from the console or by using commands in the CLI\. The first time you view the Migration Hub console, you'll be prompted to choose a home region\. You can choose and view your current home region on the Migration Hub **Settings** page\. To navigate to the **Settings** page, choose **Settings** in the left navigation pane\. After the home region is set, it cannot be changed\.
 
 **Topics**
 + [Assumptions](#gs-assumptions)
 + [Access to AWS Migration Hub](#access-via-console-and-api)
-+ [Two Ways to Get Started](#gs-the-two-ways)
-+ [Perform Discovery and Then Migrate](gs-new-user-discovery.md)
-+ [Migrate Without Performing Discovery](gs-new-user-migration.md)
++ [Two ways to get started](#gs-the-two-ways)
++ [Get started with discovery](gs-new-user-discovery.md)
++ [Get started migrating](gs-new-user-migration.md)
 
 **Note**  
 If you are a developer or are interested in sending migration status from a migration tool, script, or custom code, see [AWS Migration Hub API](api-reference.md) and [AWS Migration Hub Home Region API reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)\.  
@@ -17,8 +17,8 @@ All Migration Hub and Application Discovery Service API commands must be called 
 
 ## Assumptions<a name="gs-assumptions"></a>
 
-For these walkthroughs, we make the following assumptions:
-+ You have signed up for AWS\. For more information, see [Setting Up](setting-up.md)
+For the Migration Hub walkthroughs, we make the following assumptions:
++ You have signed up for AWS\. For more information, see [Setting up](setting-up.md)\.
 + You have selected your Migration Hub home region\.
 
 Here's what to expect:
@@ -37,20 +37,14 @@ Additionally, you can use the AWS Migration Hub API to track the status of your 
 
 The AWS SDKs assist you to develop applications that interact with Migration Hub\. The AWS SDKs for Java, \.NET, and PHP wrap the underlying Migration Hub API to simplify your programming tasks\. For information about downloading the SDK libraries, see [Sample Code Libraries](http://aws.amazon.com/code)\.
 
-## Two Ways to Get Started<a name="gs-the-two-ways"></a>
 
-If this is the first time you are using Migration Hub, you will be prompted to choose your home region in the console before beginning either of these workflows\.
 
-To discover detailed information about your servers using AWS discovery tools before migrating, see [Perform Discovery and Then Migrate](gs-new-user-discovery.md) to guide you through the discovery process\.
+## Two ways to get started<a name="gs-the-two-ways"></a>
 
-To start migrating immediately without using AWS discovery tools, see [Migrate Without Performing Discovery](gs-new-user-migration.md) to guide you through starting to migrate and tracking the status in Migration Hub\. You can also perform discovery at a later time if you want to gather server details\.
+If this is the first time you are using Migration Hub, you will be prompted to choose your home region in the console before beginning a migration\.
 
-If you have not sent any data to Migration Hub yet, you will see the new user screen where you will be given the option to choose one of the two migration workflows\.
+To begin your migration, open the AWS Migration Hub console at [https://console\.aws\.amazon\.com/migrationhub/](https://console.aws.amazon.com/migrationhub/), and in the navigation pane choose **Dashboard**\. 
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/DashNewUser.png)
+If you have not sent any data to Migration Hub yet, you'll see the **AWS Migration Hub** page where you're given the option to choose one of the two migration workflows\. Choose either **[Get started with discovery](gs-new-user-discovery.md)** or **[Get started migrating](gs-new-user-migration.md)**\.
 
-To begin your migration, choose either **Get started with discovery** or **Get started migrating** and then proceed to the workflow listed in the topics that follow\.
-
-**Topics**
-+ Option 1: [Perform Discovery and Then Migrate](gs-new-user-discovery.md)
-+ Option 2: [Migrate Without Performing Discovery](gs-new-user-migration.md)
+![\[Getting started dashboard.\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/mhub-dashboard-get-started.png)

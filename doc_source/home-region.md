@@ -1,6 +1,6 @@
 # The AWS Migration Hub Home Region<a name="home-region"></a>
 
-Your AWS Migration Hub data is stored in your home region for purposes of discovery, planning, and migration tracking\. The status of migrations for your entire portfolio appears in your selected home region\. You can specify a home region from the Migration Hub **Settings** page or from the [Migration Hub Config API](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)\. After it is set, the Migration Hub home region cannot be changed\.
+Your AWS Migration Hub data is stored in your home region for purposes of discovery, planning, and migration tracking\. The status of migrations for your entire portfolio appears in your selected home region\. You can specify a home region from the Migration Hub **Settings** page or from the [Migration Hub Home Region API Reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)\. For information about changing the Migration Hub home region after it is set, see [Changing your Migration Hub Home Region](#change-home-region)\.
 
 ## Choose a Migration Hub Home Region<a name="select-home-region"></a>
 
@@ -14,9 +14,9 @@ The Migration Hub console in your home region gives you detailed visibility into
 
 All of the discovery and migration tracking data sent from AWS tools or partner migration tools is stored and processed in your home region, regardless of the migrating application’s target region\.
 
- For example, you can select US West \(Oregon\) as your AWS Migration Hub home region, then perform discovery of your datacenters, and analyze and identify your applications\. If you use CloudEndure, for example, to migrate into Oregon and Frankfurt AWS Regions, you can track your CloudEndure migrations at the application level in Migration Hub\. Throughout each step in this example, your migration team uses Migration Hub in one AWS Region only: the home region you selected, which is the US West \(Oregon\) Region\.
+For example, you can select US West \(Oregon\) as your AWS Migration Hub home region, then perform discovery of your datacenters, and analyze and identify your applications\. Then if you use AWS Application Migration Service \(AWS MGN\) to migrate into the Oregon and Frankfurt AWS Regions, you can track your AWS MGN migrations at the application level in Migration Hub\. Throughout each step in this example, your migration team uses Migration Hub in one AWS Region only: the home region you selected, which is the US West \(Oregon\) Region\.
 
-## Set a Home Region for Discovery<a name="home-region-with-discovery"></a>
+## Set a Home Region for discovery<a name="home-region-with-discovery"></a>
 
 To start discovery and planning, you can deploy data collectors, such as AWS Application Discovery Agent or AWS Agentless Discovery Connector, into your data centers\. These tools send data to the AWS Migration Hub service in your home region, and the information is displayed on your home region console\.
 
@@ -28,15 +28,15 @@ AWS Agentless Discovery Connector discovers data for VMWare vCenter hosts and sy
 
 Alternatively, you can import a `.csv` file by means of the [AWS Migration Hub Import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) capability\.
 
-## Set a Home Region for Migration Reporting<a name="migration-reporting"></a>
+## Set a Home Region for migration reporting<a name="migration-reporting"></a>
 
 When you’re ready to migrate, use the migration tools that best fit your needs\. Options include AWS Server Migration Service \(AWS SMS\), AWS Database Migration Service \(AWS DMS\), or one of many third\-party tools\. Migrate your servers and applications into any AWS Region, and the migration progress reported by each tool is stored in your home region\. Stored data provides a single discovery and migration planning repository for your entire portfolio, and a single view of your migrations in multiple AWS Regions\.
 
 Authorize your migration tools, such as AWS SMS, to read discovery data from and send migration status to Migration Hub in your home region\. The migration tools read application groupings and send basic identifying information for each resource\. For example, the hostname, IP address, MAC address, and VMware or hypervisor identifiers are sent, along with the resource’s migration status, from the migration’s destination region to the Migration Hub home region\.
 
-## Changing Your Migration Hub Home Region<a name="change-home-region"></a>
+## Changing your Migration Hub Home Region<a name="change-home-region"></a>
 
-After it is set, your Migration Hub home region cannot be changed\. Contact [AWS Support](http://aws.amazon.com/contact-us) for alternatives if you need to change your home region\.
+After it is set, the Migration Hub home region can only be changed by contacting [AWS Support](http://aws.amazon.com/contact-us)\. If you change the Migration Hub home region, data collected in the old home region doesn't migrate to the new home region\. You'll need to recollect the data in the new home region\.
 
 ## Working with the Migration Hub Home Region APIs<a name="using-migration-hub-apis"></a>
 

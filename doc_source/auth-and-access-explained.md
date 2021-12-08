@@ -18,6 +18,8 @@ When granting permissions, you decide who is getting the permissions, the resour
 
 ### AWS Migration Hub Resources and Operations<a name="access-control-resources"></a>
 
+
+
  In AWS Migration Hub, the primary resource is a Migration Hub *ProgressUpdateStream*\.  This resource has an unique Amazon Resource Name \(ARN\) associated with it as shown in the following table\. 
 
 
@@ -101,6 +103,10 @@ To learn more about IAM policy syntax and descriptions, see [AWS IAM Policy Refe
 
 For a table showing all of the AWS Migration Hub API actions and the resources that they apply to, see [AWS Migration Hub API Permissions: Actions and Resources Reference](migrationhub-api-permissions-ref.md)\.
 
+
+
+
+
 ### Specifying Conditions in a Policy<a name="specifying-conditions"></a>
 
 When you grant permissions, you can use the IAM policy language to specify the conditions when a policy should take effect\. For example, you might want a policy to be applied only after a specific date\. For more information about specifying conditions in a policy language, see [Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Condition) in the *IAM User Guide*\.
@@ -118,6 +124,8 @@ The sections in this topic cover the following:
 + [Permissions Required to Use the AWS Migration Hub Console and API](#console-required-permissions) 
 + [AWS Managed \(Predefined\) Policies for AWS Migration Hub](#access-policy-examples-aws-managed) 
 + [AWS Migration Hub Trust Policies ](#access-policy-examples-aws-trust) 
+
+
 
 The following shows an example of a permissions policy:
 

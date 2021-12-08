@@ -1,7 +1,7 @@
 # AWS Migration Hub User Guide
 
 -----
-*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -15,27 +15,27 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What Is AWS Migration Hub?](whatishub.md)
-+ [Setting Up](setting-up.md)
-+ [Getting Started with AWS Migration Hub](getting-started.md)
-   + [Perform Discovery and Then Migrate](gs-new-user-discovery.md)
-   + [Migrate Without Performing Discovery](gs-new-user-migration.md)
++ [Setting up](setting-up.md)
++ [Getting started with AWS Migration Hub](getting-started.md)
+   + [Get started with discovery](gs-new-user-discovery.md)
+   + [Get started migrating](gs-new-user-migration.md)
 + [AWS Migration Hub Walkthroughs](walkthroughs.md)
-   + [Option 1: Perform Discovery and Then Migrate](discovery-walkthroughs.md)
+   + [Option 1: Perform discovery and then migrate](discovery-walkthroughs.md)
       + [Phase 1: Discover](discovery-wt-discover.md)
       + [Phase 2: Migrate](discovery-wt-migrate.md)
       + [Phase 3: Track](discovery-wt-track.md)
-   + [Option 2: Migrate Without Performing Discovery](migrate-walkthroughs.md)
+   + [Option 2: Migrate without performing discovery](migrate-walkthroughs.md)
       + [Phase 1: Migrate](migrate-wt-migrate.md)
       + [Phase 2: Track](migrate-wt-track.md)
-+ [Doing More in Migration Hub](doing-more.md)
++ [Migration Hub tracking, tagging, and console navigation tips](doing-more.md)
 + [The AWS Migration Hub Home Region](home-region.md)
-+ [Amazon EC2 Instance Recommendations](ec2-recommendations.md)
-+ [Viewing Network Connections in Migration Hub](network-diagram.md)
-   + [Prerequisites for Using the Network Diagram in Migration Hub](network-diagram-prerequisites.md)
-   + [How to Use the Network Diagram in Migration Hub](network-diagram-how-to.md)
-   + [Troubleshooting the Network Diagram](network-diagram-troubleshooting.md)
++ [Amazon EC2 instance recommendations](ec2-recommendations.md)
++ [Viewing network connections in Migration Hub](network-diagram.md)
+   + [Prerequisites for using the network diagram in Migration Hub](network-diagram-prerequisites.md)
+   + [How to use the network diagram in Migration Hub](network-diagram-how-to.md)
+   + [Troubleshooting the network diagram](network-diagram-troubleshooting.md)
 + [Security in AWS Migration Hub](security.md)
-   + [Identity and Access Management in AWS Migration Hub](auth-and-access-control.md)
+   + [Identity and Access Management in Migration Hub](auth-and-access-control.md)
       + [AWS Migration Hub Roles and Policies](policy-templates.md)
          + [New User IAM Setup](new-customer-setup.md)
          + [Custom Policies for Migration Tools](customer-managed-vendor.md)
@@ -46,7 +46,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Using Roles to Connect Migration Hub to AWS DMS](using-service-linked-roles-dms-service-role.md)
          + [Using Roles to Connect Migration Hub to AWS SMS](using-service-linked-roles-sms-service-role.md)
    + [Logging and monitoring in AWS Migration Hub](logging-monitoring.md)
-+ [AWS Migration Hub Limits](limits.md)
++ [AWS Migration Hub quotas](limits.md)
 + [Troubleshooting AWS Migration Hub](troubleshooting.md)
 + [AWS Migration Hub API](api-reference.md)
    + [Actions](API_Operations.md)
@@ -76,5 +76,5 @@ Amazon's trademarks and trade dress may not be used in
       + [ProgressUpdateStreamSummary](API_ProgressUpdateStreamSummary.md)
       + [ResourceAttribute](API_ResourceAttribute.md)
       + [Task](API_Task.md)
-+ [Logging Migration Hub API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
-+ [Document History](document-history.md)
++ [Logging Migration Hub API calls with AWS CloudTrail](logging-using-cloudtrail.md)
++ [Document history](document-history.md)

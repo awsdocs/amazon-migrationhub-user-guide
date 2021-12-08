@@ -1,4 +1,4 @@
-# How to Use the Network Diagram in Migration Hub<a name="network-diagram-how-to"></a>
+# How to use the network diagram in Migration Hub<a name="network-diagram-how-to"></a>
 
 This section describes how to use the network diagram in Migration Hub\.
 
@@ -21,7 +21,7 @@ The following topics describe the network diagram console panes\.
 **Topics**
 + [Toolbar](#network-diagram-toolbar)
 + [Diagram](#network-diagram-pane)
-+ [Server Details and Selected Server List](#network-diagram-server-details)
++ [Server details and selected server list](#network-diagram-server-details)
 
 ## Toolbar<a name="network-diagram-toolbar"></a>
 
@@ -46,8 +46,8 @@ The toolbar icons are described in the following table\.
 
 This section describes the icons used in the diagram to show network server nodes and how to interact with the diagram\.
 + [Diagram Icons](#network-diagram-icons)
-+ [Adding a Server to a Diagram](#network-diagram-add-server)
-+ [Interacting with the Diagram](#network-diagram-controls)
++ [Adding a server to a diagram](#network-diagram-add-server)
++ [Interacting with the diagram](#network-diagram-controls)
 
 ### Diagram Icons<a name="network-diagram-icons"></a>
 
@@ -58,11 +58,11 @@ The icons used in the diagram are shown in the following table\.
 | --- | --- | --- | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-icon.png)  |  Server  |  Represents a server that is running a discovery agent that is part of your network\. To view details about a server, right\-click ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-icon.png) and then choose **View server details**\. To select a server for a group application, right\-click ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-icon.png) and then choose **Select Server**\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-selected-icon.png)  |  Selected Server  |  Represents a server that you selected for group application\.  To deselect a server, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-selected-icon.png) and then choose **Unselect server** in the server details pane\. To select a server for a group application, right\-click ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-selected-icon.png) and then choose **Select Server**\.  | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-app-label-icon.png)  |  Server with application label  |  Represents a server that belongs to a group application\. The name of the application is displayed under the server icon\. The names of all the applications the server belongs to are displayed\.  | 
+|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-app-label-icon.png)  |  Server with application label  |  Represents a server that belongs to a group application\. The name of the application is displayed under the server icon\. The names of all the applications the server belongs to are displayed\.    | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-no-agent-icon.png)  |  Server without agent  |  Represents a server in your network that doesn't have Discovery Agent installed\. To view details about the server, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/server-no-agent-icon.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/node-expand-icon.png) ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/node-contract-icon.png)  |  Plus sign on upper right corner of server icon Minus sign on upper right corner of server icon  |  Represents that the server has servers connected to it that aren't shown in the diagram\. To expand the network from the server node, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/node-expand-icon.png) on the server icon\. To collapse the network back to the server node, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/node-contract-icon.png) on the server icon\.  | 
 
-### Adding a Server to a Diagram<a name="network-diagram-add-server"></a>
+### Adding a server to a diagram<a name="network-diagram-add-server"></a>
 
 You can search for servers to add to the diagram by searching by hostname or by IP address\. You'll get results after adding your search criteria and pressing **Enter**\. 
 
@@ -76,7 +76,7 @@ You can search for servers to add to the diagram by searching by hostname or by 
 
 1. From the result, select the servers to add to the diagram, and then choose **\+** to add them to the diagram\. 
 
-### Interacting with the Diagram<a name="network-diagram-controls"></a>
+### Interacting with the diagram<a name="network-diagram-controls"></a>
 
 You can interact with the diagram in the following ways:
 + To pan around, choose and drag on empty areas in the diagram\.
@@ -88,7 +88,7 @@ You can interact with the diagram in the following ways:
   + Hovering over a port highlights all the connections that open that port on the diagram\.
 + Hold shift and choose servers to select them for grouping applications or other actions\.
 
-## Server Details and Selected Server List<a name="network-diagram-server-details"></a>
+## Server details and selected server list<a name="network-diagram-server-details"></a>
 
 Server details and the list of selected servers share the pane right of the diagram\. You can toggle back and forth between the server details view and the selected server list view by choosing the server icon\.
 
@@ -102,4 +102,4 @@ You can use the following options to select servers from the network diagram:
 
 Selected servers are shown in a list in the same pane as the server details\. You can toggle back and forth between the server details view and the selected server list view by choosing the server icon\. 
 
-After you select one or more servers, you can create an application, or add to an existing one, by choosing **Group as application**\. You can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu\. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**\. For more information, see [Grouping Servers as Applications from the Network Diagram](discovery-wt-discover.md#discovery-wt-group-as-applications-net-diagram.title)\.
+After you select one or more servers, you can create an application, or add to an existing one, by choosing **Group as application**\. You can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu\. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**\. For more information, see [Grouping servers as applications from the network diagram](discovery-wt-discover.md#discovery-wt-group-as-applications-net-diagram)\.

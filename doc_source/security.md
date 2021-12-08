@@ -9,5 +9,5 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This documentation will help you understand how to apply the shared responsibility model when using Migration Hub\. The following topics show you how to configure Migration Hub to meet your security and compliance objectives\. You'll also learn how to use other AWS services that can help you to monitor and secure your Migration Hub resources\. 
 
 **Topics**
-+ [Identity and Access Management in AWS Migration Hub](auth-and-access-control.md)
++ [Identity and Access Management in Migration Hub](auth-and-access-control.md)
 + [Logging and monitoring in AWS Migration Hub](logging-monitoring.md)

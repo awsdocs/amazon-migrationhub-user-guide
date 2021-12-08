@@ -17,25 +17,25 @@ Sets the migration state of an application\. For a given application identified 
 
 The request accepts the following data in JSON format\.
 
- ** [ApplicationId](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-ApplicationId"></a>
+ ** [ ApplicationId ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-ApplicationId"></a>
 The configurationId in Application Discovery Service that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
 Pattern: `^.{1,1600}$`   
 Required: Yes
 
- ** [DryRun](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
+ ** [ DryRun ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [Status](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-Status"></a>
+ ** [ Status ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-Status"></a>
 Status of the application \- Not Started, In\-Progress, Complete\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | COMPLETED`   
 Required: Yes
 
- ** [UpdateDateTime](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-UpdateDateTime"></a>
+ ** [ UpdateDateTime ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-UpdateDateTime"></a>
 The timestamp when the application state changed\.  
 Type: Timestamp  
 Required: No
@@ -46,43 +46,43 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 ## Errors<a name="API_NotifyApplicationState_Errors"></a>
 
- **AccessDeniedException**   
+ ** AccessDeniedException **   
 You do not have sufficient access to perform this action\.  
 HTTP Status Code: 400
 
- **DryRunOperation**   
+ ** DryRunOperation **   
 Exception raised to indicate a successfully authorized action when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
 
- **HomeRegionNotSetException**   
+ ** HomeRegionNotSetException **   
 The home region is not set\. Set the home region to continue\.  
 HTTP Status Code: 400
 
- **InternalServerError**   
+ ** InternalServerError **   
 Exception raised when an internal, configuration, or dependency error is encountered\.  
 HTTP Status Code: 500
 
- **InvalidInputException**   
+ ** InvalidInputException **   
 Exception raised when the provided input violates a policy constraint or is entered in the wrong format or data type\.  
 HTTP Status Code: 400
 
- **PolicyErrorException**   
+ ** PolicyErrorException **   
 Exception raised when there are problems accessing Application Discovery Service \(Application Discovery Service\); most likely due to a misconfigured policy or the `migrationhub-discovery` role is missing or not configured correctly\.  
 HTTP Status Code: 400
 
- **ResourceNotFoundException**   
+ ** ResourceNotFoundException **   
 Exception raised when the request references a resource \(Application Discovery Service configuration, update stream, migration task, etc\.\) that does not exist in Application Discovery Service \(Application Discovery Service\) or in Migration Hub's repository\.  
 HTTP Status Code: 400
 
- **ServiceUnavailableException**   
+ ** ServiceUnavailableException **   
 Exception raised when there is an internal, configuration, or dependency error encountered\.  
 HTTP Status Code: 500
 
- **ThrottlingException**   
+ ** ThrottlingException **   
 The request was denied due to request throttling\.  
 HTTP Status Code: 400
 
- **UnauthorizedOperation**   
+ ** UnauthorizedOperation **   
 Exception raised to indicate a request was not authorized when the `DryRun` flag is set to "true"\.  
 HTTP Status Code: 400
 
@@ -115,12 +115,12 @@ $
 ## See Also<a name="API_NotifyApplicationState_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for Java](https://docs.aws.amazon.com/goto/SdkForJava/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 

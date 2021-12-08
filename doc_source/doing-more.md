@@ -1,11 +1,14 @@
-# Doing More in Migration Hub<a name="doing-more"></a>
+# Migration Hub tracking, tagging, and console navigation tips<a name="doing-more"></a>
 
-This section contains additional information to help enrich your migration experience by providing details on how to fully utilize the Migration Hub console discussed in the following topics:
-+ [Tracking Migration Updates](#updates-tracking-wt)
-+ [Tracking Metrics Using the Dashboards](#dashboards-tracking-wt)
-+ [Navigating from the Dashboard and the Navigation Pane](#navigation-tracking-wt)
+This section describes how to track migrations, tag migration resources, and navigate the AWS Migration Hub console\.
 
-## Tracking Migration Updates<a name="updates-tracking-wt"></a>
+**Topics**
++ [Tracking migration updates](#updates-tracking-wt)
++ [Tracking metrics using the dashboards](#dashboards-tracking-wt)
++ [Tagging migration resources](#tagging-migration-resources)
++ [Navigating from the dashboard and the navigation pane](#navigation-tracking-wt)
+
+## Tracking migration updates<a name="updates-tracking-wt"></a>
 
 In order to better understand how Migration Hub helps you monitor progress of a migration, there are three concepts to understand in the Migration Hub:
 + Applications
@@ -16,7 +19,7 @@ Migration tools like AWS SMS, AWS DMS, and integrated partners' tools send updat
 
 When Migration Hub receives an update, it is displayed on the updates page\. There can be a delay of up to five minutes for the initial update to appear in the updates page\.
 
-### Tracking When You Perform Discovery First and Then Migrate<a name="updates-tracking-wt-disco-first"></a>
+### Tracking when you perform discovery first and then migrate<a name="updates-tracking-wt-disco-first"></a>
 
 If you started performing discovery using AWS discovery tools, the servers list will likely be populated before you start migrating\. Migration Hub attempts to automatically map updates from migration tools to servers in the servers list\. If it cannot find a match in the discovered servers list, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\.
 
@@ -34,11 +37,11 @@ See Step 2\.a in *To determine if a migration update must be manually mapped to 
 
    1. If one or more rows of the **Mapped servers** columns is *not* populated and there is a **Map** button present in that row's **Action** column, this is an indication that manual mapping is required\. Proceed to the next set of procedures\.
 
-### Tracking When You Migrate Without Performing Discovery<a name="updates-tracking-wt-no-disco"></a>
+### Tracking when you migrate without performing discovery<a name="updates-tracking-wt-no-disco"></a>
 
-If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\. You can group servers to applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. See, [Group Servers as Applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track Status of Migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
+If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\. You can group servers to applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. See, [Group servers as applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track status of migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
 
-### Troubleshooting and Manually Mapping Migration Updates<a name="updates-tracking-wt-troubleshooting"></a>
+### Troubleshooting and manually mapping migration updates<a name="updates-tracking-wt-troubleshooting"></a>
 
 You can verify that the migration update is mapped to a server by viewing the update on the **Updates** page\. If a server has not been mapped to a migration and you just started the migration task, see if it appears as mapped after waiting five minutes and refreshing the page\.
 
@@ -58,11 +61,11 @@ The following steps show you how to manually map a migration update to a discove
 
 1. Verify that the server name of the server you just mapped is now present in the **Mapped servers** column\.
 
-## Tracking Metrics Using the Dashboards<a name="dashboards-tracking-wt"></a>
+## Tracking metrics using the dashboards<a name="dashboards-tracking-wt"></a>
 
 Dashboards provide a way to quickly see status and progress summary data, and also help you navigate to more detailed data\.
 
-### Main Dashboard<a name="main-dashboard-tracking-wt"></a>
+### Main dashboard<a name="main-dashboard-tracking-wt"></a>
 
 The main dashboard gathers data from the Discover and Migrate dashboards in a central location\. 
 
@@ -70,7 +73,17 @@ The main dashboard consists of four at\-a\-glance status and information panes a
 
 To reach the main dashboard, choose **Dashboard** from the navigation pane\.
 
-## Navigating from the Dashboard and the Navigation Pane<a name="navigation-tracking-wt"></a>
+## Tagging migration resources<a name="tagging-migration-resources"></a>
+
+Migrated resources \(Amazon EC2 instances or Amazon Machine Images \(AMIs\)\) reported to Migration Hub by migration tools—like AWS Application Migration Service—are automatically tagged with Application Discovery Service server IDs\. 
+
+If you turn on cost allocation tagging, you can view the cost of the AWS resources that are tagged by Migration Hub in the AWS Cost Explorer Service\. Resource tagging by Migration Hub can’t be turned off\. This tagging is implemented automatically and doesn't count against your limit of 50 tags per resource\.
+
+These resources have the `aws:migrationhub:source-id` tag, and the `source-id` matches the `server.configurationId` server asset field from Application Discovery Service\. For more information, see the following topics:
++ [Querying Discovered Configuration Items](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-api-queries.html) in the *Application Discovery Service User Guide*\.
++ [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*\.
+
+## Navigating from the dashboard and the navigation pane<a name="navigation-tracking-wt"></a>
 
 After viewing dashboard data summaries, you might want to retrieve more detail without interrupting your workﬂow\. You do this by navigating directly from the relevant status or information pane on the dashboard\.
 
@@ -85,11 +98,3 @@ In the table following, you can ﬁnd instructions on how to navigate from a das
 | All applications |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose **View all applications** Or, from the Discover dashboard in the Servers & Applications pane, choose **View all applications**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | Application details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard in the Most recently updated applications box, choose the application's status box\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 | Server details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose the application\. Then choose the server name in the Server ID column\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-
-## Tagging Migration Resources<a name="tagging-migration-resources"></a>
-
-Migrated resources \(Amazon EC2 instances or Amazon Machine Images \(AMIs\)\) reported to Migration Hub by migration tools \(like CloudEndure\) are automatically tagged with Application Discovery Service server IDs\. If you turn on cost allocation tagging, you can view the cost of the AWS resources that are tagged by Migration Hub in the AWS Cost Explorer Service\. Resource tagging by Migration Hub can’t be turned off\. This tagging is implemented automatically and doesn't count against your limit of 50 tags per resource\.
-
-These resources have the `aws:migrationhub:source-id` tag, and the `source-id` matches the `server.configurationId` server asset field from Application Discovery Service\. For more information, see the following topics:
-+ [Querying Discovered Configuration Items](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-api-queries.html) in the *Application Discovery Service User Guide*\.
-+ [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*\.

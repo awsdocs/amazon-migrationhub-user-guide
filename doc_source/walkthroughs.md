@@ -5,5 +5,5 @@ Use these walkthroughs to guide you through either of the two workflows of start
 + Directly with migration without performing discovery\.
 
 **Topics**
-+ [Option 1: Perform Discovery and Then Migrate](discovery-walkthroughs.md)
-+ [Option 2: Migrate Without Performing Discovery](migrate-walkthroughs.md)
++ [Option 1: Perform discovery and then migrate](discovery-walkthroughs.md)
++ [Option 2: Migrate without performing discovery](migrate-walkthroughs.md)

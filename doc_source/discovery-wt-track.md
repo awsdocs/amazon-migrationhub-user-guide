@@ -1,12 +1,12 @@
 # Phase 3: Track<a name="discovery-wt-track"></a>
 
 In the track phase, you track the status of migrations\.
-+ Track Status of Migrations\.
++ Track status of migrations\.
 
 **Topics**
-+ [Track Step 1: Track Status of Migrations](#discovery-wt-track-app-status)
++ [Track Step 1: Track status of migrations](#discovery-wt-track-app-status)
 
-## Track Step 1: Track Status of Migrations<a name="discovery-wt-track-app-status"></a>
+## Track Step 1: Track status of migrations<a name="discovery-wt-track-app-status"></a>
 
 **To track an application's migration status**
 
@@ -28,4 +28,4 @@ In the track phase, you track the status of migrations\.
 
 1. Select the radio button next to **Completed** in the pop\-up list box\.
 
-1. Choose **Save**\. A green confirmation message appears at the top of the screen, and the status label changes to **Completed**\.
+1. Choose **Save**\. A green confirmation message displays at the top of the page, and the status label changes to **Completed**\.

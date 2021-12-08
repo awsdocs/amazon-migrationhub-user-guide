@@ -3,19 +3,19 @@
 This section describes the discovery phase in the following topics\. 
 
 **Topics**
-+ [Discover Step 1: Choose and Deploy AWS Discovery Tools](#discovery-wt-aws-disco-tools)
-+ [Discover Step 2: View Server Details and Dependencies](#discovery-wt-view-disco-servers)
-+ [Discover Step 3: Group Servers as Applications](#discovery-wt-group-as-applications)
++ [Discover Step 1: Choose and deploy AWS discovery tools](#discovery-wt-aws-disco-tools)
++ [Discover Step 2: View server details and dependencies](#discovery-wt-view-disco-servers)
++ [Discover Step 3: Group servers as applications](#discovery-wt-group-as-applications)
 
-## Discover Step 1: Choose and Deploy AWS Discovery Tools<a name="discovery-wt-aws-disco-tools"></a>
+## Discover Step 1: Choose and deploy AWS discovery tools<a name="discovery-wt-aws-disco-tools"></a>
 
-If you landed here from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), or if you already have AWS discovery tools implemented and would like to deploy more, the following steps show you how to deploy either an [AWS Agentless Discovery Connector](#discovery-agent-less-wt) or an [AWS Application Discovery Agent](#discovery-agent-wt)\. If you have already performed discovery using an AWS Migration Partner discovery tool or have existing data from data sources such as a Configuration Management Database \(CMDB\) or IT Asset Management System \(ITAM\), you can use Migration Hub import to upload them\. For more information, see [Migration Hub Import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) in the *Application Discovery Service User Guide*\.
+If you landed here from Step 4 of [Get started with discovery](gs-new-user-discovery.md), or if you already have AWS discovery tools implemented and want to deploy more, the following steps show you how to deploy either an [AWS Agentless Discovery Connector](#discovery-agent-less-wt) or an [AWS Application Discovery Agent](#discovery-agent-wt)\. 
 
-To help you decide whether to choose a Discovery Connector or a Discovery Agent, the following comparison chart is provided\.
+If you have already performed discovery using an AWS Migration Partner discovery tool or have existing data from data sources such as a Configuration Management Database \(CMDB\) or IT Asset Management System \(ITAM\), you can use Migration Hub import to upload them\. For more information, see [Migration Hub Import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) in the *Application Discovery Service User Guide*\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/AgentConnectorCompTbl.png)
+To help you decide whether to choose a Discovery Connector or a Discovery Agent, see [Compare Connectors and Agents](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html#compare-tools) in the *Application Discovery Service User Guide*\.
 
-### Discovery Using the AWS Agentless Discovery Connector<a name="discovery-agent-less-wt"></a>
+### Discovery using the AWS Agentless Discovery Connector<a name="discovery-agent-less-wt"></a>
 
 These steps walk you through the discovery process using an AWS Agentless Discovery Connector for collecting data about your on\-premises resources\.
 
@@ -25,7 +25,7 @@ You use a Discovery Connector because it lets you quickly assess your infrastruc
 
 **To discover resources using an agentless connector**
 
-1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download connector**; else, in the navigation pane, under **Discover**, choose **Tools**, and then choose **Download connector**\.
+1. If you are proceeding from Step 4 of [Get started with discovery](gs-new-user-discovery.md), choose **Download connector**; else, in the navigation pane, under **Discover**, choose **Tools**, and then choose **Download connector**\.
 
 1. Deploy and configure the agentless connector by following the instructions specified in [Setting up Agentless Discovery](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agentless.html) from the AWS Application Discovery Service User Guide\.
 
@@ -37,7 +37,7 @@ You use a Discovery Connector because it lets you quickly assess your infrastruc
 
    1. To install additional connectors, repeat the above procedure\.
 
-### Discovery Using the AWS Application Discovery Agent<a name="discovery-agent-wt"></a>
+### Discovery using the AWS Application Discovery Agent<a name="discovery-agent-wt"></a>
 
 These steps walk you through the discovery process using an AWS Application Discovery Agent for collecting data about your on\-premises resources\.
 
@@ -47,9 +47,9 @@ The beneﬁt of using a Discovery Agent is that it provides more detailed inform
 
 **To discover resources using an agent**
 
-1. If you are proceeding from Step 3 of [Perform Discovery and Then Migrate](gs-new-user-discovery.md), choose **Download agent**, then in the dropdown, select either **Windows** or **Linux**; else, the **Download agent** button can be accessed by choosing **Tools** under **Discover** in the navigation pane\.
+1. If you are proceeding from Step 3 of [Get started with discovery](gs-new-user-discovery.md), choose **Download agent**, then in the dropdown, select either **Windows** or **Linux**; else, the **Download agent** button can be accessed by choosing **Tools** under **Discover** in the navigation pane\.
 
-1. Deploy and configure the agent by following the instructions specified in [Setting up Agent Based Discovery](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agents.html) from the AWS Application Discovery Service User Guide\.
+1. Deploy and configure the agent by following the instructions specified in [Setting up Agent Based Discovery](http://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agents.html) from the *AWS Application Discovery Service User Guide*\.
 
 1. After you have successfully installed the agent, return to the **Data Collectors** page on the Migration Hub console and choose the refresh icon\.
 
@@ -59,13 +59,13 @@ The beneﬁt of using a Discovery Agent is that it provides more detailed inform
 
    1. To install additional agents, repeat the above procedure\.
 
-## Discover Step 2: View Server Details and Dependencies<a name="discovery-wt-view-disco-servers"></a>
+## Discover Step 2: View server details and dependencies<a name="discovery-wt-view-disco-servers"></a>
 
 The following procedures describe how to view detailed information about servers discovered with AWS discovery tools\. 
 
-### Viewing Server Details<a name="discovery-wt-view-disco-servers-details"></a>
+### Viewing server details<a name="discovery-wt-view-disco-servers-details"></a>
 
-The following procedure describes how to view information about the servers discovered by using any of the AWS discovery tools described in [Discover Step 1: Choose and Deploy AWS Discovery Tools](#discovery-wt-aws-disco-tools)\.
+The following procedure describes how to view information about the servers discovered by using any of the AWS discovery tools described in [Discover Step 1: Choose and deploy AWS discovery tools](#discovery-wt-aws-disco-tools)\.
 
 **To view details about a discovered server**
 
@@ -73,7 +73,7 @@ The following procedure describes how to view information about the servers disc
 
 1. To view details about the server, choose the hostname of the server from the **Server info** column\. The server's detail page displays information about the server, such as hostname, IP address, performance metrics, and so on\.
 
-### Exploring Server Network Connections<a name="discovery-wt-view-disco-servers-network"></a>
+### Exploring server network connections<a name="discovery-wt-view-disco-servers-network"></a>
 
 If you use AWS Application Discovery Agent for discovery, you can explore server network connections by using the network diagram in AWS Migration Hub\. 
 
@@ -87,7 +87,7 @@ Start exploring by choosing a single server or by choosing multiple servers at t
 
 1. Choose **Network**\. The icon for the server you choose is centered in the network diagram\. Connections fan out from the center server to servers that are directly connected to the server you choose\.
 
-1. Choose a server icon to see details about the server\. For information about how to work with the network diagram, see [Viewing Network Connections in Migration Hub](network-diagram.md)\. 
+1. Choose a server icon to see details about the server\. For information about how to work with the network diagram, see [Viewing network connections in Migration Hub](network-diagram.md)\. 
 
 **To explore network connections starting with multiple servers**
 
@@ -95,13 +95,13 @@ Start exploring by choosing a single server or by choosing multiple servers at t
 
 1. To see the network connections for multiple servers, select the check box for each of the servers you want in the network diagram, and then choose **Visualize network**\.
 
-1. You can modify the network diagram for the servers you chose\. For information on how to work with the network diagram, see [Viewing Network Connections in Migration Hub](network-diagram.md)\. 
+1. You can modify the network diagram for the servers you chose\. For information on how to work with the network diagram, see [Viewing network connections in Migration Hub](network-diagram.md)\. 
 
-## Discover Step 3: Group Servers as Applications<a name="discovery-wt-group-as-applications"></a>
+## Discover Step 3: Group servers as applications<a name="discovery-wt-group-as-applications"></a>
 
 The following procedures describe how to group servers as applications\. Because applications can have multiple servers, it can help simplify migration tracking to group them into logical units\.
 
-### Grouping Servers as Applications from the Servers List<a name="discovery-wt-group-as-applications-server-list"></a>
+### Grouping servers as applications from the servers list<a name="discovery-wt-group-as-applications-server-list"></a>
 
 The following procedure shows you how to select the servers you want to group for your application, how to create your application and name it, and how to add identifying tags\.
 
@@ -126,9 +126,9 @@ You can import application groups in bulk using the AWS CLI for Application Disc
 
    1. If you chose **Add to an existing application**, choose the option next to the application name in the list box\.
 
-1. Choose **Save**\. A green confirmation message is displayed at the top of the screen\.
+1. Choose **Save**\. A green confirmation message is displays at the top of the page\.
 
-### Grouping Servers as Applications from the Network Diagram<a name="discovery-wt-group-as-applications-net-diagram"></a>
+### Grouping servers as applications from the network diagram<a name="discovery-wt-group-as-applications-net-diagram"></a>
 
 You must select the servers in the network diagram that you want to group into a new or existing application\. 
 
@@ -136,7 +136,7 @@ The following procedure shows you how to select the servers you want to group fo
 
 **To group servers into a new or existing application from the network diagram**
 
-1. Set up a network diagram following one of the procedures in the [Exploring Server Network Connections](#discovery-wt-view-disco-servers-network) section\. 
+1. Set up a network diagram following one of the procedures in the [Exploring server network connections](#discovery-wt-view-disco-servers-network) section\. 
 
 1. You can use the following options to select servers from the network diagram:
    + Choose a server node icon\. Details about the server show in the server details pane, where you choose **Select server**\.
@@ -156,7 +156,7 @@ The following procedure shows you how to select the servers you want to group fo
 
    1. If you chose **Add to an existing application**, choose the option next to the application name in the list box\.
 
-1. Choose **Save**\. A green confirmation message is displayed at the top of the screen\.
+1. Choose **Save**\. A green confirmation message displays at the top of the page\.
 
 1. Optionally, you can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu\. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**\.
 

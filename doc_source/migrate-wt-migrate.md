@@ -1,30 +1,30 @@
 # Phase 1: Migrate<a name="migrate-wt-migrate"></a>
 
 The migrate phase has the following steps: 
-+ Connect Migration Tools to Migration Hub\.
-+ Migrate Using the Connected Migration Tools\.
-+ Group Servers as Applications\.
++ Connect migration tools to Migration Hub\.
++ Migrate using the connected migration tools\.
++ Group servers as applications\.
 
 **Topics**
-+ [Migrate Step 1: Connect Migration Tools to Migration Hub](#migrate-wt-auth-migrate-tools)
-+ [Migrate Step 2: Migrate Using the Connected Migration Tools](#migrate-wt-migrate-using-tools)
-+ [Migrate Step 3: Group Servers as Applications](#migrate-wt-group-as-applications)
++ [Migrate Step 1: Connect migration tools to Migration Hub](#migrate-wt-auth-migrate-tools)
++ [Migrate Step 2: Migrate using the connected migration tools](#migrate-wt-migrate-using-tools)
++ [Migrate Step 3: Group servers as applications](#migrate-wt-group-as-applications)
 
-## Migrate Step 1: Connect Migration Tools to Migration Hub<a name="migrate-wt-auth-migrate-tools"></a>
+## Migrate Step 1: Connect migration tools to Migration Hub<a name="migrate-wt-auth-migrate-tools"></a>
 
-If you landed here from Step 3 of [Migrate Without Performing Discovery](gs-new-user-migration.md), the following steps will show you how to authorize a migration tool and begin migrating\. 
+If you landed here from Step 4 of [Get started migrating](gs-new-user-migration.md), the following steps show you how to authorize a migration tool and begin migrating\. 
 
 ### <a name="migrate-step-1"></a>
 
-Migration happens outside Migration Hub using AWS migration tools or integrated partners' migration tools\. You choose these tools through the Tools page in the Migrate section in Migration Hub\.
+Migration happens outside AWS Migration Hub using AWS migration tools or partner migration tools\. To access these tools, in the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
 The table following lists the supported tools\.
 
 
-| Resource type | Migration tool name | 
+| Resource type | Migration tool | 
 | --- | --- | 
-|  Server  |  AWS Server Migration Service CloudEndure Migration ATADATA ATAmotion  | 
-| Database |  AWS Database Migration Service  | 
+|  Server  |  **AWS Application Migration Service \(AWS MGN\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about AWS MGN, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Using the AWS Migration Hub with MGN](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.  **AWS Server Migration Service \(AWS SMS\)**–For more information about AWS SMS, see [AWS Server Migration Service](http://aws.amazon.com/server-migration-service/) and [AWS SMS Documentation](https://docs.aws.amazon.com/server-migration-service/index.html)\. The **ATADATA ATAmotion partner tool**–For more information about ATAmotion, see [AWS Migration Hub Partners](http://aws.amazon.com/migration-hub/partners/)\.  | 
+| Database |  **AWS Database Migration Service \(AWS DMS\)**–For more information about AWS DMS, see [AWS Database Migration Service](http://aws.amazon.com/dms/) and [AWS DMS Documentation](https://docs.aws.amazon.com/dms/index.html)\.  | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
 
@@ -32,20 +32,20 @@ The following steps walk you through connecting \(authorizing\) your selected mi
 
 **To connect \(authorize\) a migration tool**
 
-1. In the navigation pane under **Migrate**, choose **Tools**\.
+1. In the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
-1. Decide upon which AWS migration tools or integrated partners' tools to migrate your application\.
+1. Decide upon which AWS migration tool or integrated partners' tool to migrate your application\.
 
 1. Choose **Connect** in the box to authorize the migration tool you selected to communicate with Migration Hub\. 
 
-   1. AWS migration tools utilize a one\-click authorization process which automatically adds the required permissions role once you choose **Connect**\.
+   1. AWS migration tools utilize a one\-click authorization process that automatically adds the required AWS Identity and Access Management \(IAM\) permissions role once you choose **Connect**\.
 
    1. Integrated partners' tools take you to their website when you choose **Connect** where you will be instructed on how to complete authorization\.
 
 **Note**  
 Note that if you are using API's or do not want to authorize through Migration Hub's console, you can learn about manual role creation in [New User IAM Setup](new-customer-setup.md)\.
 
-## Migrate Step 2: Migrate Using the Connected Migration Tools<a name="migrate-wt-migrate-using-tools"></a>
+## Migrate Step 2: Migrate using the connected migration tools<a name="migrate-wt-migrate-using-tools"></a>
 
 ### <a name="migrate-step-2"></a>
 
@@ -53,15 +53,15 @@ The following steps walk you through the migration of a previously defined appli
 
 **To migrate an application**
 
-1. In the navigation pane under **Migrate**, choose **Tools**\.
+1. In the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
 1. If you connected \(authorized\) an AWS migration tool, choose the console link\. If you connected \(authorized\) an integrated partner's tool, choose the website link\.
 
 1. When you have been linked to either the tool's console or website, follow the migration instructions for your selected migration tool as migration happens outside of Migration Hub\.
 
-1. When your application's migration has started, return to Migration Hub\.
+1. After your application's migration has started, return to Migration Hub\.
 
-## Migrate Step 3: Group Servers as Applications<a name="migrate-wt-group-as-applications"></a>
+## Migrate Step 3: Group servers as applications<a name="migrate-wt-group-as-applications"></a>
 
 These steps walk you through the process of grouping servers as applications when directly migrating with a migration tool without performing discovery first\.
 
@@ -71,7 +71,7 @@ The following steps will show you how to select the server or servers you want t
 
 **To group servers into a new or existing application**
 
-1. In the navigation pane, select **Servers**\.
+1. In the Migration Hub console navigation pane, select **Servers**\.
 
 1. In the severs list, select the checkbox for each of the servers you want to group into a new or existing application\.
 

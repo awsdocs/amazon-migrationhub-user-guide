@@ -1,12 +1,12 @@
-# Troubleshooting the Network Diagram<a name="network-diagram-troubleshooting"></a>
+# Troubleshooting the network diagram<a name="network-diagram-troubleshooting"></a>
 
 Use the information here to help you troubleshoot and fix issues that you might encounter when working with the network diagram in AWS Migration Hub\.
 
 **Topics**
-+ [Message that You Need to Install Discovery Agent](#troubleshooting-problem-need-agent)
-+ [Problems When Adding Servers or Expanding Diagram](#troubleshooting-problem-expand-diagram)
++ [Message that you need to install Discovery Agent](#troubleshooting-problem-need-agent)
++ [Problems when adding servers or expanding diagram](#troubleshooting-problem-expand-diagram)
 
-## Message that You Need to Install Discovery Agent<a name="troubleshooting-problem-need-agent"></a>
+## Message that you need to install Discovery Agent<a name="troubleshooting-problem-need-agent"></a>
 
 The following topics describe scenarios when you get a message that you need to install Discovery Agent\.
 
@@ -18,7 +18,7 @@ Add AWS Application Discovery Service Discovery Agent to the servers that you th
 
 Add the Discovery Agent to the servers that you that want to be able to add to a group\.
 
-## Problems When Adding Servers or Expanding Diagram<a name="troubleshooting-problem-expand-diagram"></a>
+## Problems when adding servers or expanding diagram<a name="troubleshooting-problem-expand-diagram"></a>
 
 The following topics describe scenarios when you get a message when adding new servers or expanding existing servers\.
 

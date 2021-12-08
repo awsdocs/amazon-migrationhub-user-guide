@@ -1,4 +1,4 @@
-# Viewing Network Connections in Migration Hub<a name="network-diagram"></a>
+# Viewing network connections in Migration Hub<a name="network-diagram"></a>
 
 Viewing network connections in AWS Migration Hub allows you to visualize a server's dependencies\. The visualization of these dependencies helps you verify all of the resources required to successfully migrate each of your applications to Amazon Web Services\.
 
@@ -7,12 +7,12 @@ You view network connections by using the network diagram\. When using the netwo
 The following topics provide information about using the network diagram\.
 
 **Topics**
-+ [Use the Network Diagram to View Connections](#network-diagram-what-is)
-+ [Prerequisites for Using the Network Diagram in Migration Hub](network-diagram-prerequisites.md)
-+ [How to Use the Network Diagram in Migration Hub](network-diagram-how-to.md)
-+ [Troubleshooting the Network Diagram](network-diagram-troubleshooting.md)
++ [Use the network diagram to view connections](#network-diagram-what-is)
++ [Prerequisites for using the network diagram in Migration Hub](network-diagram-prerequisites.md)
++ [How to use the network diagram in Migration Hub](network-diagram-how-to.md)
++ [Troubleshooting the network diagram](network-diagram-troubleshooting.md)
 
-## Use the Network Diagram to View Connections<a name="network-diagram-what-is"></a>
+## Use the network diagram to view connections<a name="network-diagram-what-is"></a>
 
 Using network connectivity data from Application Discovery Service, the network diagram in Migration Hub reduces the time it takes to plan your migration by helping you quickly determine which of your servers are included in an application\. 
 

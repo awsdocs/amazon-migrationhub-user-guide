@@ -1,4 +1,4 @@
-# Prerequisites for Using the Network Diagram in Migration Hub<a name="network-diagram-prerequisites"></a>
+# Prerequisites for using the network diagram in Migration Hub<a name="network-diagram-prerequisites"></a>
 
 The following are the prerequisites for using the network diagram in AWS Migration Hub:
 +  AWS Application Discovery Service Discovery Agent must be running on all of the on\-premises servers that you want mapped in the diagram\. For more information, see [Setting up Agent Based Discovery](https://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up-agents.html) in the *Application Discovery Service User Guide*\.

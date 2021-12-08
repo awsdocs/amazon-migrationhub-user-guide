@@ -1,15 +1,15 @@
-# Amazon EC2 Instance Recommendations<a name="ec2-recommendations"></a>
+# Amazon EC2 instance recommendations<a name="ec2-recommendations"></a>
 
 Amazon EC2 instance recommendations provide you with the ability to estimate the cost of running your existing servers in AWS\. This feature analyzes the details about each server, including server specification, CPU, and memory utilization data\. The compiled data is then used to recommend the least expensive Amazon EC2 instance type that can handle the existing performance workload\. Recommendations are returned along with per\-hour instance pricing\.
 
-Based on your business needs, you can choose additional preferences such as billing options, region, EC2 instance type exclusions and the CPU/RAM sizing \(average, peak, percentile\) to further optimize your EC2 instance recommendations and associated costs\.
+Based on your business needs, you can choose additional preferences such as billing options, region, Amazon EC2 instance type exclusions and the CPU/RAM sizing \(average, peak, percentile\) to further optimize your Amazon EC2 instance recommendations and associated costs\.
 
 **Topics**
 + [Prerequisites](#ec2-recommendation-prerequisites)
-+ [How EC2 Instance Recommendations Work](#how-ec2-recommendations-work)
-+ [Generating Amazon EC2 Recommendations](#generating-ec2-recommendations)
-+ [Understanding Your Amazon EC2 Recommendations](#understanding-ec2-recommendations)
-+ [Additional Considerations](#ec2-rec-considerations)
++ [How Amazon EC2 instance recommendations work](#how-ec2-recommendations-work)
++ [Generating Amazon EC2 recommendations](#generating-ec2-recommendations)
++ [Understanding your Amazon EC2 recommendations](#understanding-ec2-recommendations)
++ [Additional considerations](#ec2-rec-considerations)
 
 ## Prerequisites<a name="ec2-recommendation-prerequisites"></a>
 
@@ -21,26 +21,26 @@ Before you can get Amazon EC2 instance recommendations, you must have data about
 **Note**  
 Percentile\-based recommendations are only generated for servers with data collected by a Discovery Connector from March 12th, 2019 onwards, or by a Discovery Agent\.
 
-## How EC2 Instance Recommendations Work<a name="how-ec2-recommendations-work"></a>
+## How Amazon EC2 instance recommendations work<a name="how-ec2-recommendations-work"></a>
 
-This feature recommends the most cost\-effective EC2 instance type that can satisfy your existing server specifications and utilization requirements while taking into account your selected instance preferences\. The server specifications that are used to generate your recommendations are:
+This feature recommends the most cost\-effective Amazon Elastic Compute Cloud instance type that can satisfy your existing server specifications and utilization requirements while taking into account your selected instance preferences\. The server specifications that are used to generate your recommendations are:
 + Number of processors
 + Number of logical cores
 + Total amount of RAM
 + Operating system family
 + Usage data including peak, average, and percentiles of CPU and RAM
 
-EC2 instance recommendations returns the best Amazon EC2 instance type match based on server specification as well as the performance dimensions you provided\. To match the performance dimensions, the service adjusts the server’s specification by multiplying the original CPU and RAM values by the usage percentage\.
+Amazon EC2 instance recommendations returns the best Amazon EC2 instance type match based on server specification as well as the performance dimensions you provided\. To match the performance dimensions, the service adjusts the server’s specification by multiplying the original CPU and RAM values by the usage percentage\.
 
-## Generating Amazon EC2 Recommendations<a name="generating-ec2-recommendations"></a>
+## Generating Amazon EC2 recommendations<a name="generating-ec2-recommendations"></a>
 
-In the **Export EC2 instance recommendations** page of the Migration Hub console, you'll choose your recommendation preferences\. These preferences include resource sizing, instance type preferences, and instance type exclusions\. Use the following procedure to generate your Amazon EC2 instance recommendations\.
+In the **Export Amazon EC2 instance recommendations** page of the Migration Hub console, you'll choose your recommendation preferences\. These preferences include resource sizing, instance type preferences, and instance type exclusions\. Use the following procedure to generate your Amazon EC2 instance recommendations\.
 
 **To generate Amazon EC2 instance recommendations**
 
 1. Open a browser and sign into the Migration Hub console at https://console\.aws\.amazon\.com/migrationhub\.
 
-1. On the left\-side navigation, from **Assess**, choose **EC2 instance recommendations**\.
+1. On the left\-side navigation, from **Assess**, choose **Amazon EC2 instance recommendations**\.
 
 1. Choose your Amazon EC2 instance size preferences for your discovered servers\. You can choose one of the following options\.
    + **Current server specification** – You have the two options of **Direct match** or **Custom match**\.
@@ -53,7 +53,7 @@ In the **Export EC2 instance recommendations** page of the Migration Hub console
      For all the data points collected for CPU and RAM utilization, a percentile is a value that exists below a given percentage of utilization since data has been discovered\. For example, the 75th percentile represents the value under 75 percent of all the RAM and CPU utilization data that has been discovered\.
 
 1. Choose your Amazon EC2 instance type preferences, including AWS Region, tenancy, and pricing model\.
-   + **Region** – Your AWS Region selection affects EC2 instance availability and pricing\.
+   + **Region** – Your AWS Region selection affects Amazon EC2 instance availability and pricing\.
    + **Tenancy** – This defines how EC2 instances are distributed across physical hardware and affects pricing\.
      + **Shared** – Multiple customers may share the same physical hardware\.
      + **Dedicated** – Only your instances will run on the same physical hardware\.
@@ -69,7 +69,7 @@ When the process is complete, your browser will automatically download a compres
 
 Large datasets can take a few minutes to generate recommendations\. You can generate new recommendations at any time by repeating this procedure with a different set of preferences\.
 
-## Understanding Your Amazon EC2 Recommendations<a name="understanding-ec2-recommendations"></a>
+## Understanding your Amazon EC2 recommendations<a name="understanding-ec2-recommendations"></a>
 
 The downloaded CSV file has the following categories of information within it:
 + **Server identification** – This information identifies each server\. Each row of the CSV file contains information specific to a single server identified by a `ServerID`, `HostName`, and/or `ExternalId`\.
@@ -140,9 +140,9 @@ The following table defines the different columns for an Amazon EC2 recommendati
 | Server\.NetworkReadsPerSecondInKB\.Max | The maximum number of network read operations per second, in KB\. | 1083176 | 
 | Server\.NetworkWritesPerSecondInKB\.Max | The maximum number of network write operations per second, in KB\. | 53571 | 
 
-## Additional Considerations<a name="ec2-rec-considerations"></a>
+## Additional considerations<a name="ec2-rec-considerations"></a>
 
-Keep the following considerations in mind when generating EC2 instance recommendations\.
+Keep the following considerations in mind when generating Amazon EC2 instance recommendations\.
 + Burstable instances \(T2 and T3\) have an additional pricing mechanism that is computed based on CPU credits\. For the burstable instances, we use the provided `average` and `peak` CPU data points to compute an estimated number of consumed CPU credits\. This is translated into an adjusted overall recommendation\.
 + Only current generation instances are recommended\. The following types of instances are excluded from recommendations:
   + Previous generation instances \(C3, for example\)
