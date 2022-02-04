@@ -20,27 +20,27 @@ Lists the created artifacts attached to a given migration task in an update stre
 
 The request accepts the following data in JSON format\.
 
- ** [ MaxResults ](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MaxResults"></a>
+ ** [MaxResults](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MaxResults"></a>
 Maximum number of results to be returned per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 10\.  
 Required: No
 
- ** [ MigrationTaskName ](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MigrationTaskName"></a>
+ ** [MigrationTaskName](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** [ NextToken ](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-NextToken"></a>
+ ** [NextToken](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
 Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$`   
 Required: No
 
- ** [ ProgressUpdateStream ](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-ProgressUpdateStream"></a>
+ ** [ProgressUpdateStream](#API_ListCreatedArtifacts_RequestSyntax) **   <a name="migrationhub-ListCreatedArtifacts-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -67,11 +67,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** [ CreatedArtifactList ](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-CreatedArtifactList"></a>
+ ** [CreatedArtifactList](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-CreatedArtifactList"></a>
 List of created artifacts up to the maximum number of results specified in the request\.  
-Type: Array of [ CreatedArtifact ](API_CreatedArtifact.md) objects
+Type: Array of [CreatedArtifact](API_CreatedArtifact.md) objects
 
- ** [ NextToken ](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-NextToken"></a>
+ ** [NextToken](#API_ListCreatedArtifacts_ResponseSyntax) **   <a name="migrationhub-ListCreatedArtifacts-response-NextToken"></a>
 If there are more created artifacts than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
@@ -139,12 +139,12 @@ The following example lists the created artifact name and its description that i
 ## See Also<a name="API_ListCreatedArtifacts_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListCreatedArtifacts) 

@@ -2,6 +2,9 @@
 
 Migration Hub uses the service\-linked role named **AWSServiceRoleForMigrationHubSMSAccess** – Allows AWS Server Migration Service \(AWS SMS\) to send migration tracking information from any supported AWS Region to Migration Hub in US West \(Oregon\)\.
 
+**Warning**  
+As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.
+
 ## Service\-Linked Role Permissions for Migration Hub<a name="service-linked-role-permissions-sms-service-role"></a>
 
 The AWSServiceRoleForMigrationHubSMSAccess service\-linked role trusts the following services to assume the role:

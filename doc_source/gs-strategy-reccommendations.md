@@ -1,0 +1,3 @@
+# Strategy Recommendations<a name="gs-strategy-reccommendations"></a>
+
+Migration Hub Strategy Recommendations helps you plan migration and modernization initiatives by offering migration and modernization strategy recommendations for viable transformation paths for your applications\. For more information about Strategy Recommendations, see [What is Migration Hub Strategy Recommendations?](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/what-is-mhub-strategy.html)\.

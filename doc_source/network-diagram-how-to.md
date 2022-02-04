@@ -10,10 +10,6 @@ This section describes how to use the network diagram in Migration Hub\.
 
 1. Choose **Network**\. The icon for the server you choose is centered in the network diagram\. Connections fan out from the center server to servers that are directly connected to the server you choose\.
 
-The following screenshot shows the parts of the network diagram\.
-
-![\[The Migration Hub network diagram console is divided into three panes: toolbar, diagram, and the server detail/selected server pane.\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/adm-net-diagram-console.png)
-
 The network diagram console is divided into three panes: toolbar, diagram, and the server detail/selected server list pane\.
 
 The following topics describe the network diagram console panes\.
@@ -32,15 +28,12 @@ The toolbar icons are described in the following table\.
 
 | Icon | Name | Description | 
 | --- | --- | --- | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/caret-left-filled.png) ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/caret-right-filled.png)  |  Collapse toolbar Expand toolbar  |  To collapse the toolbar, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/caret-left-filled.png)\. To expand the toolbar, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/caret-right-filled.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/settings.png)  |  Settings  |  To change your settings, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/settings.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/filter.png)  |  Filters  |  To filter server connections, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/filter.png) and then clear the check box next to each port number that you do not want to display connections for\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom_in.png)  |  Zoom in  |  To zoom in on the diagram, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom_in.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom_out.png)  |  Zoom out  |  To zoom out, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom_out.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom-to-fit-icon.png)  |  Zoom to fit  |  To zoom to fit the entire diagram in the current view, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/zoom-to-fit-icon.png)\.  | 
 |  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/full-view-icon.png)  |  View full screen  |  To view the diagram full screen, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/full-view-icon.png)\.   | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/mouse-icon.png)  |  Opens **Interactive** dialog  |  To show ways to interact with the diagram, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/mouse-icon.png)\.  | 
-|  ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/key-icon.png)  |  Show legend  |  To show the diagram icon legend, choose ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/migrationhub/latest/ug/images/key-icon.png)\.  | 
 
 ## Diagram<a name="network-diagram-pane"></a>
 
@@ -68,11 +61,11 @@ You can search for servers to add to the diagram by searching by hostname or by 
 
 **To search for servers to add to the network diagram**
 
-1. Choose **Hostname** or **IP address** from the dropdown next to the search box at the top of the diagram\. 
+1. Choose the search icon on the toolbar, and then choose **Hostname** or **IP address**\.
 
-1. Type the criteria for your search in the search box, and then press **Enter**\. 
+1. Type the criteria for your search in the search box\. 
 
-   For example, to search for servers that contain **IAM ** in their hostname, enter **IAM**, and then press **Enter**\. Or, enter **0\.0\.0\. ** to search for servers that contain **0\.0\.0\. ** in their IP address\.
+   For example, to search for servers that contain **IAM** in their hostname, enter **IAM**\. Or, enter **0\.0\.0\.** to search for servers that contain **0\.0\.0\. ** in their IP address\.
 
 1. From the result, select the servers to add to the diagram, and then choose **\+** to add them to the diagram\. 
 
@@ -96,10 +89,10 @@ To see details about a server on the diagram, choose the server icon\. Details a
 
 You can use the following options to select servers from the network diagram:
 + On the network diagram, choose a server node icon\. Details about the server show in the server details pane, where you choose **Select server**\.
-+ On the network diagram, open the context \(right\-click\) menu on the server node icon, and then choose **Select server** from the dropdown\.
++ On the network diagram, open the context \(right\-click\) menu on the server node icon, and then choose **Select server** from the dropdown list\.
 + Choose **Select all** to select all the servers for grouping that are in your diagram\. Only the servers with the Discovery Agent running on them are selected\.
-+ Hold **shift** to select/unselect multiple servers at the same time\.
++ Hold **shift** to select multiple servers at the same time\.
 
 Selected servers are shown in a list in the same pane as the server details\. You can toggle back and forth between the server details view and the selected server list view by choosing the server icon\. 
 
-After you select one or more servers, you can create an application, or add to an existing one, by choosing **Group as application**\. You can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu\. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**\. For more information, see [Grouping servers as applications from the network diagram](discovery-wt-discover.md#discovery-wt-group-as-applications-net-diagram)\.
+After you select one or more servers, you can create an application, or add to an existing one, by choosing **Group as application**\. You can add a descriptive tag to the selected servers by choosing **Add tag** from the **Actions ** menu\. Doing so shows a dialog box where you can type a value for **Key**, and optionally a value for **Value**\. For more information, see [Step 3: Group servers as applicationsStep 3: Group servers](gs-new-user-discovery.md#gs-discovery-group-as-applications)\.

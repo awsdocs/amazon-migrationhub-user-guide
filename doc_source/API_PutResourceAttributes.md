@@ -4,7 +4,7 @@ Provides identifying details of the resource being migrated so that it can be as
 
 **Important**  
 Keep in mind that subsequent calls to PutResourceAttributes will override previously stored attributes\. For example, if it is first called with a MAC address, but later, it is desired to *add* an IP address, it will then be required to call it with *both* the IP and MAC addresses to prevent overriding the MAC address\.
-Note the instructions regarding the special use case of the [ `ResourceAttributeList` ](https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html#migrationhub-PutResourceAttributes-request-ResourceAttributeList) parameter when specifying any "VM" related value\.
+Note the instructions regarding the special use case of the [https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html#migrationhub-PutResourceAttributes-request-ResourceAttributeList](https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html#migrationhub-PutResourceAttributes-request-ResourceAttributeList) parameter when specifying any "VM" related value\.
 
 **Note**  
 Because this is an asynchronous call, it will always return 200, whether an association occurs or not\. To confirm if an association was found based on the provided details, call `ListDiscoveredResources`\.
@@ -29,31 +29,31 @@ Because this is an asynchronous call, it will always return 200, whether an asso
 
 The request accepts the following data in JSON format\.
 
- ** [ DryRun ](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-DryRun"></a>
+ ** [DryRun](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [ MigrationTaskName ](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-MigrationTaskName"></a>
+ ** [MigrationTaskName](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** [ ProgressUpdateStream ](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-ProgressUpdateStream"></a>
+ ** [ProgressUpdateStream](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
 Pattern: `[^/:|\000-\037]+`   
 Required: Yes
 
- ** [ ResourceAttributeList ](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-ResourceAttributeList"></a>
+ ** [ResourceAttributeList](#API_PutResourceAttributes_RequestSyntax) **   <a name="migrationhub-PutResourceAttributes-request-ResourceAttributeList"></a>
 Information about the resource that is being migrated\. This data will be used to map the task to a resource in the Application Discovery Service repository\.  
 Takes the object array of `ResourceAttribute` where the `Type` field is reserved for the following values: `IPV4_ADDRESS | IPV6_ADDRESS | MAC_ADDRESS | FQDN | VM_MANAGER_ID | VM_MANAGED_OBJECT_REFERENCE | VM_NAME | VM_PATH | BIOS_ID | MOTHERBOARD_SERIAL_NUMBER` where the identifying value can be a string up to 256 characters\.
 + If any "VM" related value is set for a `ResourceAttribute` object, it is required that `VM_MANAGER_ID`, as a minimum, is always set\. If `VM_MANAGER_ID` is not set, then all "VM" fields will be discarded and "VM" fields will not be used for matching the migration task to a server in Application Discovery Service repository\. See the [Example](https://docs.aws.amazon.com/migrationhub/latest/ug/API_PutResourceAttributes.html#API_PutResourceAttributes_Examples) section below for a use case of specifying "VM" related values\.
 +  If a server you are trying to match has multiple IP or MAC addresses, you should provide as many as you know in separate type/value pairs passed to the `ResourceAttributeList` parameter to maximize the chances of matching\.
-Type: Array of [ ResourceAttribute ](API_ResourceAttribute.md) objects  
+Type: Array of [ResourceAttribute](API_ResourceAttribute.md) objects  
 Array Members: Minimum number of 1 item\. Maximum number of 100 items\.  
 Required: Yes
 
@@ -132,12 +132,12 @@ In this particular example, the user wants to define the resource type by `VM_NA
 ## See Also<a name="API_PutResourceAttributes_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/PutResourceAttributes) 

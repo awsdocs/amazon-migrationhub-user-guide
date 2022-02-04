@@ -26,37 +26,37 @@ Notifies Migration Hub of the current status, progress, or other detail regardin
 
 The request accepts the following data in JSON format\.
 
- ** [ DryRun ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-DryRun"></a>
+ ** [DryRun](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [ MigrationTaskName ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-MigrationTaskName"></a>
+ ** [MigrationTaskName](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** [ NextUpdateSeconds ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-NextUpdateSeconds"></a>
+ ** [NextUpdateSeconds](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-NextUpdateSeconds"></a>
 Number of seconds after the UpdateDateTime within which the Migration Hub can expect an update\. If Migration Hub does not receive an update within the specified interval, then the migration task will be considered stale\.  
 Type: Integer  
 Valid Range: Minimum value of 0\.  
 Required: Yes
 
- ** [ ProgressUpdateStream ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-ProgressUpdateStream"></a>
+ ** [ProgressUpdateStream](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
 Pattern: `[^/:|\000-\037]+`   
 Required: Yes
 
- ** [ Task ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-Task"></a>
+ ** [Task](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-Task"></a>
 Information about the task's progress and status\.  
-Type: [ Task ](API_Task.md) object  
+Type: [Task](API_Task.md) object  
 Required: Yes
 
- ** [ UpdateDateTime ](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-UpdateDateTime"></a>
+ ** [UpdateDateTime](#API_NotifyMigrationTaskState_RequestSyntax) **   <a name="migrationhub-NotifyMigrationTaskState-request-UpdateDateTime"></a>
 The timestamp when the task was gathered\.  
 Type: Timestamp  
 Required: Yes
@@ -128,12 +128,12 @@ The following example communicates the latest progress and updates to Migration 
 ## See Also<a name="API_NotifyMigrationTaskState_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyMigrationTaskState) 

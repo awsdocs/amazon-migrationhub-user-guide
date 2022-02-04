@@ -18,19 +18,19 @@ This API is a prerequisite to calling the `NotifyMigrationTaskState` API as the 
 
 The request accepts the following data in JSON format\.
 
- ** [ DryRun ](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-DryRun"></a>
+ ** [DryRun](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [ MigrationTaskName ](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-MigrationTaskName"></a>
+ ** [MigrationTaskName](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** [ ProgressUpdateStream ](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-ProgressUpdateStream"></a>
+ ** [ProgressUpdateStream](#API_ImportMigrationTask_RequestSyntax) **   <a name="migrationhub-ImportMigrationTask-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\. >  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -97,12 +97,12 @@ The following example registers a new migration task with Migration Hub identifi
 ## See Also<a name="API_ImportMigrationTask_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ImportMigrationTask) 

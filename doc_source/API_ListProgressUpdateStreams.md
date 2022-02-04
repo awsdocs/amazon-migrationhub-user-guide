@@ -15,13 +15,13 @@ Lists progress update streams associated with the user account making this call\
 
 The request accepts the following data in JSON format\.
 
- ** [ MaxResults ](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-MaxResults"></a>
+ ** [MaxResults](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-MaxResults"></a>
 Filter to limit the maximum number of results to list per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 100\.  
 Required: No
 
- ** [ NextToken ](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-NextToken"></a>
+ ** [NextToken](#API_ListProgressUpdateStreams_RequestSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
@@ -47,15 +47,15 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** [ NextToken ](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-NextToken"></a>
+ ** [NextToken](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-NextToken"></a>
 If there are more streams created than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
 Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$` 
 
- ** [ ProgressUpdateStreamSummaryList ](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-ProgressUpdateStreamSummaryList"></a>
+ ** [ProgressUpdateStreamSummaryList](#API_ListProgressUpdateStreams_ResponseSyntax) **   <a name="migrationhub-ListProgressUpdateStreams-response-ProgressUpdateStreamSummaryList"></a>
 List of progress update streams up to the max number of results passed in the input\.  
-Type: Array of [ ProgressUpdateStreamSummary ](API_ProgressUpdateStreamSummary.md) objects
+Type: Array of [ProgressUpdateStreamSummary](API_ProgressUpdateStreamSummary.md) objects
 
 ## Errors<a name="API_ListProgressUpdateStreams_Errors"></a>
 
@@ -128,12 +128,12 @@ The following example lists the progress update streams associated with the acco
 ## See Also<a name="API_ListProgressUpdateStreams_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListProgressUpdateStreams) 

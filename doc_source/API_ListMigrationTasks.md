@@ -19,20 +19,20 @@ Lists all, or filtered by resource name, migration tasks associated with the use
 
 The request accepts the following data in JSON format\.
 
- ** [ MaxResults ](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-MaxResults"></a>
+ ** [MaxResults](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-MaxResults"></a>
 Value to specify how many results are returned per page\.  
 Type: Integer  
 Valid Range: Minimum value of 1\. Maximum value of 100\.  
 Required: No
 
- ** [ NextToken ](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-NextToken"></a>
+ ** [NextToken](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-NextToken"></a>
 If a `NextToken` was returned by a previous call, there are more results available\. To retrieve the next page of results, make the call again using the returned token in `NextToken`\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
 Pattern: `^[a-zA-Z0-9\/\+\=]{0,2048}$`   
 Required: No
 
- ** [ ResourceName ](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-ResourceName"></a>
+ ** [ResourceName](#API_ListMigrationTasks_RequestSyntax) **   <a name="migrationhub-ListMigrationTasks-request-ResourceName"></a>
 Filter migration tasks by discovered resource name\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
@@ -63,11 +63,11 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** [ MigrationTaskSummaryList ](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-MigrationTaskSummaryList"></a>
+ ** [MigrationTaskSummaryList](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-MigrationTaskSummaryList"></a>
 Lists the migration task's summary which includes: `MigrationTaskName`, `ProgressPercent`, `ProgressUpdateStream`, `Status`, and the `UpdateDateTime` for each task\.  
-Type: Array of [ MigrationTaskSummary ](API_MigrationTaskSummary.md) objects
+Type: Array of [MigrationTaskSummary](API_MigrationTaskSummary.md) objects
 
- ** [ NextToken ](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-NextToken"></a>
+ ** [NextToken](#API_ListMigrationTasks_ResponseSyntax) **   <a name="migrationhub-ListMigrationTasks-response-NextToken"></a>
 If there are more migration tasks than the max result, return the next token to be passed to the next call as a bookmark of where to start from\.  
 Type: String  
 Length Constraints: Minimum length of 0\. Maximum length of 2048\.  
@@ -141,12 +141,12 @@ The following example lists a summary of the migration tasks associated with the
 ## See Also<a name="API_ListMigrationTasks_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ListMigrationTasks) 

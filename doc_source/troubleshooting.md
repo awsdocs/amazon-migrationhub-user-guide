@@ -36,7 +36,7 @@ If you are not seeing your migration updates associated with an application, it 
 + Check whether all your servers have been grouped into an application\. See [steps to group servers into applications](migrate-wt-migrate.md#migrate-wt-group-as-applications)\.
 
 ### Update Status<a name="update-status"></a>
-+ The application details page requires you to refresh the page in order to see the latest status\. See [steps to track status of migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
++ The application details page requires you to refresh the page to see the latest status\. See [steps to track status of migrations](migrate-wt-track.md)\.
 
 ### Update and Server Mapping<a name="update-mapping"></a>
 + Check whether the update is present on **Updates** page\.

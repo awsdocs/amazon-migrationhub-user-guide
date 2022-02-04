@@ -5,10 +5,11 @@ AWS Migration Hub \(Migration Hub\) provides a single place to discover your exi
 Migration Hub gives you the choice to start migrating right away and group servers while migration is underway, or to first discover servers and then group them into applications\. Either way, you can migrate each server in an application and track progress from each tool in the AWS Migration Hub\.
 
 Migration Hub supports migration status updates from the following tools:
-+ **AWS Application Migration Service \(AWS MGN\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about AWS MGN, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [AWS MGN Documentation](https://docs.aws.amazon.com/mgn/index.html )\.  
++ **AWS Application Migration Service \(Application Migration Service\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about Application Migration Service, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Application Migration Service Documentation](https://docs.aws.amazon.com/mgn/index.html )\. 
 + **AWS Server Migration Service \(AWS SMS\)**–For more information about AWS SMS, see [AWS Server Migration Service](http://aws.amazon.com/server-migration-service/) and [AWS SMS Documentation](https://docs.aws.amazon.com/server-migration-service/index.html)\.
+**Warning**  
+As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.
 + **AWS Database Migration Service \(AWS DMS\)**–For more information about AWS DMS, see [AWS Database Migration Service](http://aws.amazon.com/dms/) and [AWS DMS Documentation](https://docs.aws.amazon.com/dms/index.html)\.
-+ The **ATADATA ATAmotion partner tool**–For more information about ATAmotion, see [AWS Migration Hub Partners](http://aws.amazon.com/migration-hub/partners/)\.
 
 To access these tools, open the AWS Migration Hub console at [https://console\.aws\.amazon\.com/migrationhub/](https://console.aws.amazon.com/migrationhub/), and in the navigation pane under **Migrate**, choose **Tools**\. \(You must first have an AWS account and credentials to access the Migration Hub console\. For information about signing up for AWS, see [Setting up](setting-up.md)\.\)
 
@@ -18,8 +19,7 @@ On your first use of the AWS Migration Hub console, you’re prompted to select 
 
  If you are a first\-time user of AWS Migration Hub, we recommend that you read the following sections in order:
 +  [Getting started](getting-started.md) 
-+  [Home Region](home-region.md) 
-+  [Walkthroughs](walkthroughs.md) 
++  [The AWS Migration Hub home Region](home-region.md) 
 
 To learn about sending status to or querying status from AWS Migration Hub using the AWS SDK or AWS CLI, see the following API references:
 +  [AWS Migration Hub API](api-reference.md) 
@@ -27,5 +27,3 @@ To learn about sending status to or querying status from AWS Migration Hub using
 
 **Note**  
 Only your migration tracking data is stored in your home region\. You can migrate into any AWS Region that is supported by the migration tool that you use\.
-
-If you have a tool that you want to integrate with [AWS Migration Hub](https://console.aws.amazon.com/migrationhub/home), contact us by choosing **Feedback** in the lower left\-hand corner of the footer in the AWS Migration Hub console\. For all support issues, contact us [here](http://aws.amazon.com/contact-us/)\.

@@ -14,7 +14,7 @@ Based on your business needs, you can choose additional preferences such as bill
 ## Prerequisites<a name="ec2-recommendation-prerequisites"></a>
 
 Before you can get Amazon EC2 instance recommendations, you must have data about your on\-premises servers in Migration Hub\. This data can come from the discovery tools \(Discovery Connector or Discovery Agent\) or from Migration Hub import\. For more information on using these tools and features, see the following links:
-+ [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) – This allows you to import details of your on\-premises environment directly into Migration Hub using a pre\-defined CSV template\.
++ [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) – This allows you to import details of your on\-premises environment directly into Migration Hub using a predefined CSV template\.
 + [Discovery Connector](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-connector.html) – This is a VMware appliance that can collect information only about VMware virtual machines \(VMs\)\.
 + [Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) – This is AWS software that you install on on\-premises servers and VMs targeted for discovery and migration\.
 
@@ -40,13 +40,13 @@ In the **Export Amazon EC2 instance recommendations** page of the Migration Hub 
 
 1. Open a browser and sign into the Migration Hub console at https://console\.aws\.amazon\.com/migrationhub\.
 
-1. On the left\-side navigation, from **Assess**, choose **Amazon EC2 instance recommendations**\.
+1. In the navigation pane, under **Assess**, choose **Amazon EC2 instance recommendations**\.
 
-1. Choose your Amazon EC2 instance size preferences for your discovered servers\. You can choose one of the following options\.
+1. Choose your Amazon EC2 instance sizing preference for your discovered servers\. You can choose one of the following options\.
+   + **Maximum utilization** – This option sizes your instance recommendations based off of the maximum \(peak\) CPU and RAM utilization data that was collected by the discovery tools\.
    + **Current server specification** – You have the two options of **Direct match** or **Custom match**\.
      + **Custom match** – Scales the CPU and RAM specifications for your instances relative to the collected specification data\. For example setting CPU to 50% and RAM to 60% will generate recommendations that assume 50% utilization of your discovered CPU usage and 60% utilization of your total RAM usage\.
      + **Direct match** – Matches the recommendations based off of the exact CPU and RAM specification data collected by the discovery tools you used to get the data into Migration Hub\.
-   + **Maximum utilization** – This option sizes your instance recommendations based off of the maximum \(peak\) CPU and RAM utilization data that was collected by the discovery tools\.
    + **Average utilization** – This option sizes your instance recommendations based off of the average CPU and RAM utilization data that was imported or collected by the discovery tools\.
    + **Percentile of utilization** – If you used an AWS Application Discovery Agent or an AWS Agentless Discovery Connector to collect your server data, you can generate your recommendations using percentiles of time\-series utilization data\. Percentile\-based recommendations are only generated for servers with data collected by a Discovery Connector from March 12th, 2019 onwards, or by a Discovery Agent\.
 

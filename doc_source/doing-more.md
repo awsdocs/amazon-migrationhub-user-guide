@@ -15,7 +15,7 @@ In order to better understand how Migration Hub helps you monitor progress of a 
 + Resources \(for example, servers\)
 + Updates
 
-Migration tools like AWS SMS, AWS DMS, and integrated partners' tools send updates to AWS Migration Hub\. These updates include information about how a particular resource migration \(for example, server or database\) is progressing\. One or more resources are grouped together to make an application\. Each application has a dedicated page in Migration Hub where you can go to see the updates for all the resources in the application\.
+Migration tools like AWS Application Migration Service \(Application Migration Service\), AWS Database Migration Service \(AWS DMS\), and integrated partners' tools send updates to AWS Migration Hub\. These updates include information about how a particular resource migration \(for example, server or database\) is progressing\. One or more resources are grouped together to make an application\. Each application has a dedicated page in Migration Hub where you can go to see the updates for all the resources in the application\.
 
 When Migration Hub receives an update, it is displayed on the updates page\. There can be a delay of up to five minutes for the initial update to appear in the updates page\.
 
@@ -25,7 +25,7 @@ If you started performing discovery using AWS discovery tools, the servers list 
 
 Sometimes, when using AWS discovery tools, the automatic mapping of migration updates to servers can be incorrect\. You can see updates and their mappings on the **Updates** page and can correct the mapping by choosing **Edit**\.
 
-See Step 2\.a in *To determine if a migration update must be manually mapped to a discovered server* procedures below\. If you have to frequently correct mappings after performing discovery, please contact [AWS Support](https://aws.amazon.com/contact-us/)\.
+See Step 2\.a in *To determine if a migration update must be manually mapped to a discovered server* procedures below\. If you have to frequently correct mappings after performing discovery, contact [AWS Support](https://aws.amazon.com/contact-us/)\.
 
 **To determine if a migration update must be manually mapped to a discovered server**
 
@@ -33,13 +33,13 @@ See Step 2\.a in *To determine if a migration update must be manually mapped to 
 
 1. Verify if the **Mapped servers** column is populated for every row of migration updates\.
 
-   1. If the **Mapped servers** column is populated for every row of migration updates, this means auto\-mapping was supported by the migration tool and manual mapping is not required\. *You can edit the server mapping by choosing **Edit** next to the server name\.*
+   1. If the **Mapped servers** column is populated for every row of migration updates, this means auto\-mapping was supported by the migration tool and manual mapping is not required\. To edit the server mapping, select the server, and then choose **Edit server mapping**\.
 
-   1. If one or more rows of the **Mapped servers** columns is *not* populated and there is a **Map** button present in that row's **Action** column, this is an indication that manual mapping is required\. Proceed to the next set of procedures\.
+   1. If one or more rows of the **Mapped servers** columns is *not* populated, this is an indication that manual mapping is required\. Proceed to the next set of procedures\.
 
 ### Tracking when you migrate without performing discovery<a name="updates-tracking-wt-no-disco"></a>
 
-If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server corresponding to the migration update to the servers list and automatically map the update to the server\. You can group servers to applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. See, [Group servers as applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track status of migrations](migrate-wt-track.md#migrate-wt-track-app-status)\.
+If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server that corresponds with the migration update to the servers list and automatically map the update to the server\. You can group servers as applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. For more information, see [](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track the status of your migrations in Migration Hub](migrate-wt-track.md)\.
 
 ### Troubleshooting and manually mapping migration updates<a name="updates-tracking-wt-troubleshooting"></a>
 

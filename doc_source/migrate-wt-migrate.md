@@ -1,18 +1,13 @@
-# Phase 1: Migrate<a name="migrate-wt-migrate"></a>
+# Migrate using Migration Hub migration tools<a name="migrate-wt-migrate"></a>
 
-The migrate phase has the following steps: 
-+ Connect migration tools to Migration Hub\.
-+ Migrate using the connected migration tools\.
-+ Group servers as applications\.
+This section describes how to use the AWS Migration Hub to migrate your on\-premises servers and application resources to AWS and how to track the migration\.
 
 **Topics**
-+ [Migrate Step 1: Connect migration tools to Migration Hub](#migrate-wt-auth-migrate-tools)
-+ [Migrate Step 2: Migrate using the connected migration tools](#migrate-wt-migrate-using-tools)
-+ [Migrate Step 3: Group servers as applications](#migrate-wt-group-as-applications)
++ [Step 1: Connect migration tools to Migration Hub\.](#migrate-wt-auth-migrate-tools)
++ [Step 2: Migrate using the connected migration tools](#migrate-wt-migrate-using-tools)
++ [Step 3: Group servers as applications](#migrate-wt-group-as-applications)
 
-## Migrate Step 1: Connect migration tools to Migration Hub<a name="migrate-wt-auth-migrate-tools"></a>
-
-If you landed here from Step 4 of [Get started migrating](gs-new-user-migration.md), the following steps show you how to authorize a migration tool and begin migrating\. 
+## Step 1: Connect migration tools to Migration Hub\.<a name="migrate-wt-auth-migrate-tools"></a>
 
 ### <a name="migrate-step-1"></a>
 
@@ -23,7 +18,7 @@ The table following lists the supported tools\.
 
 | Resource type | Migration tool | 
 | --- | --- | 
-|  Server  |  **AWS Application Migration Service \(AWS MGN\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about AWS MGN, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Using the AWS Migration Hub with MGN](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.  **AWS Server Migration Service \(AWS SMS\)**–For more information about AWS SMS, see [AWS Server Migration Service](http://aws.amazon.com/server-migration-service/) and [AWS SMS Documentation](https://docs.aws.amazon.com/server-migration-service/index.html)\. The **ATADATA ATAmotion partner tool**–For more information about ATAmotion, see [AWS Migration Hub Partners](http://aws.amazon.com/migration-hub/partners/)\.  | 
+|  Server  |  **AWS Application Migration Service \(Application Migration Service\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about Application Migration Service, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Application Migration Service Documentation](https://docs.aws.amazon.com/mgn/index.html )\.  **AWS Server Migration Service \(AWS SMS\)**–For more information about AWS SMS, see [AWS Server Migration Service](http://aws.amazon.com/server-migration-service/) and [AWS SMS Documentation](https://docs.aws.amazon.com/server-migration-service/index.html)\.  As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.   | 
 | Database |  **AWS Database Migration Service \(AWS DMS\)**–For more information about AWS DMS, see [AWS Database Migration Service](http://aws.amazon.com/dms/) and [AWS DMS Documentation](https://docs.aws.amazon.com/dms/index.html)\.  | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
@@ -45,7 +40,7 @@ The following steps walk you through connecting \(authorizing\) your selected mi
 **Note**  
 Note that if you are using API's or do not want to authorize through Migration Hub's console, you can learn about manual role creation in [New User IAM Setup](new-customer-setup.md)\.
 
-## Migrate Step 2: Migrate using the connected migration tools<a name="migrate-wt-migrate-using-tools"></a>
+## Step 2: Migrate using the connected migration tools<a name="migrate-wt-migrate-using-tools"></a>
 
 ### <a name="migrate-step-2"></a>
 
@@ -59,21 +54,21 @@ The following steps walk you through the migration of a previously defined appli
 
 1. When you have been linked to either the tool's console or website, follow the migration instructions for your selected migration tool as migration happens outside of Migration Hub\.
 
-1. After your application's migration has started, return to Migration Hub\.
+1. After your application's migration has started, return to the Migration Hub console\.
 
-## Migrate Step 3: Group servers as applications<a name="migrate-wt-group-as-applications"></a>
+## Step 3: Group servers as applications<a name="migrate-wt-group-as-applications"></a>
 
-These steps walk you through the process of grouping servers as applications when directly migrating with a migration tool without performing discovery first\.
+The following steps walk you through the process of grouping servers as applications when directly migrating with a migration tool without performing discovery first\. \(You already did this, if you first performed discovery as described in [Discovering on\-premises resources using AWS discovery tools](gs-new-user-discovery.md) before migrating\.\)
 
-When the migration tool has started, you will see the servers listed in Migration Hub from the migration updates sent from the migration tool\. You can select the servers and group them as applications\. Keep in mind that the server information communicated to Migration Hub from the migration tool is not as detailed as what is collected from a discovery tool\.
+After the migration tool has started, you'll see the servers listed in Migration Hub from the migration updates sent from the migration tool\. You can select the servers and group them as applications\. Keep in mind that the server information communicated to Migration Hub from the migration tool is not as detailed as what is collected from a discovery tool\.
 
-The following steps will show you how to select the server or servers you want to group for your application, how to create your application and name it, and how to add identifying tags\.
+The following steps show you how to select the server or servers you want to group for your application, how to create your application and name it, and how to add identifying tags\.
 
 **To group servers into a new or existing application**
 
-1. In the Migration Hub console navigation pane, select **Servers**\.
+1. In the Migration Hub console navigation pane, under **Discover**, choose **Servers**\.
 
-1. In the severs list, select the checkbox for each of the servers you want to group into a new or existing application\.
+1. In the severs list, select each of the servers that you want to group into a new or existing application\.
 
    1. You can also search and filter on any of the criteria specified in the headers of the server list\. Click inside the search bar and choose an item from the dropdown, then choose an operator from the next dropdown, and then type in your criteria\.
 
@@ -91,5 +86,5 @@ The following steps will show you how to select the server or servers you want t
 
 **Next steps**
 
-Once you have completed the three steps of the Migrate phase, proceed to
-+ [Phase 2: Track](migrate-wt-track.md)
+After you complete the migration steps, proceed to
++ [Track the status of your migrations in Migration Hub](migrate-wt-track.md)

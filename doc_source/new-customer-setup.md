@@ -101,6 +101,9 @@ The AWS Migration Hub console creates the `migrationhub-discovery` role that is 
 
 Roles and policies are needed for each migration tool in order for the Migration Hub to receive notifications from migration tools\. These permissions allow AWS services like AWS Server Migration Service and AWS Database Migration Service to send updates to Migration Hub\. The following procedures described how to create managed policies to use with AWS SMS and AWS DMS\.
 
+**Warning**  
+As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.
+
 #### AWS Server Migration Service \(AWS SMS\)<a name="sms-managed"></a>
 
 **To create the `migrationhub-sms` role**

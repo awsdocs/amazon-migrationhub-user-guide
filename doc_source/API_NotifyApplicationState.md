@@ -17,25 +17,25 @@ Sets the migration state of an application\. For a given application identified 
 
 The request accepts the following data in JSON format\.
 
- ** [ ApplicationId ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-ApplicationId"></a>
+ ** [ApplicationId](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-ApplicationId"></a>
 The configurationId in Application Discovery Service that uniquely identifies the grouped application\.  
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 1600\.  
 Pattern: `^.{1,1600}$`   
 Required: Yes
 
- ** [ DryRun ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
+ ** [DryRun](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [ Status ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-Status"></a>
+ ** [Status](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-Status"></a>
 Status of the application \- Not Started, In\-Progress, Complete\.  
 Type: String  
 Valid Values:` NOT_STARTED | IN_PROGRESS | COMPLETED`   
 Required: Yes
 
- ** [ UpdateDateTime ](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-UpdateDateTime"></a>
+ ** [UpdateDateTime](#API_NotifyApplicationState_RequestSyntax) **   <a name="migrationhub-NotifyApplicationState-request-UpdateDateTime"></a>
 The timestamp when the application state changed\.  
 Type: Timestamp  
 Required: No
@@ -115,12 +115,12 @@ $
 ## See Also<a name="API_NotifyApplicationState_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/NotifyApplicationState) 

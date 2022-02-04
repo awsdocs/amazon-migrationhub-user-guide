@@ -23,24 +23,24 @@ Associates a created artifact of an AWS cloud resource, the target receiving the
 
 The request accepts the following data in JSON format\.
 
- ** [ CreatedArtifact ](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-CreatedArtifact"></a>
+ ** [CreatedArtifact](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-CreatedArtifact"></a>
 An ARN of the AWS resource related to the migration \(e\.g\., AMI, EC2 instance, RDS instance, etc\.\)   
-Type: [ CreatedArtifact ](API_CreatedArtifact.md) object  
+Type: [CreatedArtifact](API_CreatedArtifact.md) object  
 Required: Yes
 
- ** [ DryRun ](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-DryRun"></a>
+ ** [DryRun](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-DryRun"></a>
 Optional boolean flag to indicate whether any effect should take place\. Used to test if the caller has permission to make the call\.  
 Type: Boolean  
 Required: No
 
- ** [ MigrationTaskName ](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-MigrationTaskName"></a>
+ ** [MigrationTaskName](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-MigrationTaskName"></a>
 Unique identifier that references the migration task\. *Do not store personal data in this field\.*   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 256\.  
 Pattern: `[^:|]+`   
 Required: Yes
 
- ** [ ProgressUpdateStream ](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-ProgressUpdateStream"></a>
+ ** [ProgressUpdateStream](#API_AssociateCreatedArtifact_RequestSyntax) **   <a name="migrationhub-AssociateCreatedArtifact-request-ProgressUpdateStream"></a>
 The name of the ProgressUpdateStream\.   
 Type: String  
 Length Constraints: Minimum length of 1\. Maximum length of 50\.  
@@ -115,12 +115,12 @@ The following example associates an AWS resource to the migration task identifie
 ## See Also<a name="API_AssociateCreatedArtifact_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-+  [ AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
-+  [ AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/AssociateCreatedArtifact) 
