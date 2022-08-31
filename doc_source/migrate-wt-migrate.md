@@ -3,22 +3,22 @@
 This section describes how to use the AWS Migration Hub to migrate your on\-premises servers and application resources to AWS and how to track the migration\.
 
 **Topics**
-+ [Step 1: Connect migration tools to Migration Hub\.](#migrate-wt-auth-migrate-tools)
++ [Step 1: Connect migration tools to Migration Hub](#migrate-wt-auth-migrate-tools)
 + [Step 2: Migrate using the connected migration tools](#migrate-wt-migrate-using-tools)
 + [Step 3: Group servers as applications](#migrate-wt-group-as-applications)
 
-## Step 1: Connect migration tools to Migration Hub\.<a name="migrate-wt-auth-migrate-tools"></a>
+## Step 1: Connect migration tools to Migration Hub<a name="migrate-wt-auth-migrate-tools"></a>
 
 ### <a name="migrate-step-1"></a>
 
-Migration happens outside AWS Migration Hub using AWS migration tools or partner migration tools\. To access these tools, in the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
+Migration happens outside AWS Migration Hub using AWS migration tools\. To access these tools, in the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
 The table following lists the supported tools\.
 
 
 | Resource type | Migration tool | 
 | --- | --- | 
-|  Server  |  **AWS Application Migration Service \(Application Migration Service\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about Application Migration Service, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Application Migration Service Documentation](https://docs.aws.amazon.com/mgn/index.html )\.  **AWS Server Migration Service \(AWS SMS\)**–For more information about AWS SMS, see [AWS Server Migration Service](http://aws.amazon.com/server-migration-service/) and [AWS SMS Documentation](https://docs.aws.amazon.com/server-migration-service/index.html)\.  As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.   | 
+|  Server  |  **AWS Application Migration Service \(Application Migration Service\)**–AWS Application Migration Service is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For more information about Application Migration Service, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Application Migration Service Documentation](https://docs.aws.amazon.com/mgn/index.html )\.   | 
 | Database |  **AWS Database Migration Service \(AWS DMS\)**–For more information about AWS DMS, see [AWS Database Migration Service](http://aws.amazon.com/dms/) and [AWS DMS Documentation](https://docs.aws.amazon.com/dms/index.html)\.  | 
 
 The preceding tools communicate directly to Migration Hub giving an aggregated view of their migrated progress and status so they can be tracked through Migration Hub\.
@@ -29,13 +29,11 @@ The following steps walk you through connecting \(authorizing\) your selected mi
 
 1. In the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
-1. Decide upon which AWS migration tool or integrated partners' tool to migrate your application\.
+1. Decide upon which AWS migration tool to use to migrate your application\.
 
 1. Choose **Connect** in the box to authorize the migration tool you selected to communicate with Migration Hub\. 
 
-   1. AWS migration tools utilize a one\-click authorization process that automatically adds the required AWS Identity and Access Management \(IAM\) permissions role once you choose **Connect**\.
-
-   1. Integrated partners' tools take you to their website when you choose **Connect** where you will be instructed on how to complete authorization\.
+   AWS migration tools utilize a one\-click authorization process that automatically adds the required AWS Identity and Access Management \(IAM\) permissions role once you choose **Connect**\.
 
 **Note**  
 Note that if you are using API's or do not want to authorize through Migration Hub's console, you can learn about manual role creation in [New User IAM Setup](new-customer-setup.md)\.
@@ -50,9 +48,9 @@ The following steps walk you through the migration of a previously defined appli
 
 1. In the Migration Hub console navigation pane under **Migrate**, choose **Tools**\.
 
-1. If you connected \(authorized\) an AWS migration tool, choose the console link\. If you connected \(authorized\) an integrated partner's tool, choose the website link\.
+1. After you connect \(authorize\) an AWS migration tool, choose the console link for the tool\.
 
-1. When you have been linked to either the tool's console or website, follow the migration instructions for your selected migration tool as migration happens outside of Migration Hub\.
+1. After you link to the tool's console, follow the migration instructions for your selected migration tool as migration happens outside of Migration Hub\.
 
 1. After your application's migration has started, return to the Migration Hub console\.
 

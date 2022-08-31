@@ -11,7 +11,7 @@ Following, you can find information on how to troubleshoot issues for AWS Migrat
 ## My Migrations Do Not Appear in Migration Hub<a name="migs-do-not-appear-in-hub"></a>
 
 If you are not seeing your applications' migration status updates on the **Updates** page in Migration Hub, it could be due to one of the following reasons:
-+ You have not selected a home region or you are not currently viewing the home region console\.
++ You have not selected a home Region or you are not currently viewing the home Region console\.
 + Migration tools are not authorized to communicate with Migration Hub\.
 + You do not have the necessary policies and roles set up in IAM\.
 + Migration status mapping is incorrect or needs to be done manually\.
@@ -46,8 +46,8 @@ If you are not seeing your migration updates associated with an application, it 
 
 ## My API Call Failed<a name="api-call-failed-status"></a>
 + Check whether you called `GetHomeRegion` before your call, if required\.
-+ You can use the AWS Migration Hub home region APIs within your home region only\. API calls originating from outside your home region are rejected, except for the ability to register your agents and connectors\.
++ You can use the AWS Migration Hub home Region APIs within your home Region only\. API calls originating from outside your home Region are rejected, except for the ability to register your agents and collectors\.
 
 ## Errors Enabling Data Collection<a name="data-collection-errors"></a>
 
-Although you can register discovery agents and connectors outside of your AWS Migration Hub home region, you cannot start data collection outside the home region\. The Application Discovery Service `StartDataCollection` API call prevents you from enabling data collection outside the home region\. 
+Although you can register discovery agents and collectors outside of your AWS Migration Hub home Region, you cannot start data collection outside the home Region\. The Application Discovery Service `StartDataCollection` API call prevents you from enabling data collection outside the home Region\. 

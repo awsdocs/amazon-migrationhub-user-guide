@@ -17,6 +17,7 @@ All Migration Hub and AWS Application Discovery Service API commands must be cal
 + [Migrate to AWS using Migration Hub migration tools and tracking](gs-new-user-migration.md)
 + [Strategy Recommendations](gs-strategy-reccommendations.md)
 + [Refactor Spaces](gs-refactor-spaces.md)
++ [Migration Hub Orchestrator](gs-orchestrator.md)
 
 ## Assumptions<a name="gs-assumptions"></a>
 

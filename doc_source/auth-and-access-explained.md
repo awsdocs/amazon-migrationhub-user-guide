@@ -177,12 +177,11 @@ In addition, there are API\-specific permissions documented in [AWS Migration Hu
 
 #### AWS Managed \(Predefined\) Policies for AWS Migration Hub<a name="access-policy-examples-aws-managed"></a>
 
-AWS addresses many common use cases by providing standalone IAM policies that are created and administered by AWS\. These AWS managed policies grant necessary permissions for common use cases so that you can avoid having to investigate what permissions are needed\. 
+AWS addresses many common use cases by providing standalone IAM policies that are created and administered by AWS\. These AWS managed policies grant necessary permissions for common use cases so that you can avoid having to investigate what permissions are needed\.
 
 The following AWS managed policies, which you can attach to users in your account, are specific to Migration Hub and are grouped by use case scenario:
 + **AWSMigrationHubDiscoveryAccess** – Grants permission to allow the Migration Hub service to call Application Discovery Service\.
 + **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for a user who's not an administrator\.
-+ **AWSMigrationHubSMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Server Migration Service migration tool\.
 + **AWSMigrationHubDMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Database Migration Service migration tool\.
 
 **Note**  

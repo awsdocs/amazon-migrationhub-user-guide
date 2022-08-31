@@ -9,4 +9,3 @@ For information about other services that support service\-linked roles, see [AW
 **Topics**
 + [Using Roles to Connect Migration Hub to Application Discovery Service](using-service-linked-roles-discovery-service-role.md)
 + [Using Roles to Connect Migration Hub to AWS DMS](using-service-linked-roles-dms-service-role.md)
-+ [Using Roles to Connect Migration Hub to AWS SMS](using-service-linked-roles-sms-service-role.md)

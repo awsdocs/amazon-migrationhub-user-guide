@@ -4,13 +4,13 @@
 *****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
-Amazon's trademarks and trade dress may not be used in 
-     connection with any product or service that is not Amazon's, 
-     in any manner that is likely to cause confusion among customers, 
-     or in any manner that disparages or discredits Amazon. All other 
-     trademarks not owned by Amazon are the property of their respective
-     owners, who may or may not be affiliated with, connected to, or 
-     sponsored by Amazon.
+Amazon's trademarks and trade dress may not be used in
+connection with any product or service that is not Amazon's,
+in any manner that is likely to cause confusion among customers,
+or in any manner that disparages or discredits Amazon. All other
+trademarks not owned by Amazon are the property of their respective
+owners, who may or may not be affiliated with, connected to, or
+sponsored by Amazon.
 
 -----
 ## Contents
@@ -23,6 +23,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Track the status of your migrations in Migration Hub](migrate-wt-track.md)
    + [Strategy Recommendations](gs-strategy-reccommendations.md)
    + [Refactor Spaces](gs-refactor-spaces.md)
+   + [Migration Hub Orchestrator](gs-orchestrator.md)
 + [Migration Hub tracking, tagging, and console navigation tips](doing-more.md)
 + [The AWS Migration Hub home Region](home-region.md)
 + [Amazon EC2 instance recommendations](ec2-recommendations.md)
@@ -40,7 +41,6 @@ Amazon's trademarks and trade dress may not be used in
       + [Using Service-Linked Roles for Migration Hub](using-service-linked-roles.md)
          + [Using Roles to Connect Migration Hub to Application Discovery Service](using-service-linked-roles-discovery-service-role.md)
          + [Using Roles to Connect Migration Hub to AWS DMS](using-service-linked-roles-dms-service-role.md)
-         + [Using Roles to Connect Migration Hub to AWS SMS](using-service-linked-roles-sms-service-role.md)
    + [Logging and monitoring in AWS Migration Hub](logging-monitoring.md)
 + [AWS Migration Hub quotas](limits.md)
 + [Troubleshooting AWS Migration Hub](troubleshooting.md)

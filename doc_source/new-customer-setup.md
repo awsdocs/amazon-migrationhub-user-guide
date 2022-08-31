@@ -7,12 +7,11 @@ This section provides an overview of the four managed policies that can be used 
 The following AWS managed policies, which you can attach to users in your account, are specific to Migration Hub and are grouped by use case scenario:
 + **AWSMigrationHubDiscoveryAccess** – \(Included in the **migrationhub\-discovery** role\) – Grants permission to allow the Migration Hub service to call Application Discovery Service\.
 + **AWSMigrationHubFullAccess** – Grants access to the Migration Hub console and API/CLI for a user who's not an administrator\.
-+ **AWSMigrationHubSMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Server Migration Service migration tool\.
 + **AWSMigrationHubDMSAccess** – Grants permission for Migration Hub to receive notifications from the AWS Database Migration Service migration tool\.
 
 If you want to grant Migration Hub rights to non\-admin IAM users, then see [Migration Hub Service API and Console Managed Access](#api-console-access-managed)\.
 
-If you want to authorize \(that is, connect\) AWS migration tools, see [AWS Server Migration Service \(AWS SMS\)](#sms-managed) or [AWS Database Migration Service \(AWS DMS\)](#dms-managed)\.
+If you want to authorize \(that is, connect\) AWS migration tools, see [AWS Database Migration Service \(AWS DMS\)](#dms-managed)\.
 
 ### Migration Hub Service API and Console Managed Access<a name="api-console-access-managed"></a>
 
@@ -84,10 +83,10 @@ The AWS Migration Hub console creates the `migrationhub-discovery` role that is 
                "Action": "sts:AssumeRole",
                "Condition": {
                    "StringEquals": {
-                       "aws: SourceAccount": "account-id"
+                       "aws:SourceAccount": "account-id"
                    },
                    "StringLike": {
-                       "aws: SourceArn": "arn:aws:mgh:region:account-id:*"
+                       "aws:SourceArn": "arn:aws:mgh:region:account-id:*"
                    }
                }
            }
@@ -99,59 +98,7 @@ The AWS Migration Hub console creates the `migrationhub-discovery` role that is 
 
 ### Migration Tools \(Managed Policies\)<a name="migration-tools-managed"></a>
 
-Roles and policies are needed for each migration tool in order for the Migration Hub to receive notifications from migration tools\. These permissions allow AWS services like AWS Server Migration Service and AWS Database Migration Service to send updates to Migration Hub\. The following procedures described how to create managed policies to use with AWS SMS and AWS DMS\.
-
-**Warning**  
-As of March 31, 2022, AWS will discontinue AWS Server Migration Service \(AWS SMS\)\. You must complete your active migration projects that are using AWS SMS by March 31, 2022\. Going forward, we recommend AWS Application Migration Service \(Application Migration Service\) as the primary migration service for lift\-and\-shift migrations\. For more information, see [Using the AWS Migration Hub with Application Migration Service](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.
-
-#### AWS Server Migration Service \(AWS SMS\)<a name="sms-managed"></a>
-
-**To create the `migrationhub-sms` role**
-
-1. Sign in to the AWS Management Console and open the IAM console at [https://console\.aws\.amazon\.com/iam/](https://console.aws.amazon.com/iam/)\.
-
-1. In the navigation pane, under **Access management**, choose **Roles**\.
-
-1. Choose **Create role**\.
-
-1. Choose **AWS service** and then under **Or select a service to view its use cases**, choose **Migration Hub**\.
-
-1. Choose **Next: Permissions**\.
-
-1. To attach the managed policy, select **AWSMigrationHubSMSAccess** from the list of policies\. You can use the search box find the policy or to filter the list\.
-
-1. Choose **Next: Tags**\.
-
-1. Choose **Next: Review**\.
-
-1. You must enter **migrationhub\-sms** for the **Role name**\. 
-
-1. Choose **Create role**\.
-
-1. Choose **Roles** in the navigation pane, and then choose the **migrationhub\-sms** name from the list of roles\. You can use the search box find the role or to filter the list\. 
-
-1. Choose the **Trust relationships** tab, and then choose **Edit trust relationship**\.
-
-1. Under **Policy Document**, paste the following trust policy\. 
-
-   ```
-   {
-       "Version": "2012-10-17",
-       "Statement": [
-           {
-               "Effect": "Allow",
-               "Principal": {
-                   "Service": [
-                       "sms.amazonaws.com"
-                   ]
-               },
-               "Action": "sts:AssumeRole"
-           }
-       ]
-   }
-   ```
-
-1. Choose **Update Trust Policy**\.
+The following procedure describes how to create managed policies to use with AWS DMS\.
 
 #### AWS Database Migration Service \(AWS DMS\)<a name="dms-managed"></a>
 

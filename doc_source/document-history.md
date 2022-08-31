@@ -1,11 +1,13 @@
 # Document history<a name="document-history"></a>
-+ **API version**: 2017\-05\-31
-+ **Latest User Guide documentation update**: January 20, 2022
+
+**Latest User Guide documentation update**: August 16, 2022
 
 The following table describes important changes to the *AWS Migration Hub User Guide* after January 18, 2019\. For notifications about documentation updates, you can subscribe to the RSS feed\.
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Application Discovery Service Agentless Collector added to the Migration Hub console](#document-history) | Application Discovery Service Agentless Collector \(Agentless Collector\) is the new AWS Application Discovery Service on\-premises application that collects information through agentless methods about your on\-premises environment to help you effectively plan your migration to the AWS Cloud\. The Agentless Collector discovery tool is now available in the Migration Hub console\. For more information, see [Discovering on\-premises resources using AWS discovery tools](https://docs.aws.amazon.com/migrationhub/latest/ug/gs-new-user-discovery.html)\. | August 16, 2022 | 
+| [Migration Evaluator Collector added to the Migration Hub console](#document-history) | Migration Evaluator is a migration assessment service that helps you create a directional business case for AWS Cloud planning and migration\. The Migration Evaluator Collector discovery tool is now available in the Migration Hub console\. For more information, see [Discovering on\-premises resources using AWS discovery tools](https://docs.aws.amazon.com/migrationhub/latest/ug/gs-new-user-discovery.html)\. | June 7, 2022 | 
 | [Updated Migration Hub console procedures](#document-history) | We updated the procedures that use the Migration Hub console according to its new design\.  | January 20, 2022 | 
 | [Updated the IAM `migrationhub-discovery` role trust policy](#document-history) | We added an optional `Condition` *block* to the AWS Identity and Access Management \(IAM\) trust policy that is used with the `migrationhub-discovery` role\. For more information about the role, see [New User IAM Setup](https://docs.aws.amazon.com/migrationhub/latest/ug/new-customer-setup.html)\. | November 8, 2021 | 
 | [Application Migration Service added to Migration Hub migration tools](#document-history) | AWS Application Migration Service \(Application Migration Service\) is integrated with the AWS Management Console and is the primary migration service recommended for lift\-and\-shift migrations to AWS\. For information on how to connect to Application Migration Service from Migration Hub, see [Connect migration tools to Migration Hub](https://docs.aws.amazon.com/migrationhub/latest/ug/discovery-wt-migrate.html#discovery-wt-auth-migrate-tools)\. For more information about Application Migration Service, see [AWS Application Migration Service](http://aws.amazon.com/application-migration-service/) and [Using the AWS Migration Hub with MGN](https://docs.aws.amazon.com/mgn/latest/ug/mgn-mgh.html)\.  | June 30, 2021 | 

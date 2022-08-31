@@ -4,9 +4,8 @@ This section describes how to track migrations, tag migration resources, and nav
 
 **Topics**
 + [Tracking migration updates](#updates-tracking-wt)
-+ [Tracking metrics using the dashboards](#dashboards-tracking-wt)
++ [Tracking metrics using the dashboard](#dashboards-tracking-wt)
 + [Tagging migration resources](#tagging-migration-resources)
-+ [Navigating from the dashboard and the navigation pane](#navigation-tracking-wt)
 
 ## Tracking migration updates<a name="updates-tracking-wt"></a>
 
@@ -39,7 +38,7 @@ See Step 2\.a in *To determine if a migration update must be manually mapped to 
 
 ### Tracking when you migrate without performing discovery<a name="updates-tracking-wt-no-disco"></a>
 
-If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server that corresponds with the migration update to the servers list and automatically map the update to the server\. You can group servers as applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. For more information, see [](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track the status of your migrations in Migration Hub](migrate-wt-track.md)\.
+If you did not perform discovery with an AWS discovery tool, then Migration Hub will add a server that corresponds with the migration update to the servers list and automatically map the update to the server\. You can group servers as applications and then start tracking the migration on the application’s details page in the **Migrate** section of the console\. For more information, see [Step 3: Group servers as applications](migrate-wt-migrate.md#migrate-wt-group-as-applications) and [Track the status of your migrations in Migration Hub](migrate-wt-track.md)\.
 
 ### Troubleshooting and manually mapping migration updates<a name="updates-tracking-wt-troubleshooting"></a>
 
@@ -61,17 +60,32 @@ The following steps show you how to manually map a migration update to a discove
 
 1. Verify that the server name of the server you just mapped is now present in the **Mapped servers** column\.
 
-## Tracking metrics using the dashboards<a name="dashboards-tracking-wt"></a>
+## Tracking metrics using the dashboard<a name="dashboards-tracking-wt"></a>
 
 Dashboards provide a way to quickly see status and progress summary data, and also help you navigate to more detailed data\.
 
-### Main dashboard<a name="main-dashboard-tracking-wt"></a>
+### Dashboard<a name="main-dashboard-tracking-wt"></a>
 
-The main dashboard gathers data from the Discover and Migrate dashboards in a central location\. 
+The dashboard consists of four at\-a\-glance status and information sections as well as links for quick access to more details\. These sections allow you to understand the summary status of most recently updated applications and also get quick access to any of them, to get an overview of applications in different states, and to track the migration progress over time\. 
 
-The main dashboard consists of four at\-a\-glance status and information panes as well as a consolidated list of links for quick access\. These panes allow you to understand the summary status of most recently updated applications and also get quick access to any of them, to get an overview of applications in different states, and to track the migration progress over time\. 
+To reach the **Dashboard**, choose **Dashboard** from the Migration Hub console navigation pane\.
 
-To reach the main dashboard, choose **Dashboard** from the navigation pane\.
+### Navigating from the dashboard and the navigation pane<a name="navigation-tracking-wt"></a>
+
+After viewing dashboard data summaries, you might want to retrieve more detail without interrupting your workﬂow\. You do this by navigating directly from the relevant status or information pane on the dashboard\.
+
+In the following table, you can ﬁnd instructions on how to navigate from a dashboard to the information you want to see\. You can also find instructions on how to get to this information by using the navigation pane\.
+
+To navigate to the **Dashboard**, choose **Dashboard** from the Migration Hub console navigation pane\.
+
+
+| To See | Do This | Which Is the Same As | 
+| --- | --- | --- | 
+| All servers |  On the **Dashboard** in the **Discovery summary** section, under **Servers**, choose the number\.  |  In the Migration Hub console navigation pane, choose **Servers**\.  | 
+| All agents |  On the **Dashboard** in the **Discovery summary** section, under **Agents**, choose the number\.  |  In the navigation pane, under **Discover** choose **Data Collectors**, and then choose the **Agents** tab\.  | 
+| All applications |  On the **Dashboard** in the **Discovery summary** section, under **Applications**, choose the number\.  |  In the navigation pane, under **Migrate**, choose **Applications**\.  | 
+| Application details |  On the **Dashboard** in the **Most recently updated applications** section, choose the name of the application to see details\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
+| Server details  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
 
 ## Tagging migration resources<a name="tagging-migration-resources"></a>
 
@@ -81,20 +95,4 @@ If you turn on cost allocation tagging, you can view the cost of the AWS resourc
 
 These resources have the `aws:migrationhub:source-id` tag, and the `source-id` matches the `server.configurationId` server asset field from Application Discovery Service\. For more information, see the following topics:
 + [Querying Discovered Configuration Items](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-api-queries.html) in the *Application Discovery Service User Guide*\.
-+ [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing and Cost Management User Guide*\.
-
-## Navigating from the dashboard and the navigation pane<a name="navigation-tracking-wt"></a>
-
-After viewing dashboard data summaries, you might want to retrieve more detail without interrupting your workﬂow\. You do this by navigating directly from the relevant status or information pane on the dashboard\.
-
-In the table following, you can ﬁnd instructions on how to navigate from a dashboard to the information you want to see\. You can also find instructions on how to get to this information by using the navigation pane\.
-
-
-| To See | Do This | Which Is the Same As | 
-| --- | --- | --- | 
-| All servers |  From the total number of servers inside the Discovery summary box in the Main dashboard, choose **View all servers**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| All agents |  From the total number of agents in the Discovery summary box in the Main Dashboard, choose **View all agents**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| All connectors |  From the total number of connectors in the Discovery summary box in the Main dashboard, choose **View all connectors**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| All applications |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose **View all applications** Or, from the Discover dashboard in the Servers & Applications pane, choose **View all applications**\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| Application details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard in the Most recently updated applications box, choose the application's status box\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
-| Server details\.\.\. [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html) |  From either the Main dashboard or Migrate dashboard, in the Most recently updated applications pane, choose the application\. Then choose the server name in the Server ID column\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/migrationhub/latest/ug/doing-more.html)  | 
++ [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing User Guide*\.

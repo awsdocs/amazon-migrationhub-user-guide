@@ -1,6 +1,6 @@
 # Amazon EC2 instance recommendations<a name="ec2-recommendations"></a>
 
-Amazon EC2 instance recommendations provide you with the ability to estimate the cost of running your existing servers in AWS\. This feature analyzes the details about each server, including server specification, CPU, and memory utilization data\. The compiled data is then used to recommend the least expensive Amazon EC2 instance type that can handle the existing performance workload\. Recommendations are returned along with per\-hour instance pricing\.
+Amazon Elastic Compute Cloud \(Amazon EC2\) instance recommendations provide you with the ability to estimate the cost of running your existing servers in AWS\. This feature analyzes the details about each server, including server specification, CPU, and memory utilization data\. The compiled data is then used to recommend the least expensive Amazon EC2 instance type that can handle the existing performance workload\. Recommendations are returned along with per\-hour instance pricing\.
 
 Based on your business needs, you can choose additional preferences such as billing options, region, Amazon EC2 instance type exclusions and the CPU/RAM sizing \(average, peak, percentile\) to further optimize your Amazon EC2 instance recommendations and associated costs\.
 
@@ -13,13 +13,10 @@ Based on your business needs, you can choose additional preferences such as bill
 
 ## Prerequisites<a name="ec2-recommendation-prerequisites"></a>
 
-Before you can get Amazon EC2 instance recommendations, you must have data about your on\-premises servers in Migration Hub\. This data can come from the discovery tools \(Discovery Connector or Discovery Agent\) or from Migration Hub import\. For more information on using these tools and features, see the following links:
-+ [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) – This allows you to import details of your on\-premises environment directly into Migration Hub using a predefined CSV template\.
-+ [Discovery Connector](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-connector.html) – This is a VMware appliance that can collect information only about VMware virtual machines \(VMs\)\.
-+ [Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) – This is AWS software that you install on on\-premises servers and VMs targeted for discovery and migration\.
-
-**Note**  
-Percentile\-based recommendations are only generated for servers with data collected by a Discovery Connector from March 12th, 2019 onwards, or by a Discovery Agent\.
+Before you can get Amazon EC2 instance recommendations, you must have data about your on\-premises servers in Migration Hub\. This data can come from the discovery tools Application Discovery Service Agentless Collector \(Agentless Collector\) or AWS Application Discovery Agent \(Discovery Agent\), or from Migration Hub import\. 
++ [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html) – This allows you to import details of your on\-premises environment directly into Migration Hub using a predefined CSV template\. For more information, see [Migration Hub import](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-import.html)\.
++ [Agentless Collector](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-connector.html) – This is a VMware appliance that can collect information only about VMware virtual machines \(VMs\)\. For more informatio, see [Application Discovery Service Agentless Collector](https://docs.aws.amazon.com/application-discovery/latest/userguide/agentless-collector.html) in the *Application Discovery Service User Guide*
++ [Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) – This is AWS software that you install on on\-premises servers and VMs targeted for discovery and migration\. For more information, see [AWS Application Discovery Agent](https://docs.aws.amazon.com/application-discovery/latest/userguide/discovery-agent.html) in the *Application Discovery Service User Guide*\.
 
 ## How Amazon EC2 instance recommendations work<a name="how-ec2-recommendations-work"></a>
 
