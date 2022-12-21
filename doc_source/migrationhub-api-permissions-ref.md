@@ -1,6 +1,6 @@
 # AWS Migration Hub API Permissions: Actions and Resources Reference<a name="migrationhub-api-permissions-ref"></a>
 
-When you are setting up [Access Control](auth-and-access-control.md#access-control) and writing a permissions policy that you can attach to an IAM identity \(identity\-based policies\), you can use the following table as a reference\. The table lists each Migration Hub API operation, the corresponding actions for which you can grant permissions to perform the action, and the AWS resource for which you can grant the permissions\. You specify the actions in the policy's `Action` field, and you specify the resource value in the policy's `Resource` field\. 
+When you are setting up [Access control](auth-and-access-control.md#access-control) and writing a permissions policy that you can attach to an IAM identity \(identity\-based policies\), you can use the following table as a reference\. The table lists each Migration Hub API operation, the corresponding actions for which you can grant permissions to perform the action, and the AWS resource for which you can grant the permissions\. You specify the actions in the policy's `Action` field, and you specify the resource value in the policy's `Resource` field\. 
 
 **Note**  
 To specify an action, use the `mgh:` prefix followed by the API operation name \(for example, `mgh:CreateProgressUpdateStream`\)\.
@@ -38,5 +38,5 @@ Use the scroll bars to see the rest of the table\.
 |  [DescribeHomeRegionControls](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html)  | mgh:DescribeHomeRegionControls |  \*  | 
 |  [GetHomeRegion](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html)  | mgh:GetHomeRegion |  \*  | 
 
-## Related Topics<a name="w123aac29c17c23c29"></a>
-+ [Access Control](auth-and-access-control.md#access-control)
+## Related Topics<a name="w72aac29c17c23c29"></a>
++ [Access control](auth-and-access-control.md#access-control)

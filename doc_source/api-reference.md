@@ -22,7 +22,7 @@ After you’ve created a `ProgressUpdateStream`, you can start importing migrati
 
 ### Associating a migration task with a previously discovered server<a name="api-reference-associate_task"></a>
 
-To add migration task detail to the console, the task must be associated with a resource\. The resource represents the existing or source server for the migration\.   This association can be made in two ways:
+To add migration task detail to the console, the task must be associated with a resource\. The resource represents the existing or source server for the migration\. This association can be made in two ways:
 + **Auto\-mapping \(recommended\)**: A migration tool can associate \(Put\) identifiable information \(for example, IP address, MAC address, and fully qualified domain name, and in a VMware environment, vCenter ID, MoRef ID, VM name, and VM folder path\) by calling `PutResourceAttributes` with a migration task\. With this information, AWS Migration Hub can correctly map the server being migrated to a server in the AWS Application Discovery Service \(ADS\) server repository\. If Migration Hub does not find a matching server in the ADS server repository, it adds the server to the repository, automatically\.
 + **Manual\-mapping**: Alternatively, a migration tool can allow the user to make this association manually\. The tool can provide a mapping experience within the migration tool’s workflow that displays a list of existing AWS Application Discovery Service \(ADS\) servers\.
 **Note**  
@@ -73,7 +73,7 @@ Migration Hub is integrated with CloudTrail, a service that captures API calls f
 ## Related topics<a name="api-reference-related-topics"></a>
 
 The following sections provide descriptions of the API operations, how to create a signature for request authentication, and how to grant permissions for these API operations using the IAM policies\.
-+  [Identity and Access Management in Migration Hub](auth-and-access-control.md) 
++  [Identity and access management in Migration Hub](auth-and-access-control.md) 
 +  [Actions](API_Operations.md) 
 +  [Data Types](API_Types.md) 
 +  [Logging Migration Hub API calls with AWS CloudTrail](logging-using-cloudtrail.md) 

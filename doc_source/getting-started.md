@@ -4,10 +4,10 @@ In this section, you can find information about how to get started with AWS Migr
 
 Before you begin, be sure to set your home Region, either from the console or by using commands in the CLI\. 
 
-The first time you view the Migration Hub console, you'll be prompted to choose a home Region\. You can choose and view your current home Region on the Migration Hub **Settings** page\. To navigate to the **Settings** page, choose **Settings** in the navigation pane\. After the home Region is set, it can only be changed by contacting [AWS Support](http://aws.amazon.com/contact-us)\. For information, see [The AWS Migration Hub home Region](home-region.md)\.
+The first time you view the Migration Hub console, you'll be prompted to choose a home Region\. You can choose and view your current home Region on the Migration Hub **Settings** page\. To navigate to the **Settings** page, choose **Settings** in the navigation pane\. After the home Region is set, it can only be changed by contacting [AWS Support](http://aws.amazon.com/contact-us)\. For information, see [Migration Hub home Region](home-region.md)\.
 
 **Note**  
-If you are a developer or are interested in sending migration status from a migration tool, script, or custom code, see [AWS Migration Hub API](api-reference.md) and [AWSAWS Migration Hub Home Region API Reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)\.  
+If you are a developer or are interested in sending migration status from a migration tool, script, or custom code, see [AWS Migration Hub API](api-reference.md) and [AWS Migration Hub Home Region API Reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)\.  
 All Migration Hub and AWS Application Discovery Service API commands must be called from within the home Region only, and they require you to call `GetHomeRegion` at least once before you call any other API, to obtain the account's Migration Hub home Region\. Calls originating from outside your home Region are rejected\.
 
 **Topics**
@@ -31,7 +31,7 @@ Here's what to expect:
 + The migration tools that integrate with Migration Hub store all data about your migration status in Migration Hub\. The data is stored in your selected home Region\.
 + The migration tools do not send a status unless you have authorized their connection\.
 + For a list of AWS Regions where you can use Migration Hub, see the [Amazon Web Services General Reference](https://docs.aws.amazon.com/general/latest/gr/rande.html#migrationhub_region)\.
-+ For more information about working with your home Region, see the section about [The AWS Migration Hub home Region](home-region.md)\.
++ For more information about working with your home Region, see the section about [Migration Hub home Region](home-region.md)\.
 
 ## Access to AWS Migration Hub<a name="access-via-console-and-api"></a>
 

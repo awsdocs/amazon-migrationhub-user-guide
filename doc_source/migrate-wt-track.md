@@ -10,7 +10,7 @@ With a migration underway, you can track its progress status as well as details 
 
    1. If you do not see all of your application's servers listed in the application's details page, it could be because you have not grouped those servers into this application yet\.  See [Updates About My Migrations Don't Appear Inside an Application](troubleshooting.md#migs-do-not-appear-in-app)\.
 
-1. The first time a migration task is started for a server associated with the application, applications with this status will change to the **In progress** status, automatically\. After verifying the in\-progress migration status from the application's detail screen, if the status is still **Not started**, you can manually change it to **In progress**\. To change the status, choose **In progress** from the **Update status** menu\.
+1. The first time a migration task is started for a server associated with the application, applications with this server will change to the **In progress** status, automatically\. After verifying the in\-progress migration status from the application's detail screen, if the status is still **Not started**, you can manually change it to **In progress**\. To change the status, choose **In progress** from the **Update status** menu\.
 
 1. Choose **Confirm**\. A green confirmation message appears at the top of the screen, and the status label changes to **In progress**\.
 

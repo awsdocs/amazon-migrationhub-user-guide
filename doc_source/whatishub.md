@@ -16,7 +16,7 @@ On your first use of the AWS Migration Hub console, you’re prompted to select 
 
  If you are a first\-time user of AWS Migration Hub, we recommend that you read the following sections in order:
 +  [Getting started](getting-started.md) 
-+  [The AWS Migration Hub home Region](home-region.md) 
++  [Migration Hub home Region](home-region.md) 
 
 To learn about sending status to or querying status from AWS Migration Hub using the AWS SDK or AWS CLI, see the following API references:
 +  [AWS Migration Hub API](api-reference.md) 

@@ -36,7 +36,7 @@ The following steps walk you through connecting \(authorizing\) your selected mi
    AWS migration tools utilize a one\-click authorization process that automatically adds the required AWS Identity and Access Management \(IAM\) permissions role once you choose **Connect**\.
 
 **Note**  
-Note that if you are using API's or do not want to authorize through Migration Hub's console, you can learn about manual role creation in [New User IAM Setup](new-customer-setup.md)\.
+Note that if you are using API's or do not want to authorize through Migration Hub's console, you can learn about manual role creation in [New user IAM setup](new-customer-setup.md)\.
 
 ## Step 2: Migrate using the connected migration tools<a name="migrate-wt-migrate-using-tools"></a>
 

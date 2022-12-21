@@ -20,7 +20,7 @@ If you are not seeing your applications' migration status updates on the **Updat
 
 To make sure authentication is occurring correctly:
 + Check whether the migration tools you are using have been authorized to communicate with Migration Hub\. For more information, see [steps to authorize a migration tool](migrate-wt-migrate.md#migrate-wt-migrate-using-tools)\.
-+ Check the [Tools page](http://console.aws.amazon.com/migrationhub/migrate/tools) to see the status of connected tools\. Learn more about setting up necessary policies and roles in [Required Managed Policies](new-customer-setup.md#required-managed-policies)\.
++ Check the [Tools page](http://console.aws.amazon.com/migrationhub/migrate/tools) to see the status of connected tools\. Learn more about setting up necessary policies and roles in [Managed policies and roles](new-customer-setup.md#required-managed-policies)\.
 
 ### Migration Status Matching When Using AWS Discovery Tools<a name="matching"></a>
 + Check whether a migration update must be manually mapped or was incorrectly mapped to a discovered server, see [Tracking migration updates](doing-more.md#updates-tracking-wt)\.
